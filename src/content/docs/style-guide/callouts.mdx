@@ -1,0 +1,67 @@
+---
+title: Callouts
+description: When to use each callout, including "Needs Austin's review".
+sidebar:
+  order: 2
+---
+
+Callouts are `:::` blocks. Use them sparingly: one or two on a page. A page full of warnings reads as a page with no warnings.
+
+## Needs Austin's review
+
+Use this for anything Austin must sign off before it ships: T&T rules, scoring math, pricing, refunds, data privacy, and advice that depends on an unsettled decision.
+
+```md
+:::review
+Hosts bring their own travel router. This follows SCO-2058, which isn't approved yet.
+:::
+```
+
+:::review
+Hosts bring their own travel router. This follows SCO-2058, which isn't approved yet.
+:::
+
+You can give it a sharper title:
+
+```md
+:::review[Needs Austin's review: pricing]
+The pilot is free for the first three meets.
+:::
+```
+
+:::review[Needs Austin's review: pricing]
+The pilot is free for the first three meets.
+:::
+
+Remove the callout only once Austin has approved the statement, and mention the approval in the commit message.
+
+## What the rulebook says
+
+Use `:::rule` to quote or paraphrase the USA Gymnastics rulebook. See [Cite the rulebook](/style-guide/rulebook-citations/) for the exact pattern.
+
+## The standard four
+
+| Callout | Use it for | Example |
+| -- | -- | -- |
+| `:::note` | Extra context the reader can skip. | Rehearsal scores never appear on scorsync.com. |
+| `:::tip` | A faster or easier way. | Press ⌘K to find any athlete. |
+| `:::caution` | Something that could cost time or need a redo. | Unlocking the schedule lets coaches see changes. |
+| `:::danger` | Something that loses scores or stops the meet. | Quit stops scoring for every judge. |
+
+:::note
+Rehearsal scores never appear on scorsync.com.
+:::
+
+:::tip
+Press ⌘K (Ctrl+K on Windows) to find any athlete, judge or official.
+:::
+
+:::caution
+Unlocking the schedule lets you place a late entry, but every change shows on scorsync.com.
+:::
+
+:::danger[Don't Quit Scorsync Desktop]
+Quit stops scoring for every judge. Close the window instead: the meet keeps running.
+:::
+
+These examples show the format only. They haven't been checked against the app.

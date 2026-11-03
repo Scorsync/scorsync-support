@@ -1,0 +1,59 @@
+---
+title: Cite the rulebook
+description: How to state a T&T rule on this site, with its source and a review flag.
+sidebar:
+  order: 3
+---
+
+Any sentence about T&T rules or scoring math needs two things:
+
+1. A `:::rule` callout that says what the rule is, in plain words, and where it comes from.
+2. A `:::review` callout until Austin signs it off.
+
+Help pages say which button does what. They don't teach the rules. Keep the rule to one or two sentences, and send judges to the rulebook for the rest.
+
+## The pattern
+
+```md
+:::rule[What the rulebook says]
+Competitors are scheduled in flights of about 12 athletes or fewer.
+
+**Source:** USA Gymnastics, *Development Program Code of Points: Trampoline* (2025–2029), Section 1, Rule 4.1, page 4.
+:::
+
+:::review
+Rules statement. Not yet signed off.
+:::
+```
+
+It renders like this:
+
+:::rule[What the rulebook says]
+Competitors are scheduled in flights of about 12 athletes or fewer.
+
+**Source:** USA Gymnastics, *Development Program Code of Points: Trampoline* (2025–2029), Section 1, Rule 4.1, page 4.
+:::
+
+:::review
+Rules statement. Not yet signed off.
+:::
+
+## Writing the source line
+
+Write it so a coach or judge can find the rule in their own copy of the PDF:
+
+**Source:** USA Gymnastics, *Document title* (edition), Section N, Rule X.Y.Z, page P.
+
+- **Document title**, in italics, as printed on its cover: *Development Program Code of Points: Trampoline*, *Development Program Code of Points: Tumbling*, *Development Program Code of Points: Double Mini*, *U.S. Elite Code of Points*, *HUGS Code of Points*, or *Rules & Policies*, Section V, VI or IX.
+- **Edition**: the cycle, such as 2025–2029.
+- **Rule number** exactly as printed, and the PDF page number.
+- **2026–27 changes** override the 2025–26 text. Cite them as "2026–27 Coaches T210, slide N".
+- **FIG rules**: cite the *FIG Code of Points: Trampoline Gymnastics* (2025–2028) only where the USA Gymnastics rules defer to it.
+
+Look the rule up with the `tt-rulebook` skill. Never cite a rule from memory or from the code.
+
+## When sources disagree
+
+If the app, the code or another document disagrees with the rulebook, don't pick one in the help. Write what the rulebook says, flag it with `:::review`, and note the disagreement for Austin.
+
+The example above is one: the rulebook says flights of "approximately 12 athletes or less", while the scorsync `GLOSSARY.md` calls 12 a hard maximum, and Meet Builder shows two different capacity numbers (SCO-2047).

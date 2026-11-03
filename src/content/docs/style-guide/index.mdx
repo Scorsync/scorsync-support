@@ -1,0 +1,48 @@
+---
+title: How we write these docs
+description: The house rules for every page on this site.
+sidebar:
+  order: 0
+  group:
+    label: For writers
+---
+
+This section is for the people writing the site, not for hosts or judges. It holds the style kit: the [article template](/style-guide/article-template/), the [callouts](/style-guide/callouts/) and the [rulebook citation pattern](/style-guide/rulebook-citations/).
+
+## Who we write for
+
+Gym staff and volunteers on a busy meet day. Most aren't technical. Assume they're reading on a phone or a tablet, with an athlete waiting.
+
+## The rules
+
+- **Plain language.** Short sentences. No developer words: say "address", not "URL" or "host name"; say "the laptop", not "the server".
+- **One action per step.** If a step has "and" in it, it's probably two steps.
+- **A screenshot for every step.** Take it with fake data only: no real athletes, clubs, judges or emails.
+- **Name buttons exactly as they appear**, in **bold**.
+- **Organise by audience, then task.** Never by code module or screen name.
+- **Rules and money wait for sign-off.** Anything about T&T rules, scoring math, pricing, refunds or data privacy gets a [Needs Austin's review](/style-guide/callouts/#needs-austins-review) callout, and rules also get a [rulebook citation](/style-guide/rulebook-citations/).
+
+## Product names
+
+Use these names exactly (from `GLOSSARY.md`, "The products", in the scorsync repo). Never let one stand in for another.
+
+| Say | Meaning | Don't say |
+| -- | -- | -- |
+| Scorsync Desktop | The venue app for Mac and Windows. Runs the whole scoring system on the host's computer, with or without internet. | Desktop server, venue server, the app |
+| Scorsync Cloud | Hosted scoring at scoring.scorsync.com. The same system, run by us. | Cloud scoring site, the website, Online |
+| Meet Builder | Where a host sets up a meet: events, sessions, flights, run orders and awards. | Builder (on its own), setup wizard |
+| Judge panel | The screen judges score on, usually a tablet. | Judge app, judge site |
+| scorsync.com | The results site families follow. It has its own help; we link out. | Scorsync (on its own), Online |
+| Scorsync for iPhone | The iOS app. Its help lives with scorsync.com's. | The Scorsync app |
+| Scorsync Live | The older bridge from ProScore or TScore to scorsync.com. Not part of the new system. | "Live" on its own |
+
+The app's button still says "Connect to Scorsync Online". Quote it once, like that, and call the site scorsync.com everywhere else.
+
+## Keep the exit cheap
+
+The site runs on Nimbus, which is pre-1.0. Write so the content would move to Starlight unchanged:
+
+- Callouts are `:::` directives, never `<Aside>` in page content.
+- Steps are a plain numbered list inside `<Steps>`. Don't use `<Step title>`.
+- Frontmatter is only `title`, `description` and `sidebar.{order,label,badge}` (plus `sidebar.group.label` on a section's `index.mdx`).
+- Images sit next to the page, in an `images/` folder, with relative paths.
