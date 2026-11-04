@@ -790,3 +790,21 @@ body:not(:has([data-mobile-sidebar])) [data-menu-btn] {
 		--nb-header-height: 6rem;
 	}
 }
+
+/* Print: the runbooks say "print it and tick it off". A printed page keeps
+   the steps and the danger warnings, and drops the site chrome, screenshots
+   and ordinary callouts, so a runbook fits on a few sheets. */
+@media print {
+  header,
+  #desktop-sidebar,
+  [aria-label="On this page"],
+  [data-slot="page-header"] ~ div:has(> [data-nb-mobile-toc]),
+  [data-nb-mobile-toc],
+  nav[aria-label="Breadcrumb"],
+  .docs-content img,
+  .docs-content figure,
+  .docs-content aside[data-slot="aside"]:not([data-type="danger"]) {
+    display: none !important;
+  }
+  .docs-content :is(ol, ul) li { break-inside: avoid; }
+}

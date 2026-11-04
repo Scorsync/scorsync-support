@@ -2,7 +2,7 @@
 title: "Keep the meet running"
 description: "Keep the laptop powered and awake, close the window instead of quitting, and reopen Scorsync after a restart."
 sidebar:
-  order: 90
+  order: 75
 ---
 
 **Who it's for:** Offline host · Scorsync Desktop
@@ -45,32 +45,40 @@ Quit stops scoring for every judge within a second, and nothing asks you to conf
 :::
 
 :::review[Needs Austin's review: closing the window]
-The code keeps scoring running when the window is closed, but closing the window and closing the lid haven't been tried on real hardware yet. Both are on the drill list (SCO-2057).
+The code keeps scoring running when the window is closed, but closing the window and closing the lid haven't been tried on real hardware yet.
 :::
+
+Test closing the window at your rehearsal: check that a judge can still submit a score.
 
 ## Reopen Scorsync after a restart
 
-Scorsync doesn't open by itself when the laptop starts. If every judge drops at once, someone probably quit Scorsync, or the laptop slept or restarted.
+Scorsync doesn't open by itself when the laptop starts. If every judge drops at once, the travel router lost power, or someone quit Scorsync, or the laptop slept or restarted.
 
 <Steps>
 
-1. Open Scorsync. Wait for "Starting the server…" to finish: about 10 seconds.
+1. Check the travel router has power and its Wi-Fi light is on. If it restarted, wait a minute for the tablets to rejoin the scoring Wi-Fi.
 
-2. If the window shows **Welcome to the meet**, select **Admin panel** at the bottom, and sign in again.
+2. Open the tray menu. If it says **● Running**, Scorsync is fine: skip to step 5.
+
+3. If there's no Scorsync icon, open Scorsync. Wait for "Starting the server…" to finish: about 10 seconds.
+
+4. If the window shows **Welcome to the meet**, select **Admin panel** at the bottom, and sign in again.
 
    ![The Scorsync window after reopening: "Welcome to the meet", with Results and "Judges and staff: sign in", and Admin panel at the bottom](./images/keep-the-meet-running-window-after-reopen.png)
 
-3. Open the tray menu, and check that the address after **Judges open** matches your card.
+5. Open the tray menu, and check that the address after **Judges open** matches your card.
 
-4. Ask the chair to check that every judge shows on the panel again. Judges stay signed in, and scores saved on their tablets send by themselves.
+6. Ask the chair to check that every judge shows on the panel again. Judges stay signed in, and scores saved on their tablets send by themselves.
 
 </Steps>
 
 ## If something goes wrong
 
-- **The address after Judges open has changed**, for example `:8001` instead of `:8000`. Another program took the old address. Give judges the new address. A score a judge saved on their tablet while Scorsync was closed stays under the old address and doesn't send, so ask the chair to check that the athlete on the floor has every judge's score.
+- **The address after Judges open has changed**, for example `:8001` instead of `:8000`. Another program took the old address.
+  1. Each judge opens the new address on their tablet. They stay signed in.
+  2. A score a judge saved on their tablet while Scorsync was closed doesn't send from the new address. The judge tells the chair the mark, and the chair enters it. See [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/).
 
-  ![The Scorsync menu after reopening: the judges' address now ends in :8001](./images/tray-menu-address-changed.png)
+  ![The Scorsync menu after reopening: the judges' address now ends in 8001 instead of 8000](./images/tray-menu-address-changed.png)
 
 - **"Scorsync could not start" with "Ports 80 and 8000–8009 are all in use."** Quit the other programs you don't need, then select **Restart Server** in the tray menu. Opening Scorsync again won't retry. If it still fails, restart the laptop and open only Scorsync.
 - **"Scorsync processes from the last run are still running."** Restart the laptop, then open Scorsync again.

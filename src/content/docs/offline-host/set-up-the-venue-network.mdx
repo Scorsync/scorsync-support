@@ -1,9 +1,9 @@
 ---
 title: "Set up Scorsync Desktop and the venue network"
-description: "Set up your travel router, run Scorsync Desktop's first-run setup, and check that a judge's tablet can reach it."
+description: "Set up your travel router, install Scorsync Desktop on its Wi-Fi, and check that a judge's tablet can reach it."
 sidebar:
-  order: 1
-  label: "Set up Desktop and the network"
+  order: 10
+  label: "Set up the venue network"
 ---
 
 **Who it's for:** Offline host · Scorsync Desktop
@@ -14,7 +14,6 @@ Do this at home a few days before the meet, then check it again at the venue on 
 
 ## Before you start
 
-- Scorsync Desktop is installed on the laptop. See [Install on a Mac](/offline-host/install-on-mac/) or [Install on Windows](/offline-host/install-on-windows/).
 - You have your own travel router (see the checklist below). Scorsync doesn't lend routers.
 - You have one tablet to test with.
 
@@ -32,8 +31,10 @@ Also bring the laptop's power cable, a power strip, and a small UPS (a battery b
 Don't run the scoring Wi-Fi from your phone or from the laptop's own hotspot: judges' tablets may not find Scorsync at all. If you can't get a travel router, contact support before the meet.
 :::
 
+Want Scorsync to check your setup with you? Email support@scorsync.com a week before your meet.
+
 :::review[Needs Austin's review: booking the setup check]
-The decided venue setup (SCO-2058) offers hosts a pre-meet setup check with Scorsync support, and says the guide tells them how to book it. How they book it isn't decided. Draft wording: "Want us to check your setup? Contact support a week before your meet and we'll go through it with you."
+The decided venue setup offers hosts a pre-meet setup check with Scorsync support, and says the guide tells them how to book it. How they book it isn't decided. The line above the callout is the interim wording.
 :::
 
 ## Set up the router
@@ -48,47 +49,15 @@ Every router is different, so these steps have no screenshots. Use your router's
 
 3. Connect the laptop to the scoring Wi-Fi.
 
-4. In the router's settings, reserve the laptop's address for the laptop. This keeps the judges' address from changing mid-meet.
+4. In the router's settings, reserve the laptop's address for the laptop. This keeps the judges' address from changing mid-meet. If you can't find this setting, skip it, and write down both judges' addresses each morning instead (see [Connect the judges' tablets](/offline-host/connect-judges-tablets/)).
 
 5. If you'll publish to scorsync.com, give the router its internet: plug in the venue's cable, or join your phone's hotspot from the router. Never turn on a hotspot on the laptop.
 
 </Steps>
 
-## Run first-run setup
+## Install Scorsync Desktop
 
-The first time you open Scorsync Desktop, it walks you through six steps. You do this once per laptop.
-
-<Steps>
-
-1. Open Scorsync, and on **Set up the database**, select **Set up the database**. It takes a few seconds.
-
-   ![Step 1 of 6, "Set up the database", with a list of what will be installed and the Set up the database button](./images/setup-step-1-database.png)
-
-2. Type your name, your email and a password, then select **Create account and continue**. The email doesn't need to receive mail: it's only what you sign in with.
-
-   ![Step 2 of 6, "Create the admin account", filled in for Dana Whitlock](./images/setup-step-2-admin-account.png)
-
-3. Type your club's name under **Organization name**, then choose **Link this computer** or **Continue without linking**. Note the date under the buttons: "Go live works until…".
-
-   ![Step 3 of 6, "Your organization", with the Scorsync license card and the date go live works until](./images/setup-step-3-organization-and-license.png)
-
-4. On **Connect judges' devices**, write down both addresses: the one under **Judges open**, and the one after "Does not open? Use". Then select **Next: Scorsync Online**.
-
-   ![Step 4 of 6, "Connect judges' devices": a QR code, the judges' address, a second address made of numbers, and "Keep this address from changing"](./images/setup-step-4-network-addresses.png)
-
-5. Select **Next: System check**. You don't connect anything here: each meet is connected to scorsync.com on its own, later.
-
-   ![Step 5 of 6, "Scorsync Online (optional)", which says you connect each meet, not this computer](./images/setup-step-5-scorsync-com.png)
-
-6. Check that every row on **System check** says **Ready**, then select **Finish**.
-
-   ![Step 6 of 6, "System check", with every row marked Ready](./images/setup-step-6-system-check.png)
-
-</Steps>
-
-:::review[Needs Austin's review: the license]
-On the test run the license card read "Go live works without it until December 3, 2026": 30 days after first run, and two days before the pilot. Linking needs the internet. What we tell hosts about license codes, linking and that date isn't settled, so this page only says to note the date. The draft fix under "If something goes wrong" needs your sign-off.
-:::
+With the laptop on the scoring Wi-Fi, install Scorsync Desktop ([on a Mac](/offline-host/install-on-mac/) or [on Windows](/offline-host/install-on-windows/)), then [run first-run setup](/offline-host/first-run-setup/). Come back here to check it from a tablet.
 
 ## Check it from a tablet
 
@@ -126,12 +95,11 @@ For a closer look at the network, open Scorsync on the laptop, select **Setup**,
 
 ## If something goes wrong
 
-- **A tablet can't open the address.** Type the second address from the menu, the one after **Or:**. The QR codes only hold the first address, so on that tablet type the address instead of scanning.
+- **A tablet can't open the address.** Type the second address from the menu, the one after **Or** (all numbers, like `http://192.168.1.20:8000`). The QR codes only hold the first address, so on that tablet type the address instead of scanning.
 - **After you reopen Scorsync, the address ends in a different number**, such as `:8001` instead of `:8000`. Something else on the laptop took the old one. Give judges the new address from the menu. On meet day, close other programs before you open Scorsync.
 
-  ![The Scorsync menu after reopening: the judges' address now ends in :8001](./images/tray-menu-address-changed.png)
+  ![The Scorsync menu after reopening: the judges' address now ends in 8001 instead of 8000](./images/tray-menu-address-changed.png)
 
-- **The "Go live works until…" date is before your meet.** Link the computer while you have internet, or contact support.
 - **A System check row isn't Ready.** Select **Re-run the checks**. If it's still not Ready, contact support.
 
 ## Related

@@ -2,7 +2,7 @@
 title: "Override a mark, apply penalties or score 0"
 description: "Which button on the chair's screen does what: Override, Add deduction, the time penalty, Skills performed and Score 0."
 sidebar:
-  order: 4
+  order: 13
 ---
 
 **Who it's for:** The chair · Scorsync Cloud and Scorsync Desktop
@@ -11,7 +11,7 @@ Use this page when a routine's score needs the chair's hand: a wrong mark, a ded
 
 | You need to | Use | Where |
 | -- | -- | -- |
-| Change a mark a judge sent | **Override** | The judge's card |
+| Change a mark a judge sent | **Override** | The judge's card. For an athlete you've moved past, see [below](#fix-an-athlete-youve-already-moved-past) |
 | Undo your override | The small orange pencil next to "Submitted" | The judge's card |
 | Take a landing deduction or a chair penalty | **Add deduction** | Neutral deductions |
 | Take a time penalty | **Apply Penalty** | Pops up when you stop the timer |
@@ -43,10 +43,30 @@ Use this page when a routine's score needs the chair's hand: a wrong mark, a ded
 
 </Steps>
 
+:::caution[Don't tap the orange pencil]
+It isn't an edit button: one tap puts the judge's own mark back, with no question asked. To change your override, select **Override** again and type the new mark.
+:::
+
 If a judge hasn't sent a mark at all, their card shows **Enter** instead. See [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/).
 
-:::caution[One tap on the orange pencil undoes your override]
-The small orange pencil next to "Submitted" isn't an edit button. It puts the judge's own mark back at once, with no question asked. To change your override, select **Override** again and type the new mark.
+## Fix an athlete you've already moved past
+
+Do this between athletes, while no routine is being scored.
+
+<Steps>
+
+1. Select **Back to flight** in the bottom bar (on a phone, it's under **More**).
+
+2. In the run order, tap the athlete's pass (**P1** or **P2**). The scoring screen opens for that athlete.
+
+3. Select **Override** on the judge's card, and follow [Override a mark](#override-a-mark).
+
+4. Select **Back to flight**, then carry on with the next athlete's pass.
+
+</Steps>
+
+:::review[Needs Austin's review: going back to an earlier athlete]
+Written from the code and the run order's "Tap a pass to open it." Not tried on the bench: check whether opening an earlier pass also moves the judges' tablets to that athlete.
 :::
 
 ## Add a deduction or penalty
@@ -75,7 +95,7 @@ To remove a deduction, untick it. To type a total instead of ticking boxes, sele
 
 3. If the wait was long enough for a penalty, Scorsync shows **Time Penalty Detected** with the amount. Select **Apply Penalty**, or **Dismiss** to leave it off.
 
-   ![Time Penalty Detected: the timer stopped at 1:05, −0.2, "Apply this time penalty?", with Dismiss and Apply Penalty](./images/override-and-penalties-time-penalty.png)
+   ![Time Penalty Detected: the timer stopped at 1\:05, −0.2, "Apply this time penalty?", with Dismiss and Apply Penalty](./images/override-and-penalties-time-penalty.png)
 
 </Steps>
 
@@ -93,7 +113,7 @@ Select **More** in the bottom bar (on a phone, the ⋮ button).
 
 ![The More menu: Change level or scratch, Request a correction, Score 0, Reset timer and Reset scores](./images/override-and-penalties-more-menu.png)
 
-- **Score 0** gives the routine 0.000 and keeps the judges' marks. Select **OK** when asked "Score this routine 0.000? Panel marks are kept." To undo it, select **More** → **Restore computed score**.
+- **Score 0** gives the routine 0.000 and keeps the judges' marks. Select **OK** when asked "Score this routine 0.000? Panel marks are kept." To undo it, select **More** → **Restore computed score**, then **OK**. (The question wrongly says 0.000; **OK** restores the computed score.)
 - **Reset scores** clears every mark and deduction for this routine only, so the panel can score it again. Select **Clear routine scores** to confirm. To undo it, select **More** → **Undo reset scores**. That works for 12 hours, and only until a judge scores the routine again.
 
 :::rule[What the rulebook says]
@@ -111,7 +131,6 @@ Rules statement: chair penalties, the time-to-start penalty, interrupted routine
 - **Typing after Override does nothing.** The box isn't selected yet. Tap the box, then type.
 - **"Execution score is too high".** The message says the most the mark can be, for example "Execution score cannot exceed 10.0 for 10 skills performed." Nothing was saved. Select **Override** again and type a lower mark, or check **Skills performed**.
 - **"Changed on another device".** Someone changed this override on another screen first. Check the card, then override again if you still need to.
-- **Restore computed score asks "Score this routine 0.000? Panel marks are kept."** That's the wrong question, but the right action. Select **OK**: the computed score comes back.
 - **The buttons are greyed out, with "Results are official. Ask the meet host to correct a score."** The flight is official. You reopen it yourself: see [Reopen an official flight to fix a score](/judges/chair/reopen-official-flight/).
 
 ## Related

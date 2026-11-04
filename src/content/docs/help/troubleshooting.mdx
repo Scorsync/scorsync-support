@@ -11,14 +11,17 @@ Find what you see on screen, do the fix, and open the linked page if you need th
 
 ## The tablets are down
 
-- **No tablet can score, and it won't be fixed in a few minutes.** Switch to the paper score sheets you printed the day before: the panel writes its scores on them, and someone keys them in later. Then contact Scorsync support. See [Print start lists and paper backup sheets](/host/before-meet-day/print-start-lists/#print-the-paper-backup) and [Key scores as a data-entry judge](/scoring-table/key-scores/).
+- **Every judge's tablet disconnected (lost connection) at once.**
+  - **Scorsync Desktop:** check the travel router has power and its Wi-Fi light is on; if it restarted, wait a minute for tablets to rejoin. Then check the Scorsync icon says **● Running**. If not, open Scorsync. See [Keep the meet running](/offline-host/keep-the-meet-running/#reopen-scorsync-after-a-restart).
+  - **Scorsync Cloud:** the venue internet is down. Judges keep scoring (their tablets hold the scores), but the chair can't move on until it's back. See [Meet-day runbook: Scorsync Cloud](/runbook/scorsync-cloud/#when-something-goes-wrong).
+- **Tablets can't score for more than a few minutes.** Switch to the paper score sheets you printed the day before: the panel writes its scores on them, and someone keys them in later. Then contact Scorsync support. See [Print start lists and paper backup sheets](/host/before-meet-day/print-start-lists/#print-the-paper-backup) and [Key scores as a data-entry judge](/scoring-table/key-scores/).
 
 ## Tablets and sign-in
 
-- **A tablet can't open Scorsync, or "can't find the server"** (Scorsync Desktop). Check the tablet is on the scoring Wi-Fi, not the venue's. Then type the second address from the Scorsync menu, the one after **Or:**: the QR codes only hold the first address. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/).
+- **A tablet can't open Scorsync, or "can't find the server"** (Scorsync Desktop). Check the tablet is on the scoring Wi-Fi, not the venue's. Then, on the host laptop, click the Scorsync icon in the menu bar (Windows: right-click it near the clock), and type the address next to **Or** into the tablet's browser. It's all numbers, like `http://192.168.1.20:8000`. The QR codes only hold the first address. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/).
+- **A tablet can't open Scorsync** (Scorsync Cloud). Check the tablet is on the venue Wi-Fi and can open another website. Then type the address the scoring table gave you exactly, or sign in with a desk code. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#a-desk-code).
 - **The judges' address changed**, for example `:8001` instead of `:8000`. Give judges the new address from the Scorsync menu, and ask the chair to check that the athlete on the floor has every judge's score. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong).
 - **"Network name is now scorsync-2.local — use Restart Server".** Another Scorsync laptop is on the same Wi-Fi. Select **Quit Scorsync** on the other laptop, then **Restart Server** on yours when no one is scoring. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/#if-something-goes-wrong).
-- **Every tablet drops at once on Scorsync Cloud.** The venue internet is probably down. Judges keep scoring: their tablets hold the scores. See [Meet-day runbook: Scorsync Cloud](/runbook/scorsync-cloud/#when-something-goes-wrong).
 - **"That code didn't work. Ask for a new one."** The desk code was mistyped, already used or more than 10 minutes old. Select **New code** and try again. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#if-something-goes-wrong).
 - **"That email and password or PIN do not match."** Check the email and PIN in **All credentials**, and type them again. If it still fails, use a desk code. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#if-something-goes-wrong).
 - **"QR code already used."** Each sign-in QR works once. Select **Sign-in QR** again for a fresh one.
@@ -29,7 +32,7 @@ Find what you see on screen, do the fix, and open the linked page if you need th
 ## Scoring
 
 - **The session still says "Upcoming", or Run says "The floor is idle".** That's normal: there's no start button. The session starts when the chair opens the first athlete and the first score is in. See [Start a session](/scoring-table/start-a-session/).
-- **A judge's tablet doesn't move to the scoring screen.** Ask the judge to select **Go Now**. If it says "Waiting for CJP", the chair hasn't opened an athlete yet. See [Start a session](/scoring-table/start-a-session/#if-something-goes-wrong).
+- **A judge's tablet doesn't move to the scoring screen.** Ask the judge to select **Go Now** on the countdown, or **Enter Score** on their dashboard. If it says "Waiting for CJP", the chair hasn't opened an athlete yet. See [Start a session](/scoring-table/start-a-session/#if-something-goes-wrong).
 - **"My screen jumped to another athlete."** The chair opened the next athlete: tablets show "You're being pulled into scoring" and move by themselves. If the judge was changing a score, they tell the chair the right mark. See [Fix a score you submitted](/judges/fix-a-score/).
 - **A score didn't send, or "Score saved on this device".** The tablet lost the Wi-Fi. Keep scoring: the score sends by itself when the Wi-Fi is back. If the tablet shows **Unsent score**, select **Send**. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/).
 - **"Your saved score was not applied …"** The chair moved on, or changed the score, before it arrived. Show the chair your paper. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/#if-something-goes-wrong).
@@ -45,7 +48,6 @@ Find what you see on screen, do the fix, and open the linked page if you need th
 
 ## Scorsync Desktop laptop
 
-- **Every judge disconnected at once.** Someone quit Scorsync, or the laptop slept or restarted. Open Scorsync again: judges stay signed in, and scores held on their tablets send by themselves. See [Keep the meet running](/offline-host/keep-the-meet-running/#reopen-scorsync-after-a-restart).
 - **There's no Scorsync icon in the menu bar or notification area.** Scorsync isn't open. Open it, and wait for **● Running**. See [Use the Scorsync tray menu](/offline-host/tray-menu/).
 - **"Scorsync could not start" with "Ports 80 and 8000–8009 are all in use."** Quit the other programs you don't need, then select **Restart Server** in the tray menu. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong).
 - **"Scorsync processes from the last run are still running."** Restart the laptop, then open Scorsync again.
@@ -56,7 +58,7 @@ Find what you see on screen, do the fix, and open the linked page if you need th
 
 ## scorsync.com
 
-- **Scores aren't showing on scorsync.com.** A score goes out only once every judge has submitted, or the chair moves on. Then check the Sync Rail chip at the bottom right of Run. See [Watch publishing on the Sync Rail](/scoring-table/watch-publishing/).
+- **Scores aren't showing on scorsync.com.** A score goes out only once every judge has submitted, or the chair moves on. Then check the Sync Rail chip at the bottom right of Run. See [Check scores are reaching scorsync.com](/scoring-table/watch-publishing/).
 - **The chip says "Offline · holding".** Keep scoring: results go out by themselves when the internet is back. To send straight away, select the chip, then **Try now**. See [Score with no internet](/offline-host/score-without-internet/).
 - **Families can't find the meet.** The meet isn't connected, publishing is off, or it's still rehearsing: a rehearsal never shows. See [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/).
 - **On Scorsync Cloud, families see "Follow results on Scorsync Online".** That's expected. They select **Go to Scorsync Online** and find your meet. See [Know what families see on scorsync.com](/start-here/what-families-see/).

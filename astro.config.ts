@@ -29,7 +29,9 @@ const nimbusConfig = defineNimbusConfig({
       { label: "Scoring table", autogenerate: { directory: "scoring-table" } },
       { label: "Judges and chairs", autogenerate: { directory: "judges" } },
       { label: "Help", autogenerate: { directory: "help" } },
-      { label: "For writers", autogenerate: { directory: "style-guide" }, collapsed: true },
+      // The style guide (src/content/docs/style-guide/) is for writers only:
+      // its pages are drafts, kept out of the public build, sidebar and
+      // search. Open them at /style-guide/ under `astro dev`.
     ],
   },
 });
