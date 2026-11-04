@@ -1,16 +1,64 @@
 ---
 title: "Install the pilot build before meet day"
-description: "Update Scorsync Desktop to the pilot build ahead of the meet."
+description: "Install a newer version of Scorsync Desktop over the old one, without losing your meet."
 sidebar:
-  order: 10
+  order: 110
+  label: "Install the pilot build"
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Offline host · Scorsync Desktop
 
-**Who it's for:** Offline host (runs Scorsync Desktop)
+Scorsync doesn't update itself. When a newer version is out, Scorsync shows a line such as "Scorsync 0.2.0 is available. You have 0.1.0." Install it at least a week before your meet.
 
-## What this page will cover
+## Before you start
 
-Update Scorsync Desktop to the pilot build ahead of the meet.
+- You have internet, for the download.
+- No meet is being scored. Installing stops Scorsync for every judge.
+- If a meet just ended and publishes to scorsync.com, Results & Sync shows nothing waiting to send.
 
-Feature-map rows (SCO-2053): 24.
+## Steps
+
+<Steps>
+
+1. In Scorsync, select **Manage**, then **Setup** → **License**.
+
+2. Select **Download** and the version number, for example **Download 0.2.0**. If there's no such button, download it from `scoring.scorsync.com/downloads` as on [Install on a Mac](/offline-host/install-on-mac/) or [Install on Windows](/offline-host/install-on-windows/).
+
+3. Click the Scorsync icon in the menu bar (on Windows, right-click it in the notification area) and select **Back Up Now**. Wait for "Backed up.", then select **OK**.
+
+4. **On a Mac:** select **Quit Scorsync** in the same menu. Then open the new `.dmg` file, drag Scorsync onto **Applications**, and select **Replace**.
+
+5. **On Windows:** open the new **Scorsync-Setup** file and select **Yes** when Windows asks. If the installer says Scorsync is running, select **OK** to let it close Scorsync.
+
+6. Open Scorsync. The first start of a new version updates its database, so the window may say "Updating the database". On Windows this can take a few minutes.
+
+7. If the window shows "Welcome to the meet", select **Admin panel** at the bottom and sign in.
+
+8. Check that the menu says **● Running**, the address after **Judges open** is the same as before, and your meet is still there. You're on the new version.
+
+</Steps>
+
+Your meet isn't stored in the app, so replacing the app keeps it. Scorsync also keeps a copy of the meet the first time a new version opens. Don't uninstall Scorsync first, and don't delete anything.
+
+:::caution[Never update during a meet]
+Quitting or installing stops scoring for every judge, and a new version changes the meet's database. Update between meets, never on meet day.
+:::
+
+:::review[Needs Austin's review: the pilot build, and updating]
+How pilot hosts get the pilot build (the downloads page, the License page's Download button, or a link from support) isn't decided. Installing over an existing install hasn't been tested on Mac or Windows yet: steps 4–7 and the "your meet is kept" line come from the code. If a newer version is required, Scorsync gives hosts a deadline before Go live stops working; that policy isn't covered here.
+:::
+
+## If something goes wrong
+
+- **The Mac says Scorsync can't be replaced because it's open.** Select **Quit Scorsync** in the Scorsync menu, then drag it onto **Applications** again.
+- **"Scorsync could not start" with "The database could not be updated."** Don't run setup again, and don't delete anything. Contact support (support@scorsync.com).
+- **"The meet database is missing", or Scorsync shows Set up the database again.** Stop there and contact support. Your meet and its backups are still on the laptop.
+- **"This app is version … Scorsync … or newer is needed to go live with a new meet."** Your version is too old to go live. Install the newer version with the steps above.
+- **The judges' address changed** (for example `:8001` instead of `:8000`). Give judges the new address from the menu. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/).
+
+## Related
+
+- [Meet-day runbook: Scorsync Desktop](/runbook/scorsync-desktop/)
+- [Back up your meet](/offline-host/backups/)
+- [Install Scorsync Desktop on a Mac](/offline-host/install-on-mac/)
+- [Install Scorsync Desktop on Windows](/offline-host/install-on-windows/)
