@@ -1,0 +1,8 @@
+# Netlify hosts the public site at https://support.scorsync.com.
+# Deploy previews (one per PR) get X-Robots-Tag: noindex from Netlify itself.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"

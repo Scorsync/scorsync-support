@@ -27,8 +27,9 @@ CI (`.github/workflows/ci.yml`) runs `nimbus-docs check`, `astro check` and the 
 | `src/components/ui/aside/Aside.astro` | How every callout looks, including the house ones. |
 | `src/content/partials/placeholder.mdx` | The "Placeholder" notice on pages not written yet. |
 | `templates/article.mdx` | The article template. Copy it to start a page. |
-| `wrangler.jsonc` | Cloudflare deploy config (static assets only, no Worker script). |
-| `public/_headers` | Caching, and `noindex` on every page until launch. |
+| `netlify.toml` | Netlify build settings. |
+| `public/_headers` | Caching headers. |
+| `wrangler.jsonc` | Old Cloudflare deploy config, kept until the Cloudflare Worker is retired. |
 
 The house style is on the site itself, under **For writers**: [how we write](src/content/docs/style-guide/index.mdx), the [article template](src/content/docs/style-guide/article-template.mdx), [callouts](src/content/docs/style-guide/callouts.mdx) and [rulebook citations](src/content/docs/style-guide/rulebook-citations.mdx).
 
@@ -36,14 +37,13 @@ The internal Support playbook (restore, admin password reset, Reset meet, config
 
 ## Deploys
 
-Cloudflare Workers Builds watches this repo:
+Netlify watches this repo:
 
-- **Every branch / pull request** gets a preview URL (`<branch>-scorsync-support.<account>.workers.dev`), posted on the PR.
-- **`main`** deploys to `scorsync-support.<account>.workers.dev`.
-- To redeploy: push a commit, or Cloudflare dashboard → Workers & Pages → `scorsync-support` → Deployments → **Retry build**.
-- Build command `npm run build`; deploy command `npx wrangler deploy`; non-production branch deploy command `npx wrangler versions upload`.
-
-Until launch the whole site is behind Cloudflare Access (named reviewers sign in with an emailed code), and every page sends `X-Robots-Tag: noindex`.
+- **`main`** deploys to https://support.scorsync.com. The site is public.
+- **Every pull request** gets a deploy preview URL, posted on the PR. Netlify marks previews `noindex`.
+- To redeploy: push a commit, or Netlify → `scorsync-support` → Deploys → **Trigger deploy**.
+- Build settings are in `netlify.toml`: build `npm run build`, publish `dist`, Node 22.
+- DNS: `support.scorsync.com` is a CNAME at DigitalOcean (the scorsync.com DNS host) to the Netlify site.
 
 ## Upgrading Nimbus
 

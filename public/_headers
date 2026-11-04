@@ -2,8 +2,3 @@
 # asking again. Hosts that don't read _headers ignore this file.
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
-
-# Pre-launch: keep every page out of search engines, production included.
-# Remove at launch (together with the Cloudflare Access policy).
-/*
-  X-Robots-Tag: noindex, nofollow
