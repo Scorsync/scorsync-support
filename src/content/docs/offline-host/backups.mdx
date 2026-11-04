@@ -12,11 +12,12 @@ The laptop holds the only copy of your meet: set up the USB copy and the key fil
 ## Before you start
 
 - Scorsync is open, and the tray menu says **● Running**.
+- You're signed in to Meet Control as the host.
 - You have a USB drive that stays plugged into the laptop all day.
 
 ## Back up now
 
-Scorsync backs up by itself every 5 minutes, to the laptop's own disk, and keeps the last 3 hours of backups. Back up by hand as well at the end of each session.
+Scorsync backs up by itself every 5 minutes, to the laptop's own disk. Back up by hand as well at the end of each session.
 
 <Steps>
 
@@ -70,7 +71,7 @@ The key file lets Scorsync support open your backups on another computer if the 
 
 2. Go up two folders, to the folder named **Scorsync**. On a Mac, press ⌘↑ twice. On Windows, select **Scorsync** in the address bar.
 
-3. Copy the file named `settings.json` to the USB drive.
+3. Copy the file named `settings.json` to the USB drive. Windows may show it as `settings`.
 
 </Steps>
 
@@ -80,7 +81,7 @@ The key file and a backup together open the whole meet, including judges' sign-i
 
 ## Restore a backup
 
-Contact Scorsync support (support@scorsync.com) before you restore anything. A restore replaces the meet with the backup, and everything scored after that backup must be entered again. Don't use **Restore from Backup…** on your own.
+Don't use **Restore from Backup…** on your own: everything scored after the backup is lost. Contact Scorsync support (support@scorsync.com) first.
 
 ## If something goes wrong
 
@@ -88,10 +89,10 @@ Contact Scorsync support (support@scorsync.com) before you restore anything. A r
 
   ![Run with the red line "Backups stopped — a lost database cannot be restored", and "Last backup 25 minutes ago" at the bottom](./images/backups-backups-stopped.png)
 
-- **"Disk almost full — backups and scores may stop saving"**. The laptop has less than 500 MB free, and backups have stopped. Delete or move large files you don't need, such as videos, then select **Back up now**.
+- **"Disk almost full — backups and scores may stop saving"**. The laptop has less than 500 MB free, so backups can't run. Delete or move large files you don't need, such as videos, then select **Back up now**.
 - **"Backed up", followed by "The backup could not be copied to the second disk".** The USB drive is unplugged or full. Plug it back in, or free some space on it, then select **Back up now**.
-- **"The backup did not finish."** in the tray. Try **Back up now** in Run. If it fails too, contact Scorsync support.
-- **"Backup not started"** in Run. Read the message under it. If it isn't clear what to do, contact Scorsync support.
+- **"The backup did not finish."** after **Back Up Now** in the tray. Try **Back up now** in Run. If that fails too, contact Scorsync support.
+- **"Backup not started" or "Backup failed"** in Run. Read the message under it, for example "Not enough free disk space for a backup". If it isn't clear what to do, contact Scorsync support.
 
 ## Related
 

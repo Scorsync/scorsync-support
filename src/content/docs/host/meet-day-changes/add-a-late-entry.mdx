@@ -16,24 +16,26 @@ Use this when an athlete turns up who isn't entered in the meet.
 
 ## Before you start
 
+- You're signed in to Meet Builder as the host.
 - You have the athlete's club, name, gender, birth date, and their level for each event.
-- The flight they'll compete in hasn't started yet.
 
 ## Add the athlete
 
 <Steps>
 
-1. Open Meet Builder (select **Manage** at the top of Meet Control). Select **+ Add**, then **Add athlete**.
+1. In Meet Control, select **Manage** at the top to open Meet Builder.
+
+2. Select **+ Add**, then **Add athlete**.
 
    ![Meet Builder with Locked at the top right, the "Schedule locked. Unlock to edit." bar, and the + Add menu open: Add athlete, Add from CSV, Sync from USAG, Import from ProScore (PTF)](./images/add-a-late-entry-add-menu.png)
 
-2. Fill in **Club**, **First name**, **Last name**, **Gender** and **Birthdate**. Their USAG number goes under **Identifier**.
+3. Fill in **Club**, **First name**, **Last name**, **Gender** and **Birthdate**. Their USAG number goes under **Identifier**.
 
-3. Under **Event levels**, choose a level for each event they compete in. Leave the other events blank.
+4. Under **Event levels**, choose a level for each event they compete in. Leave the other events blank. Without a level, they don't reach the start list.
 
    ![The Add Athlete form filled in for Juniper Hale, with Trampoline level set to Level 9 and the Save Athlete button](./images/add-a-late-entry-form.png)
 
-4. Select **Save Athlete**. The athlete appears in the start list on the left, under their division.
+5. Select **Save Athlete**. The athlete appears in the start list on the left, under their division.
 
    ![The start list with one division, TRA L9 · 13–14 · F, while the schedule is locked](./images/add-a-late-entry-start-list.png)
 
@@ -43,26 +45,28 @@ Use this when an athlete turns up who isn't entered in the meet.
 
 <Steps>
 
-1. In the "Schedule locked. Unlock to edit." bar, select **Unlock**, then **Confirm Unlock**.
+1. In the "Schedule locked. Unlock to edit." bar, select **Unlock**.
+
+2. Select **Confirm Unlock**.
 
    ![Unlock Schedule? Unlocking removes the protection against bulk changes, with Cancel and Confirm Unlock](./images/add-a-late-entry-unlock.png)
 
-2. Tick the athlete in the start list. Each panel on the board now shows **Place here**.
+3. Tick the athlete in the start list. Each panel on the board now shows **Place here**.
 
-   ![Juniper Hale ticked in the start list, and a Place here button under each Trampoline panel in Flight D](./images/add-a-late-entry-place-here.png)
+   ![Juniper Hale ticked in the start list, and a Place here button under Trampoline Panel A and Panel B](./images/add-a-late-entry-place-here.png)
 
-3. Select **Place here** under the panel and flight they compete in.
+4. Select **Place here** under the panel and flight they compete in.
 
-4. Check that their name now shows at the bottom of that panel.
+5. Check that their name now shows at the bottom of that panel.
 
-   ![Flight D, Trampoline Panel A now shows 7/12, with Juniper Hale at the bottom](./images/add-a-late-entry-placed.png)
+   ![Trampoline Panel A now shows 7/12, with Juniper Hale at the bottom](./images/add-a-late-entry-placed.png)
 
-5. Select **Lock** at the top right, then **Confirm Lock**. Check that the button reads **Locked** again.
+6. Select **Lock** at the top right, then **Confirm Lock**. Check that the button reads **Locked** again.
 
 </Steps>
 
 :::caution[Lock again straight away]
-While the schedule is unlocked, bulk changes on the board go through without asking, and schedule changes don't reach scorsync.com. Place the athlete, then lock.
+While the schedule is unlocked, bulk changes on the board go through without asking, and scorsync.com doesn't get schedule changes until you lock again. Place the athlete, then lock.
 :::
 
 The athlete runs last on that panel. To run them somewhere else in the order, ask the chair: see [Reorder, DNS and reinstate](/judges/chair/reorder-dns-reinstate/).
@@ -73,9 +77,9 @@ The app labels an athlete added by request as a "billable add". Whether a late e
 
 ## If something goes wrong
 
-- **The status bar says "… added. Give them an event level to put them on the start list."** You saved without a level. Unlock, select **Athletes** at the top, and set the level in their row.
+- **"… added. Give them an event level to put them on the start list."** You saved without a level, and Meet Builder can't add one afterwards. Unlock the schedule, then in Run press ⌘K, select the athlete, then **View full athlete card** → **Edit**. Choose the level under **Event levels** and select **Save changes**.
 - **There are no Place here buttons.** The schedule is still locked, or the athlete isn't ticked.
-- **The club isn't in the Club list.** Select **+** next to **Club** to add it.
+- **The club isn't in the Club list.** Select the **+** next to **Club** to add it.
 - **The lock window lists items under "Before go-live".** You can still lock: select **Confirm Lock**.
 
 ## Related

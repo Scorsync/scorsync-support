@@ -31,13 +31,15 @@ Yours will differ. Some laptops show no `:8000`.
 
 1. On the laptop, click the Scorsync icon in the menu bar (on Windows, right-click it in the notification area).
 
-2. Check that the menu says **● Running**. Write both addresses on a card: the one after **Judges open** and the one after **Or**. Click either line to copy it.
+2. Check that the menu says **● Running**.
+
+3. Write both addresses on a card for the judges' table: the one after **Judges open** and the one after **Or**.
 
    ![The Scorsync menu: Running, "Judges open" with the address, "Or" with a second address, then the rest of the menu](./images/tray-menu-running.png)
 
-3. On a judge's tablet, open the web browser and type the **Judges open** address, including any `:8000` at the end.
+4. On a judge's tablet, open the web browser and type the **Judges open** address, including any `:8000` at the end.
 
-4. Check that the tablet shows **Log in to Scorsync**. The tablet is connected. Now sign the judge in: see [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/).
+5. Check that the tablet shows **Log in to Scorsync**. The tablet is connected. Now sign the judge in: see [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/).
 
    ![A tablet showing "Log in to Scorsync" with Email address and Password or PIN boxes](./images/tablet-sign-in-page.png)
 
@@ -61,17 +63,17 @@ Test each tablet before meet day. A tablet that can't open `scorsync.local` at h
 
 ## If something goes wrong
 
-- **The tablet says it can't find the server, or the QR code opens nothing.** Type the second address, the one after **Or**. Check the tablet is on the scoring Wi-Fi, not the venue's.
+- **The tablet says it can't find the server, or the QR code opens nothing.** Check the tablet is on the scoring Wi-Fi, not the venue's, and try once more. If it still fails, type the second address, the one after **Or**.
 - **After you reopen Scorsync, the address ends in a different number**, such as `:8001` instead of `:8000`. Give judges the new address from the menu. Scores a judge saved on their tablet meanwhile wait under the old address: see [Keep the meet running](/offline-host/keep-the-meet-running/).
 
   ![The Scorsync menu after reopening: the judges' address now ends in :8001](./images/tray-menu-address-changed.png)
 
-- **The menu says "Network name is now scorsync-2.local — use Restart Server".** Another Scorsync laptop is on the same Wi-Fi. Close Scorsync on the other laptop, then select **Restart Server** when no one is scoring.
+- **The menu says "Network name is now scorsync-2.local — use Restart Server".** Another Scorsync laptop is on the same Wi-Fi, and `scorsync.local` may now open that one. Select **Quit Scorsync** on the other laptop (closing its window isn't enough), then select **Restart Server** on yours when no one is scoring.
 - **The second address changed.** The router gave the laptop a new address. Reserve one for it in the router. See [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/).
 
 ## Related
 
 - [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/)
 - [Check your network before the meet](/offline-host/check-your-network/)
-- [The tray menu at a glance](/offline-host/tray-menu/)
+- [Use the Scorsync tray menu](/offline-host/tray-menu/)
 - [Troubleshooting](/help/troubleshooting/)

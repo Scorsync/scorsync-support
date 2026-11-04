@@ -15,11 +15,11 @@ Scorsync Desktop serves every judge from your laptop, so the meet runs only whil
 
 1. Plug the laptop into mains power, through a UPS (a battery backup) if you have one.
 
-2. In the laptop's power settings, turn off sleep while plugged in. On Windows, also set closing the lid to "Do nothing".
+2. In the laptop's power settings, turn off sleep while plugged in.
 
-3. On a Mac laptop, keep the lid open all day. A closed lid puts it to sleep.
+3. Keep the lid open all day. Closing it can put the laptop to sleep.
 
-4. Close other programs you don't need, especially other web servers. One could take Scorsync's address.
+4. Quit other programs you don't need. Another program can take Scorsync's address.
 
 5. Open Scorsync.
 
@@ -36,7 +36,7 @@ Scorsync Desktop serves every judge from your laptop, so the meet runs only whil
 | Close or minimise the Scorsync window | Yes |
 | Let the screen go dark or lock | Yes |
 | Select **Restart Server** in the tray menu | Yes, after about 5 seconds |
-| Let the laptop sleep, or close a Mac's lid | No |
+| Let the laptop sleep, or close its lid | No |
 | Run out of battery, or restart the laptop for an update | No |
 | **Quit Scorsync** in the tray menu, ⌘Q, Dock → Quit, or File → Exit on Windows | No |
 
@@ -45,7 +45,7 @@ Quit stops scoring for every judge within a second, and nothing asks you to conf
 :::
 
 :::review[Needs Austin's review: closing the window]
-The code keeps scoring running when the window is closed, but closing the window and closing a Mac's lid haven't been tried on real hardware yet. Both are on the drill list (SCO-2057).
+The code keeps scoring running when the window is closed, but closing the window and closing the lid haven't been tried on real hardware yet. Both are on the drill list (SCO-2057).
 :::
 
 ## Reopen Scorsync after a restart
@@ -54,7 +54,7 @@ Scorsync doesn't open by itself when the laptop starts. If every judge drops at 
 
 <Steps>
 
-1. Open Scorsync. Wait for "Starting the server" to finish: about 10 seconds.
+1. Open Scorsync. Wait for "Starting the server…" to finish: about 10 seconds.
 
 2. If the window shows **Welcome to the meet**, select **Admin panel** at the bottom, and sign in again.
 
@@ -72,10 +72,9 @@ Scorsync doesn't open by itself when the laptop starts. If every judge drops at 
 
   ![The Scorsync menu after reopening: the judges' address now ends in :8001](./images/tray-menu-address-changed.png)
 
-- **"Scorsync could not start" with "Ports 80 and 8000–8009 are all in use."** Close the other web server or program, then open Scorsync again. If you don't know which one, restart the laptop and open only Scorsync.
+- **"Scorsync could not start" with "Ports 80 and 8000–8009 are all in use."** Quit the other programs you don't need, then select **Restart Server** in the tray menu. Opening Scorsync again won't retry. If it still fails, restart the laptop and open only Scorsync.
 - **"Scorsync processes from the last run are still running."** Restart the laptop, then open Scorsync again.
 - **One judge drops, not all of them.** That's their tablet or the Wi-Fi, not the laptop. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/).
-- **The tray menu or the window won't respond.** The laptop's screen is locked. Unlock it: scoring carried on meanwhile.
 
 ## Related
 
