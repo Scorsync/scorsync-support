@@ -18,6 +18,7 @@ The For writers section (`/style-guide/`) is internal guidance and isn't listed.
 | `/runbook/scorsync-desktop/` | Meet-day runbook: Scorsync Desktop | Offline host, scoring table | Runbook skeleton | 11 | partly | 3 |
 | `/host/` | Getting started as a host | Host | 56, 71 | 2 | yes | 0 |
 | `/host/before-meet-day/` | Before meet day | Host | Hub | 0 | yes | 0 |
+| `/host/before-meet-day/build-your-meet/` | Build your meet in Meet Builder | Host | 31–45 (summary; full guide is Later) | 1 | partly | 0 |
 | `/host/before-meet-day/rehearse/` | Rehearse your meet | Host | 70 | 4 | yes | 0 |
 | `/host/before-meet-day/print-judge-sign-in-sheets/` | Print judge sign-in sheets and data-entry cards | Host | 46, 47 | 7 | yes | 0 |
 | `/host/before-meet-day/lock-the-schedule/` | Lock the schedule | Host | 49, 124 | 4 | yes | 1 |
@@ -34,7 +35,7 @@ The For writers section (`/style-guide/`) is internal guidance and isn't listed.
 | `/offline-host/install-on-mac/` | Install Scorsync Desktop on a Mac | Offline host | 1, 2 | 2 | partly | 1 |
 | `/offline-host/install-on-windows/` | Install Scorsync Desktop on Windows | Offline host | 1, 3 | 1 | no | 1 |
 | `/offline-host/first-run-setup/` | Run first-run setup | Offline host | 4 | 6 | partly | 1 |
-| `/offline-host/install-the-pilot-build/` | Install the pilot build before meet day | Offline host | 24 | 0 | partly | 1 |
+| `/offline-host/install-a-newer-version/` | Install a newer version | Offline host | 24 | 0 | partly | 1 |
 | `/offline-host/check-your-network/` | Check your network before the meet | Offline host | 5 | 4 | yes | 0 |
 | `/offline-host/connect-judges-tablets/` | Connect the judges' tablets | Offline host | 11, 12, 13 | 4 | yes | 0 |
 | `/offline-host/backups/` | Back up your meet | Offline host | 17–20 | 3 | yes | 1 |
@@ -56,6 +57,7 @@ The For writers section (`/style-guide/`) is internal guidance and isn't listed.
 | `/judges/score-when-wifi-drops/` | Score when the Wi-Fi drops | Judges | 92 | 3 | yes | 0 |
 | `/judges/check-your-paper/` | Check your paper after the flight | Judges | 101 | 2 | yes | 0 |
 | `/judges/chair/` | Getting started as the chair | Chair | 62, 90, 94 | 3 | yes | 0 |
+| `/judges/chair/sign-in-your-panel/` | Sign in your panel | Chair | 62 | 6 | yes | 0 |
 | `/judges/chair/reorder-dns-reinstate/` | Reorder, mark DNS or reinstate an athlete | Chair | 96 | 6 | yes | 1 |
 | `/judges/chair/move-on-missing-judge/` | Move on when a judge hasn't submitted | Chair | 94 | 3 | yes | 1 |
 | `/judges/chair/out-of-range-flag/` | Check an out-of-range flag | Chair | 99 | 2 | yes | 1 |
@@ -67,7 +69,7 @@ The For writers section (`/style-guide/`) is internal guidance and isn't listed.
 | `/help/faq/` | Frequently asked questions | Everyone | 7, 8, 14, 24, 27–29, 56, 70, 72, 99, 122, 124, 126 | 0 | partly | 3 |
 | `/help/tips/` | Things you might not know | Hosts, scoring table, chairs | 6, 52, 70, 78, 79, 102 | 5 | yes | 0 |
 
-**Totals:** 55 public pages, 215 screenshots, 34 open `:::review` callouts. Not checked in the app at all: 1 page (Windows install). Partly checked: 10 pages.
+**Totals:** 57 public pages, 194 screenshots, 34 open `:::review` callouts (after the usability pass, which added two pages and trimmed images). Not checked in the app at all: 1 page (Windows install). Partly checked: 10 pages.
 
 ## Not documented, and why
 
