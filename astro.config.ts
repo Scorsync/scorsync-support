@@ -13,20 +13,21 @@ const nimbusConfig = defineNimbusConfig({
   description:
     "Step-by-step help for hosts, scoring table operators and judges running meets with Scorsync.",
   locale: "en",
-  // The repo is private and readers are gym staff, so no GitHub link.
+  // Readers are gym staff, not developers, so no GitHub link.
   github: null,
   socialImageAlt: "Scorsync Support",
   // Organised by audience, then task (never by code module). Mirrors the
-  // IA approved in SCO-2053. Pages are placeholders until written.
+  // IA approved in SCO-2053. The meet-day runbook sits second because
+  // meet-day readers need it fastest.
   sidebar: {
     items: [
       "index",
       { label: "Start here", autogenerate: { directory: "start-here" } },
+      { label: "Meet-day runbook", autogenerate: { directory: "runbook" } },
       { label: "Host", autogenerate: { directory: "host" } },
       { label: "Offline host (Scorsync Desktop)", autogenerate: { directory: "offline-host" } },
       { label: "Scoring table", autogenerate: { directory: "scoring-table" } },
       { label: "Judges and chairs", autogenerate: { directory: "judges" } },
-      { label: "Meet-day runbook", autogenerate: { directory: "runbook" } },
       { label: "Help", autogenerate: { directory: "help" } },
       { label: "For writers", autogenerate: { directory: "style-guide" }, collapsed: true },
     ],

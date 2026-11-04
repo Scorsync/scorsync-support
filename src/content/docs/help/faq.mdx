@@ -6,62 +6,84 @@ sidebar:
   label: "FAQ"
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Everyone · Scorsync Cloud and Scorsync Desktop
 
-**Who it's for:** Everyone
+## Before the meet
 
-:::caution[Provisional]
-The venue network advice depends on SCO-2058, which isn't settled yet. Expect this page to change.
+### Do I need internet on meet day?
+
+On Scorsync Desktop, no. Judges, the chair, Meet Control and backups only need the laptop and the scoring Wi-Fi; results for scorsync.com wait on the laptop until the internet is back. On Scorsync Cloud, yes: every tablet and the scoring table reach Scorsync over the internet. See [Score with no internet](/offline-host/score-without-internet/).
+
+### Can I run the scoring Wi-Fi from a phone or laptop hotspot?
+
+Not for the pilot: judges' tablets may not find Scorsync at all. Use a travel router. A phone hotspot can give the router its internet, but never turn on a hotspot on the laptop. If you can't get a travel router, contact Scorsync support before the meet. See [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/).
+
+### Is there automatic updating?
+
+No. Scorsync Desktop doesn't update itself. When a new version is out, install it over the old one at least a week before your meet, never during it. On Scorsync Cloud there's nothing to install. See [Install the pilot build](/offline-host/install-the-pilot-build/).
+
+### Do rehearsal scores show anywhere?
+
+No. Practice scores never appear on the public results or on scorsync.com, and **End rehearsal** deletes them. See [Rehearse your meet](/host/before-meet-day/rehearse/).
+
+### Can I undo go-live?
+
+Only before anyone has scored: open the go-live screen again and select **Return to Build**. After the first score, contact Scorsync support (support@scorsync.com). See [Go live](/host/before-meet-day/go-live/#go-back-to-build).
+
+## On the laptop
+
+### Does closing the window stop the meet?
+
+No. Closing or minimising the Scorsync window keeps judges scoring. To open it again, select **Open Scorsync** in the tray menu. **Quit Scorsync**, ⌘Q, or letting the laptop sleep stops scoring for every judge. See [Keep the meet running](/offline-host/keep-the-meet-running/).
+
+:::review[Needs Austin's review: closing the window]
+Closing the window hasn't been tried on real hardware yet. It's on the drill list (SCO-2057).
+:::
+
+### Why does it warn "Running without encryption"?
+
+Network diagnostics always shows this on Scorsync Desktop, because tablets talk to the laptop over the scoring Wi-Fi without encryption. It's expected. Keep the scoring Wi-Fi for the laptop and the judges only. See [Check your network before the meet](/offline-host/check-your-network/).
+
+:::review[Needs Austin's review: data privacy]
+What we tell hosts about scores and names crossing the venue Wi-Fi unencrypted isn't signed off.
+:::
+
+### Why doesn't Scorsync Desktop send email?
+
+Scorsync Desktop runs at the venue and never sends email, even with internet. Judges get their sign-in details from printed sheets. If you forget the admin password, contact Scorsync support (support@scorsync.com). See [Print judge sign-in sheets](/host/before-meet-day/print-judge-sign-in-sheets/).
+
+## Sign-in and scoring
+
+### Why can't I sign in with a PIN as a host on Scorsync Cloud?
+
+On Scorsync Cloud, an account that runs meets signs in only with its own email and password. PINs, sign-in QR codes, desk codes and the chair's panel sign-in are for judges. If you also judge, sign in on the tablet with your own password. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/).
+
+### Why does only the chair see out-of-range?
+
+The red E-range flag is a warning on the chair's screen; the execution judges' tablets show nothing, so the chair tells them. It doesn't stop the chair moving on. See [Check an out-of-range flag](/judges/chair/out-of-range-flag/).
+
+:::rule[What the rulebook says]
+When total E scores are used, the two E scores must be within 0.5 points (0.2 in Double Mini). If they aren't, the chair decides what is best and fairest so the range is met.
+
+**Source:** USA Gymnastics, *Development Program Code of Points: Trampoline* (2025–2029), Section 2, Rule 5.6, page 11, and Rule 2.13, page 8. Double Mini: *Development Program Code of Points: Double Mini* (2025–2029), Section 2, Rule 2.13, page 8, and Rule 5.5.6, page 12.
 :::
 
 :::review
-This page touches T&T rules. It will say only which button does what. Every rules statement needs a rulebook citation (see [Cite the rulebook](/style-guide/rulebook-citations/)) and Austin's sign-off before it ships.
+Rules statement. The app treats the range as a warning only, while the rulebook says it must be met. Not yet signed off.
 :::
 
-## Do I need internet on meet day?
+## scorsync.com
 
-Placeholder. Feature-map rows: 28.
+### Why does the app say "Scorsync Online"?
 
-## Does closing the window stop the meet?
+Scorsync Online is the app's name for scorsync.com, the results site families follow. The "Connect to Scorsync Online" button connects your meet to scorsync.com. See [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/).
 
-Placeholder. Feature-map rows: 7, 8.
+### When do families see scores?
 
-## Can I run the scoring Wi-Fi from a phone or laptop hotspot?
+The schedule shows once you lock it. Each score shows once every judge has submitted, or the chair moves on, marked **Unofficial Results**, and turns to **Official Results** when the division is official. For families' own questions, send them to [help.scorsync.com](https://help.scorsync.com). See [Know what families see on scorsync.com](/start-here/what-families-see/).
 
-Placeholder. Feature-map rows: 14.
+## Related
 
-## Why does the app say "Scorsync Online"?
-
-Placeholder. Feature-map rows: 122.
-
-## Why doesn't Scorsync Desktop send email?
-
-Placeholder. Feature-map rows: 27.
-
-## Why does it warn "Running without encryption"?
-
-Placeholder. Feature-map rows: 29.
-
-## Is there automatic updating?
-
-Placeholder. Feature-map rows: 24.
-
-## Can I undo go-live?
-
-Placeholder. Feature-map rows: 72.
-
-## Do rehearsal scores show anywhere?
-
-Placeholder. Feature-map rows: 70, 126.
-
-## When do families see scores?
-
-Placeholder. Feature-map rows: 124.
-
-## Why can't I sign in with a PIN as a host on Scorsync Cloud?
-
-Placeholder. Feature-map rows: 56.
-
-## Why does only the chair see out-of-range?
-
-Placeholder. Feature-map rows: 99.
+- [Troubleshooting](/help/troubleshooting/)
+- [Things you might not know](/help/tips/)
+- [Meet-day runbook: Scorsync Desktop](/runbook/scorsync-desktop/)

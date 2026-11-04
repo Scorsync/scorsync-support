@@ -2,7 +2,7 @@
 title: "Override a mark, apply penalties or score 0"
 description: "Which button on the chair's screen does what: Override, Add deduction, the time penalty, Skills performed and Score 0."
 sidebar:
-  order: 2
+  order: 4
 ---
 
 **Who it's for:** The chair · Scorsync Cloud and Scorsync Desktop
@@ -79,7 +79,7 @@ To remove a deduction, untick it. To type a total instead of ticking boxes, sele
 
 </Steps>
 
-If the wait went past the limit, the window says **Cannot Start** instead. **Confirm Score of 0** gives the routine 0; **Dismiss** leaves the score alone.
+If the wait went past the limit, the window says **Cannot Start** instead. **Confirm Score of 0** gives the routine 0 and sets **Skills performed** to 0; **Dismiss** leaves the score alone. To undo a Score of 0 from here, select the right number under **Skills performed**.
 
 ## Set skills performed
 
@@ -97,21 +97,21 @@ Select **More** in the bottom bar (on a phone, the ⋮ button).
 - **Reset scores** clears every mark and deduction for this routine only, so the panel can score it again. Select **Clear routine scores** to confirm. To undo it, select **More** → **Undo reset scores**. That works for 12 hours, and only until a judge scores the routine again.
 
 :::rule[What the rulebook says]
-The chair declares the maximum mark for an interrupted routine, and decides and displays the chair's penalties taken from the total score. A coach's signal costs 0.6. After the start signal, the athlete has one minute to begin: 61–90 seconds costs 0.2, 91–120 seconds 0.4, 121–180 seconds 0.6, and at 181 seconds the athlete can't start and scores 0.
+The chair declares the maximum mark for an interrupted routine, and decides and displays the chair's penalties taken from the total score. A coach's signal costs 0.6. After the start signal, a trampoline athlete has one minute to begin: 61–90 seconds costs 0.2, 91–120 seconds 0.4, 121–180 seconds 0.6, and at 181 seconds the athlete can't start and scores 0. In Double Mini and Tumbling the limit is 20 seconds (0.2), and at 61 seconds the athlete can't start.
 
-**Source:** USA Gymnastics, *Development Program Code of Points: Trampoline* (2025–2029), Section 1, Rule 6.3, page 5; Section 2, Rules 2.12 and 2.15, page 8; Rules 4.1.1 and 4.1.7, page 10. Landing deductions: Section 2, Rule 5.9, page 12. Tumbling and Double Mini have their own tables in their Codes of Points.
+**Source:** USA Gymnastics, *Development Program Code of Points: Trampoline* (2025–2029), Section 1, Rule 6.3, page 5; Section 2, Rules 2.12 and 2.15, page 8; Rules 4.1.1 and 4.1.7, page 10. Landing deductions: Section 2, Rule 5.9, page 12. *Development Program Code of Points: Double Mini* (2025–2029), Section 1, Rule 6.3, page 5, and Section 2, Rule 4.1.10, page 10. *Development Program Code of Points: Tumbling* (2025–2029), Section 1, Rule 6.3, page 4, and Section 2, Rule 4.1.11, page 9.
 :::
 
 :::review
-Rules statement: chair penalties, the time-to-start penalty, interrupted routines and Score 0. Not yet signed off. Also check: when a chair should use Override at all (the rulebook has the chair direct E judges to re-evaluate, not change their marks). Two disagreements to settle: the app's trampoline "Warmup abuse" is −0.20, but Rule 4.1.2 (page 10) says 0.4; and the app's Double Mini timer uses its own limits (penalty from 21 seconds, can't start from 61), which this page hasn't checked against the Double Mini code.
+Rules statement: chair penalties, the time-to-start penalty, interrupted routines and Score 0. Not yet signed off. Also check: when a chair should use Override at all (the rulebook has the chair direct E judges to re-evaluate, not change their marks). The app's Double Mini and Tumbling timers match their codes (penalty from 21 seconds, can't start at 61), but for Tumbling the rulebook says "no score will be awarded" where the app gives 0.
 :::
 
 ## If something goes wrong
 
 - **Typing after Override does nothing.** The box isn't selected yet. Tap the box, then type.
-- **"Execution score is too high".** The message says the most the mark can be, for example "cannot exceed 10.0 for 10 skills performed". Select **Override** again and type a lower mark, or check **Skills performed**.
+- **"Execution score is too high".** The message says the most the mark can be, for example "Execution score cannot exceed 10.0 for 10 skills performed." Nothing was saved. Select **Override** again and type a lower mark, or check **Skills performed**.
 - **"Changed on another device".** Someone changed this override on another screen first. Check the card, then override again if you still need to.
-- **Restore computed score asks "Score this routine 0.000?".** That's the wrong message. Select **OK**: the computed score comes back.
+- **Restore computed score asks "Score this routine 0.000? Panel marks are kept."** That's the wrong question, but the right action. Select **OK**: the computed score comes back.
 - **The buttons are greyed out, with "Results are official. Ask the meet host to correct a score."** The flight is official. You reopen it yourself: see [Reopen an official flight to fix a score](/judges/chair/reopen-official-flight/).
 
 ## Related
