@@ -10,8 +10,6 @@
     "typecheck": "astro check",
     "lint:docs": "nimbus-docs lint",
     "lint:docs:fix": "nimbus-docs lint --fix",
-    "prepreview:cf": "astro build",
-    "preview:cf": "wrangler dev",
     "check": "nimbus-docs check"
   },
   "dependencies": {
@@ -32,8 +30,7 @@
     "@tailwindcss/vite": "4.3.4",
     "pagefind": "1.6.0",
     "tailwindcss": "4.3.4",
-    "typescript": "5.9.3",
-    "wrangler": "4.157.0"
+    "typescript": "5.9.3"
   },
   "engines": {
     "node": ">=22.12.0"
