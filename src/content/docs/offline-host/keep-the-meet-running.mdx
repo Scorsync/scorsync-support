@@ -1,20 +1,85 @@
 ---
 title: "Keep the meet running"
-description: "Close the window but never Quit, keep the laptop powered and awake, and reopen after a restart."
+description: "Keep the laptop powered and awake, close the window instead of quitting, and reopen Scorsync after a restart."
 sidebar:
-  order: 8
+  order: 80
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Offline host · Scorsync Desktop
 
-**Who it's for:** Offline host (runs Scorsync Desktop)
+Scorsync Desktop serves every judge from your laptop, so the meet runs only while Scorsync is open and the laptop is awake.
 
-:::caution[Provisional]
-The venue network advice depends on SCO-2058, which isn't settled yet. Expect this page to change.
+## Before the first session
+
+<Steps>
+
+1. Plug the laptop into mains power, through a UPS (a battery backup) if you have one.
+
+2. In the laptop's power settings, turn off sleep while plugged in. On Windows, also set closing the lid to "Do nothing".
+
+3. On a Mac laptop, keep the lid open all day. A closed lid puts it to sleep.
+
+4. Close other programs you don't need, especially other web servers. One could take Scorsync's address.
+
+5. Open Scorsync.
+
+6. Open the tray menu (the Scorsync icon in the Mac menu bar, or right-click it in the Windows notification area). Check it says **● Running**.
+
+7. Write the address after **Judges open** on a card for the judges' table.
+
+</Steps>
+
+## What stops the meet, and what doesn't
+
+| You do this | Judges keep scoring? |
+| -- | -- |
+| Close or minimise the Scorsync window | Yes |
+| Let the screen go dark or lock | Yes |
+| Select **Restart Server** in the tray menu | Yes, after about 5 seconds |
+| Let the laptop sleep, or close a Mac's lid | No |
+| Run out of battery, or restart the laptop for an update | No |
+| **Quit Scorsync** in the tray menu, ⌘Q, Dock → Quit, or File → Exit on Windows | No |
+
+:::danger[Don't Quit Scorsync during the meet]
+Quit stops scoring for every judge within a second, and nothing asks you to confirm. Close the window instead. To open it again, select **Open Scorsync** in the tray menu.
 :::
 
-## What this page will cover
+:::review[Needs Austin's review: closing the window]
+The code keeps scoring running when the window is closed, but closing the window and closing a Mac's lid haven't been tried on real hardware yet. Both are on the drill list (SCO-2057).
+:::
 
-Close the window but never Quit, keep the laptop powered and awake, and reopen after a restart.
+## Reopen Scorsync after a restart
 
-Feature-map rows (SCO-2053): 7–10, 15.
+Scorsync doesn't open by itself when the laptop starts. If every judge drops at once, someone probably quit Scorsync, or the laptop slept or restarted.
+
+<Steps>
+
+1. Open Scorsync. Wait for "Starting the server" to finish: about 10 seconds.
+
+2. If the window shows **Welcome to the meet**, select **Admin panel** at the bottom, and sign in again.
+
+   ![The Scorsync window after reopening: "Welcome to the meet", with Results and "Judges and staff: sign in", and Admin panel at the bottom](./images/keep-the-meet-running-window-after-reopen.png)
+
+3. Open the tray menu, and check that the address after **Judges open** matches your card.
+
+4. Ask the chair to check that every judge shows on the panel again. Judges stay signed in, and scores saved on their tablets send by themselves.
+
+</Steps>
+
+## If something goes wrong
+
+- **The address after Judges open has changed**, for example `:8001` instead of `:8000`. Another program took the old address. Give judges the new address. A score a judge saved on their tablet while Scorsync was closed stays under the old address and doesn't send, so ask the chair to check that the athlete on the floor has every judge's score.
+
+  ![The Scorsync menu after reopening: the judges' address now ends in :8001](./images/tray-menu-address-changed.png)
+
+- **"Scorsync could not start" with "Ports 80 and 8000–8009 are all in use."** Close the other web server or program, then open Scorsync again. If you don't know which one, restart the laptop and open only Scorsync.
+- **"Scorsync processes from the last run are still running."** Restart the laptop, then open Scorsync again.
+- **One judge drops, not all of them.** That's their tablet or the Wi-Fi, not the laptop. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/).
+- **The tray menu or the window won't respond.** The laptop's screen is locked. Unlock it: scoring carried on meanwhile.
+
+## Related
+
+- [Back up your meet](/offline-host/backups/)
+- [Use the Scorsync tray menu](/offline-host/tray-menu/)
+- [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/)
+- [Meet-day runbook: Scorsync Desktop](/runbook/scorsync-desktop/)
