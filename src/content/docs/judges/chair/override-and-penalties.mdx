@@ -1,20 +1,124 @@
 ---
-title: "Overrides, Score 0 and penalties"
-description: "Which button does what: override a mark, Score 0, neutral deductions, time penalty, skills performed."
+title: "Override a mark, apply penalties or score 0"
+description: "Which button on the chair's screen does what: Override, Add deduction, the time penalty, Skills performed and Score 0."
 sidebar:
   order: 2
 ---
 
-<Render file="placeholder" />
+**Who it's for:** The chair · Scorsync Cloud and Scorsync Desktop
 
-**Who it's for:** The chair
+Use this page when a routine's score needs the chair's hand: a wrong mark, a deduction, a time penalty or an interrupted routine.
 
-:::review
-This page touches T&T rules. It will say only which button does what. Every rules statement needs a rulebook citation (see [Cite the rulebook](/style-guide/rulebook-citations/)) and Austin's sign-off before it ships.
+| You need to | Use | Where |
+| -- | -- | -- |
+| Change a mark a judge sent | **Override** | The judge's card |
+| Undo your override | The small orange pencil next to "Submitted" | The judge's card |
+| Take a landing deduction or a chair penalty | **Add deduction** | Neutral deductions |
+| Take a time penalty | **Apply Penalty** | Pops up when you stop the timer |
+| Set how many skills were done | The number buttons | Skills performed |
+| Give the routine 0 | **More** → **Score 0** | The bar at the bottom |
+
+This page says which button does what. It doesn't say when the rules call for each one: check the rulebook, or ask the meet referee.
+
+## Before you start
+
+- You're signed in as the chair, with the athlete open on your screen. See [Getting started as the chair](/judges/chair/).
+- The flight isn't official yet. If it is, see [Reopen an official flight to fix a score](/judges/chair/reopen-official-flight/).
+
+## Override a mark
+
+<Steps>
+
+1. On the judge's card, select **Override**.
+
+2. Tap the box that appears, then type the new mark. The last digit is tenths: type `86` or `8.6` for 8.6.
+
+   ![The E2 card with a box holding 86, a tick and a cross, and the hint "Last digit is tenths — 89 → 8.9"](./images/override-and-penalties-override-box.png)
+
+3. Select the tick, or press Enter.
+
+4. Check the card: your mark shows in orange, with the judge's mark struck through beside it. The judge's tablet says "Chair changed your score".
+
+   ![The E2 card showing 8.30 in orange, 8.60 struck through, and a small orange pencil next to "Submitted"](./images/override-and-penalties-overridden-mark.png)
+
+</Steps>
+
+If a judge hasn't sent a mark at all, their card shows **Enter** instead. See [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/).
+
+:::danger[One tap on the orange pencil undoes your override]
+The small orange pencil next to "Submitted" isn't an edit button. It puts the judge's own mark back at once, with no question asked. To change your override, select **Override** again and type the new mark.
 :::
 
-## What this page will cover
+## Add a deduction or penalty
 
-Which button does what: override a mark, Score 0, neutral deductions, time penalty, skills performed.
+<Steps>
 
-Feature-map rows (SCO-2053): 95.
+1. Under Neutral deductions, select **Add deduction**.
+
+2. Tick each deduction that applies. Scorsync saves each tick straight away, and greys out deductions that can't go together.
+
+   ![Neutral deductions open: Touched hands ticked at −0.50, Supported by hands greyed out, CJP penalties below, and Total ND −0.50](./images/override-and-penalties-neutral-deductions.png)
+
+3. Check **Running score** on the right: the routine total has gone down.
+
+</Steps>
+
+To type a total instead of ticking boxes, select **Manual Entry**. To remove a deduction, untick it.
+
+## Take a time penalty
+
+<Steps>
+
+1. Select **Start** in the bottom bar when you give the athlete the signal to start. Press Space to do the same.
+
+2. Select **Stop** when the athlete starts their first skill.
+
+3. If the time is long enough for a penalty, Scorsync shows **Time Penalty Detected** with the amount. Select **Apply Penalty**, or **Dismiss** to leave it off.
+
+   ![Time Penalty Detected: the timer stopped at 1:05, −0.2, "Apply this time penalty?", with Dismiss and Apply Penalty](./images/override-and-penalties-time-penalty.png)
+
+</Steps>
+
+If the wait was very long, the window says **Cannot Start** instead. **Confirm Score of 0** gives the routine 0.
+
+## Set skills performed
+
+Select the number of skills the athlete did, under **Skills performed**. Do this before the marks come in if you can. Once marks are in, Scorsync asks first: select **Change skills** to go ahead. The score is worked out again, and judges may need to mark the routine again.
+
+![Change skills performed? Maya Corwin, Routine 1, 10 → 8 skills, "Score 16.50 will be recalculated", with Cancel and Change skills](./images/override-and-penalties-skills-performed.png)
+
+The red **0** means no skills were performed.
+
+## Score 0, and starting again
+
+Select **More** in the bottom bar.
+
+![The More menu: Change level or scratch, Request a correction, Score 0, Reset timer and Reset scores](./images/override-and-penalties-more-menu.png)
+
+- **Score 0** gives the routine 0.000 and keeps the judges' marks. Scorsync asks "Score this routine 0.000? Panel marks are kept." To undo it, select **More** → **Restore computed score**.
+- **Reset scores** clears every mark and deduction for this routine only, so the panel can score it again. You can undo it with **More** → **Undo reset scores** until a judge scores the routine again.
+
+:::rule[What the rulebook says]
+The chair declares the maximum mark for an interrupted routine, and decides and displays the chair's penalties taken from the total score. A coach's signal costs 0.6. After the start signal, the athlete has one minute to begin: 61–90 seconds costs 0.2, 91–120 seconds 0.4, 121–180 seconds 0.6, and at 181 seconds the athlete can't start and scores 0.
+
+**Source:** USA Gymnastics, *Development Program Code of Points: Trampoline* (2025–2029), Section 2, Rules 2.12 and 2.15, page 8; Rules 4.1.1 and 4.1.7, page 10; Rule 6.3, page 5. Landing deductions: Section 2, Rule 5.9, page 12. Tumbling and Double Mini have their own tables in their Codes of Points.
+:::
+
+:::review
+Rules statement: chair penalties, the time-to-start penalty, interrupted routines and Score 0. Not yet signed off. Also check: when a chair should use Override at all (the rulebook has the chair direct E judges to re-evaluate, not change their marks).
+:::
+
+## If something goes wrong
+
+- **Typing after Override does nothing.** The box isn't selected yet. Tap the box, then type.
+- **"Execution score is too high".** The mark is above the maximum for this routine. Select **Override** again and type a lower mark.
+- **"Changed on another device".** Someone changed this override on another screen first. Check the card, then override again if you still need to.
+- **Restore computed score asks "Score this routine 0.000?".** That's the wrong message. Select **OK**: the computed score comes back.
+- **Override and the other buttons are greyed out, with "Results are official. Ask the meet host to correct a score."** The flight is official. The chair reopens it: see [Reopen an official flight to fix a score](/judges/chair/reopen-official-flight/).
+
+## Related
+
+- [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/)
+- [What the out-of-range flag means](/judges/chair/out-of-range-flag/)
+- [Confirm a flight official](/judges/chair/confirm-flight-official/)
+- [Fix a score you submitted](/judges/fix-a-score/)
