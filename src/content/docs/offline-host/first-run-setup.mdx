@@ -1,16 +1,73 @@
 ---
-title: "First-run setup"
-description: "Work through the setup wizard the first time you open Scorsync Desktop."
+title: "Run first-run setup"
+description: "Work through the six setup steps the first time you open Scorsync Desktop: database, admin account, organization and license, judges' address, scorsync.com and system check."
 sidebar:
-  order: 4
+  order: 40
+  label: "First-run setup"
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Offline host · Scorsync Desktop
 
-**Who it's for:** Offline host (runs Scorsync Desktop)
+The first time you open Scorsync Desktop, it shows six setup steps. You do them once per laptop.
 
-## What this page will cover
+## Before you start
 
-Work through the setup wizard the first time you open Scorsync Desktop.
+- Scorsync Desktop is installed. See [Install on a Mac](/offline-host/install-on-mac/) or [Install on Windows](/offline-host/install-on-windows/).
+- The laptop is on the scoring Wi-Fi from your travel router. Step 4 shows the address for the network the laptop is on now. See [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/).
+- Internet, if you want to link the computer to your Scorsync account in step 3.
 
-Feature-map rows (SCO-2053): 4.
+## Steps
+
+<Steps>
+
+1. On **Set up the database**, select **Set up the database**. It can take up to a minute.
+
+   ![Step 1 of 6, "Set up the database", with a list of what will be installed and the Set up the database button](./images/setup-step-1-database.png)
+
+2. On **Create the admin account**, fill in **Your name**, **Email address**, **Password** and **Confirm password**, then select **Create account and continue**. The email doesn't need to receive mail: it's only what you sign in with. Write the password down somewhere safe.
+
+   ![Step 2 of 6, "Create the admin account", filled in for Dana Whitlock](./images/setup-step-2-admin-account.png)
+
+3. On **Your organization**, type your club's name under **Organization name**, as scorsync.com knows it.
+
+4. Under **Scorsync license**, choose one:
+   - **Link this computer** (needs the internet): your browser opens Scorsync Cloud. Sign in with your Scorsync account, then select **Allow** on "Link this computer?".
+   - **Enter a license code**, if Scorsync gave you one. Type it, then select **Use code**.
+   - **Continue without linking**. Note the date under the buttons: "Go live works until…".
+
+   ![Step 3 of 6, "Your organization": the Scorsync license card in its grace period, Link this computer, Continue without linking, and "Go live works until December 3, 2026"](./images/setup-step-3-organization-and-license.png)
+
+5. On **Connect judges' devices**, write down both addresses: the one under **Judges open**, and the one after "Does not open? Use". Then select **Next: Scorsync Online**.
+
+   ![Step 4 of 6, "Connect judges' devices": a QR code, the judges' address, a second address made of numbers, and "Keep this address from changing"](./images/setup-step-4-network-addresses.png)
+
+6. On **Scorsync Online (optional)**, select **Next: System check**. You don't connect anything here: you connect each meet to scorsync.com later, from that meet.
+
+   ![Step 5 of 6, "Scorsync Online (optional)", which says you connect each meet, not this computer](./images/setup-step-5-scorsync-com.png)
+
+7. On **System check**, check that every row says **Ready**, then select **Finish**.
+
+   ![Step 6 of 6, "System check", with every row marked Ready](./images/setup-step-6-system-check.png)
+
+8. Check that Scorsync now welcomes you by name and offers **Create a meet**. Setup is done.
+
+</Steps>
+
+:::review[Needs Austin's review: the license]
+On the test run the license card read "Go live works without it until December 3, 2026": 30 days after first run, and two days before the pilot. What we tell hosts about linking, license codes and that date isn't settled. The linking and code steps above come from the code and weren't tried.
+:::
+
+## If something goes wrong
+
+- **"This server has no network address that other devices can reach."** The laptop isn't on any network. Join it to the scoring Wi-Fi (or plug it into the router), then reload the page.
+- **The "Go live works until…" date is before your meet.** Link the computer while you have internet, or contact support. You can come back to this later: select **Manage**, then **Setup** → **License**.
+- **A System check row isn't Ready.** Select **Re-run the checks**. If it's still not Ready, contact support.
+- **You need the judges' address or QR code again.** Select **Manage**, then **Setup** → **Advanced** → **Setup wizard**. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/).
+- **You forgot the admin password.** Scorsync Desktop can't email you a reset link. Contact support (support@scorsync.com).
+
+## Related
+
+- [Check your network before the meet](/offline-host/check-your-network/)
+- [Connect the judges' tablets](/offline-host/connect-judges-tablets/)
+- [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/)
+- [Meet-day runbook: Scorsync Desktop](/runbook/scorsync-desktop/)
