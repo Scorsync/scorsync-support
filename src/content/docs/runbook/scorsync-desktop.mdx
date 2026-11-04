@@ -1,39 +1,171 @@
 ---
 title: "Meet-day runbook: Scorsync Desktop"
-description: "Everything to do from a week before the meet to the end of the day, on Scorsync Desktop."
+description: "Everything to do from a week before the meet to the end of the day, when you run the meet on Scorsync Desktop."
 sidebar:
   order: 2
   label: "Scorsync Desktop"
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Offline host and scoring table operator · Scorsync Desktop
 
-**Who it's for:** Offline host (runs Scorsync Desktop) and Scoring table operator
+Work down this page in order. Each step links to the full how-to when there is one. Print it and tick it off.
 
-:::caution[Provisional]
-The venue network advice depends on SCO-2058, which isn't settled yet. Expect this page to change.
-:::
+## Before you start
+
+- Your meet is built in Meet Builder: sessions, flights, athletes and judges are in place.
+- You've set up the laptop and the travel router once already. See [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/).
 
 ## A week before
 
-Placeholder.
+<Steps>
+
+1. Install the pilot build of Scorsync Desktop. See [Install the pilot build](/offline-host/install-the-pilot-build/).
+
+2. Open Scorsync and check the license date on **Build readiness**: "Go live works without it until…". If that date is before your meet, link the computer while you have internet, or contact support.
+
+3. Run a rehearsal with a couple of tablets. See [Rehearse your meet](/host/before-meet-day/rehearse/).
+
+4. Print the judges' sign-in sheets. See [Print judge sign-in sheets](/host/before-meet-day/print-judge-sign-in-sheets/).
+
+</Steps>
+
+:::review[Needs Austin's review: the license date]
+On the test run, the license grace lasted 30 days from first run, so a laptop set up on Nov 3 couldn't go live offline after Dec 3, two days before the pilot. What we tell hosts about license codes and linking isn't settled; step 2's wording is a draft.
+:::
 
 ## The day before
 
-Placeholder.
+<Steps>
+
+1. Print a paper backup for each flight. Go to **Manage** → **Sessions**, open the session, and select **Start list PDF** and **Score sheet PDF** on each flight's row.
+
+   ![A session page with three flights. Each row has Edit, Start list PDF and Score sheet PDF](./images/session-paper-backup-pdfs.png)
+
+2. If your meet will publish to scorsync.com, connect it now, while you have internet. See [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/).
+
+3. Pack the laptop, its power cable, the travel router, a power strip and the UPS if you have one.
+
+</Steps>
+
+:::tip
+The score sheet has one score line per athlete. For a two-routine flight, print two copies: one per routine.
+:::
 
 ## Morning of
 
-Placeholder.
+<Steps>
+
+1. Plug the router and the laptop into mains power. Check that sleep is off.
+
+2. Open Scorsync. Wait a few seconds for "Starting the server" to finish.
+
+3. Click the Scorsync icon in the menu bar. Check it says **● Running**, and write the address after **Judges open** on a card for the judges' table.
+
+   ![The Scorsync menu: Running, the judges' address, a second address, and the rest of the menu](./images/tray-menu-running.png)
+
+4. Sign each judge in. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/).
+
+5. In Meet Control, open **Build readiness** and select **Go live**.
+
+6. Select **Yes, go live**. The schedule locks.
+
+   ![Ready to go live? with every row ticked, and "Go live? The schedule locks." with Cancel and Yes, go live](./images/go-live-confirm.png)
+
+7. Check that Run says "The floor is idle". That's expected: the session starts with the first score.
+
+   ![Run after going live: "The floor is idle. No session in progress — it starts at the first score."](./images/run-floor-idle-after-go-live.png)
+
+</Steps>
+
+:::danger[Never Quit Scorsync during the meet]
+**Quit Scorsync** in the menu, and ⌘Q on a Mac, stop scoring for every judge within a second. Nothing asks you to confirm. If you need the screen for something else, close or minimise the Scorsync window instead.
+:::
+
+:::review[Needs Austin's review: closing the window]
+The decided venue setup (SCO-2058) says to close the window instead of quitting. The walkthrough confirmed that a dark or locked screen doesn't stop scoring, but didn't test closing the window. It's on the drill list.
+:::
 
 ## Each session
 
-Placeholder.
+<Steps>
+
+1. The chair selects **Open Flight**, then **P1 Score** next to the first athlete. The judges' tablets follow by themselves.
+
+   ![The chair's flight view with the first athlete on the floor and every judge "waiting"](./images/chair-flight-view-open-pass.png)
+
+2. Watch the session from **Run** on the laptop.
+
+3. To scratch an athlete, press ⌘K in Run, type their name, and choose them. Then select **Scratch Trampoline** (or the event) and **Scratch event**. You can select **Undo** straight afterwards.
+
+   ![Scratch Brooks Bellamy from Trampoline? with Cancel and Scratch event](./images/scratch-athlete-confirm.png)
+
+4. When the flight ends, the chair selects **Confirm official**, then **Yes, confirm official**.
+
+   ![Confirm A official? Ready for awards, with Cancel and Yes, confirm official](./images/chair-confirm-official.png)
+
+</Steps>
+
+At Level 8, the chair is asked to **Advance Anyway** for every athlete, because some judges have nothing to score. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#at-level-8).
+
+**Confirm official** stays greyed out until every row under "Before this flight is official" is ticked, including "Inquiry window closed".
+
+:::rule[What the rulebook says]
+The meet referee must be told about a possible inquiry within 5 minutes after the flight ends (or before awards). The written inquiry is due within 10 minutes of that.
+
+**Source:** USA Gymnastics, *Development Program Code of Points: Trampoline* (2025–2029), Section 4, Rule 13.4, page 29.
+:::
+
+:::review
+Rules statement. Also: in the app, the 5-minute inquiry window starts again after any correction or ruling, so a reopened flight waits another 5 minutes before it can be confirmed official. Not yet signed off.
+:::
 
 ## When something goes wrong
 
-Placeholder.
+**A judge's tablet loses the Wi-Fi.** The judge keeps scoring. Their tablet says "Score saved on this device", and the score sends by itself when the Wi-Fi comes back. Meanwhile the chair sees that judge as "Waiting", like a slow judge. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/).
+
+![A judge's tablet while offline: "Score saved on this device. It will submit automatically when you're back online."](./images/judge-offline-score-held.png)
+
+**Every judge drops at once.** Someone probably quit Scorsync, or the laptop slept or restarted.
+
+<Steps>
+
+1. Open Scorsync again. It's ready in under 10 seconds. Judges stay signed in, and scores saved on their tablets send by themselves.
+
+2. If the Scorsync window shows "Welcome to the meet", select **Admin panel** at the bottom, and sign in again.
+
+   ![The Scorsync window after reopening: "Welcome to the meet", with Results and "Judges and staff: sign in", and Admin panel at the bottom](./images/window-after-reopen-signed-out.png)
+
+3. Click the Scorsync icon in the menu bar, and check the address after **Judges open** is the same as on your card.
+
+</Steps>
+
+**The address changed after you reopened Scorsync**, for example `:8001` instead of `:8000`. Give judges the new address. Scores a judge saved on their tablet while Scorsync was closed wait under the old address, so ask the chair to check that the athlete on the floor has every judge's score.
+
+![The Scorsync menu after reopening: the judges' address now ends in :8001](./images/tray-menu-address-changed.png)
+
+**A tablet can't open the judges' address.** Type the second address from the menu, the one after **Or:**. The QR codes only hold the first address.
+
+**The tablets are down for good.** Switch to the paper score sheets you printed the day before, and contact support.
+
+For anything else, see [Troubleshooting](/help/troubleshooting/), or contact support.
 
 ## End of day
 
-Placeholder.
+<Steps>
+
+1. In Run, select **Back up now** (bottom right). Scorsync also backs up by itself every 5 minutes.
+
+   ![Run with the Backed up message, and "Last backup 0 seconds ago" next to Back up now](./images/run-back-up-now.png)
+
+2. If your meet publishes to scorsync.com, leave Scorsync open until Results & Sync shows nothing waiting to send.
+
+3. Close the Scorsync window. Quit only once every flight is official and published.
+
+</Steps>
+
+## Related
+
+- [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/)
+- [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/)
+- [Backups](/offline-host/backups/)
+- [Meet-day runbook: Scorsync Cloud](/runbook/scorsync-cloud/)
