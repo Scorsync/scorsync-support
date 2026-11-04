@@ -1,16 +1,77 @@
 ---
 title: "Print judge sign-in sheets and data-entry cards"
-description: "Print the sheets judges and data-entry staff use to sign in."
+description: "Print every judge's sign-in email and PIN, and create and print cards for the people who key scores."
 sidebar:
   order: 4
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Host (meet director) · Scorsync Cloud and Scorsync Desktop
 
-**Who it's for:** Host (meet director)
+Print these a few days before the meet, so each judge and data-entry helper has their sign-in on paper.
 
-## What this page will cover
+## Before you start
 
-Print the sheets judges and data-entry staff use to sign in.
+- Judges are seated on their panels (Setup → **Judge assignments**).
+- On Scorsync Desktop, the venue network is set up, so the address printed on each card is the one tablets will use. See [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/).
 
-Feature-map rows (SCO-2053): 46, 47.
+## Print the judges' sheet
+
+<Steps>
+
+1. Select **Manage** at the top, then the gear (**Setup**), then **Judge assignments**.
+
+2. Select **All credentials** at the top right.
+
+   ![Judge Assignments, with All credentials and Data-entry judges at the top right](./images/print-judge-sign-in-sheets-all-credentials.png)
+
+3. Select **Print all**. The sheet opens in a new tab with your printer window.
+
+   ![Judge Credentials, with Back to Assignments and Print all](./images/print-judge-sign-in-sheets-print-all.png)
+
+4. Print it, cut the cards apart, and give each judge their own. Each card has the judge's sign-in email, PIN and the address to open.
+
+   ![The Judge sign-in credentials sheet: one card per judge with sign-in email, sign-in PIN and the address to sign in at. The PINs are blurred in this picture](./images/print-judge-sign-in-sheets-sheet.png)
+
+</Steps>
+
+:::caution
+The sheet holds every judge's PIN. Keep it with you until you hand the cards out. **New PIN** stops the judge's old PIN at once and signs their tablet out, so their printed card no longer works: print it again.
+:::
+
+## Create and print data-entry cards
+
+Data-entry helpers key the marks for a panel that scores on paper. Their password is printed on the card and shown nowhere else.
+
+<Steps>
+
+1. In Setup, select **Data entry judges**, then **Bulk Create**.
+
+2. Under **Assign to Meet**, choose your meet. Type how many accounts you need under **Number of Accounts**, then select **Create Accounts**.
+
+3. In the "Accounts Created Successfully" message, select **Print All Credentials**.
+
+   ![Data Entry Judges with two new accounts, and the "Accounts Created Successfully" message with Print All Credentials](./images/print-judge-sign-in-sheets-data-entry-created.png)
+
+4. Print the cards. Each has a sign-in QR code, a username, a password and the date the account expires: the end of the meet.
+
+   ![Two Data Entry Judge Access cards with a QR code, name, username, password, the address, the expiry date and Active. The QR codes and passwords are blurred in this picture](./images/print-judge-sign-in-sheets-data-entry-cards.png)
+
+</Steps>
+
+To give an account its panel, open that panel's settings on Judge assignments, set the input to **Data Entry**, then select **Assign entry person**.
+
+:::tip
+To reprint one card, select **Print** on that account's row in Data entry judges. A helper who turns up on the day can get a one-time code instead: select **Sign in a helper**.
+:::
+
+## If something goes wrong
+
+- **A judge's card has no PIN** ("Not issued — reissue on the credential screen"). Select **New PIN** on that judge's row in **All credentials**, then print again. See [Show or reset a judge's PIN](/scoring-table/show-or-reset-a-pin/).
+- **The printer window doesn't open.** The sheet opens in a new tab. Allow pop-ups for the Scorsync address, then try again.
+- **A data-entry card was lost.** Its password can't be shown again. Select **New Password** on its row, then **Print**.
+
+## Related
+
+- [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/)
+- [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/)
+- [Key scores as a data-entry judge](/scoring-table/key-scores/)

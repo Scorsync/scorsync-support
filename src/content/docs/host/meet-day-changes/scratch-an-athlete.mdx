@@ -1,16 +1,83 @@
 ---
 title: "Scratch an athlete"
-description: "Scratch an athlete from an event or the meet, and undo it."
+description: "Withdraw an athlete from one event or from the whole meet on meet day, and undo it if you need to."
 sidebar:
   order: 1
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Host (meet director) · Scorsync Cloud and Scorsync Desktop
 
-**Who it's for:** Host (meet director)
+Use this when an athlete withdraws once the meet is live. Once the schedule is locked, scratch from **Run** in Meet Control. Meet Builder won't let you.
 
-## What this page will cover
+## Before you start
 
-Scratch an athlete from an event or the meet, and undo it.
+- You're signed in to Meet Control as the host.
 
-Feature-map rows (SCO-2053): 80.
+## Scratch from one event
+
+<Steps>
+
+1. In **Run**, press ⌘K (Ctrl+K on Windows), or select **Search athletes, judges & officials…** at the top right. Type the athlete's name.
+
+   ![The search box with "Wesley Sorensen" typed, and one athlete found: Prairie Wind T&T, DM 9, Session 2, Flight D](./images/scratch-an-athlete-search.png)
+
+2. Select the athlete. Their actions open on the right.
+
+   ![Wesley Sorensen's actions: Change level / division, Move flight / session, Scratch Double Mini and Scratch from the meet](./images/scratch-an-athlete-drawer.png)
+
+3. Select **Scratch** followed by the event name, for example **Scratch Double Mini**.
+
+4. Select **Scratch event**. No reason is asked.
+
+   ![Scratch Wesley Sorensen from Double Mini? This athlete will be withdrawn from this event. Cancel and Scratch event](./images/scratch-an-athlete-confirm.png)
+
+5. Check that the event now says "Scratched" next to the athlete's name. The message at the bottom has an **Undo** button for about 10 seconds, in case you picked the wrong athlete.
+
+   ![The event chip reads "Double Mini · 9 · Scratched", the actions now offer Reinstate Double Mini, and the message "Scratched from Double Mini · undo" has an Undo button](./images/scratch-an-athlete-undo.png)
+
+</Steps>
+
+The chair's run order marks the athlete **SCR** and skips them. If your meet publishes to scorsync.com, the scratch shows there too.
+
+:::caution[Check the name first]
+Scorsync doesn't warn you if the athlete already has scores, or if their flight is already official. Check the name, club and flight before you select **Scratch event**.
+:::
+
+## Scratch from the whole meet
+
+<Steps>
+
+1. Find the athlete as above, then select **Scratch from the meet**.
+
+2. Choose a reason (**No-show**, **Injury** or **Coach request**), or type your own. The button stays grey until there's a reason.
+
+   ![Scratch Nolan Abernathy from the meet: what this changes, the reason buttons and the Scratch from meet button](./images/scratch-an-athlete-from-meet.png)
+
+3. Select **Scratch from meet**. The athlete's actions now show "Scratched from meet".
+
+</Steps>
+
+For a synchro athlete, this scratches their partner too. The button says so.
+
+## Undo a scratch later
+
+Find the athlete again, then:
+
+- **One event:** select **Reinstate** followed by the event name, then **Restore event**.
+- **The whole meet:** select **Unscratch from the meet**, then **Restore athlete**.
+
+If the flight is already full, Scorsync asks first ("Restore over capacity?").
+
+## If something goes wrong
+
+- **Meet Builder says "The schedule is locked. Level, birth date, gender, flight and scratch go through Triage."** After lock, scratch from Run, as on this page.
+- **"Undo expired. The change is still saved."** Undo lasts about 10 seconds. Use **Reinstate** instead (see above).
+- **"That event was already scratched."** Someone else got there first. Close the athlete's actions and open them again to see where things stand.
+- **The athlete only shows "Unscratch from the meet".** They're scratched from the whole meet. Unscratch them first if you only meant to scratch one event.
+
+## Related
+
+- [Change an athlete's level or flight](/host/meet-day-changes/change-level-or-flight/)
+- [Approve or reject requests](/host/meet-day-changes/approve-requests/)
+- [Reorder, DNS and reinstate](/judges/chair/reorder-dns-reinstate/) (the chair's side)
+- [Meet-day runbook: Scorsync Cloud](/runbook/scorsync-cloud/)
