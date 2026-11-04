@@ -6,10 +6,8 @@ import nimbus, {
 import { tableScroll } from "@cloudflare/nimbus-docs/markdown";
 
 const nimbusConfig = defineNimbusConfig({
-  // Provisional production address. The real one is still undecided
-  // (SCO-2043 "Not yet specified"); help.scorsync.com stays with scorsync.com.
-  // Until launch the whole site sits behind Cloudflare Access and is noindexed
-  // (see public/_headers), so this only shapes canonical and OG URLs.
+  // Production address, hosted on Netlify. help.scorsync.com stays with
+  // scorsync.com's own help.
   site: "https://support.scorsync.com",
   title: "Scorsync Support",
   description:
