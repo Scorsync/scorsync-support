@@ -1,16 +1,73 @@
 ---
 title: "Show or reset a judge's PIN"
-description: "Show a judge's PIN for 60 seconds, or issue a new one."
+description: "Read a judge their sign-in email and PIN from Run, or give them a new PIN if the old one may be known."
 sidebar:
-  order: 2
+  order: 3
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Scoring table operator and host · Scorsync Cloud and Scorsync Desktop
 
-**Who it's for:** Scoring table operator
+Use this when a judge has lost their sign-in sheet mid-session, or their PIN may have been seen by someone else.
 
-## What this page will cover
+## Before you start
 
-Show a judge's PIN for 60 seconds, or issue a new one.
+- You're signed in to Meet Control as the host or a scoring table operator. A meet referee can't see PINs.
+- The judge's session has started. Before the first score, use Judge Assignments → **All credentials** instead (see below).
 
-Feature-map rows (SCO-2053): 59.
+## Show a PIN
+
+<Steps>
+
+1. In Run, select the card of the judge's panel. The panel drawer opens.
+
+2. Scroll down to **Panel seats**.
+
+   ![Panel seats for Trampoline A: one row per seat, each with Replace, Remove and Show PIN. Seats whose judge isn't signed in also have New PIN](./images/show-or-reset-a-pin-seats.png)
+
+3. On the judge's row, select **Show PIN**.
+
+4. Read the judge the email and the PIN under their row. They disappear after 60 seconds.
+
+   ![The judge's sign-in email and PIN under their row, with Copy PIN. The PIN is blurred in this picture](./images/show-or-reset-a-pin-shown.png)
+
+5. The judge signs in with that email and PIN. Check that their tablet shows their **Dashboard**.
+
+</Steps>
+
+## Give a judge a new PIN
+
+A new PIN stops the old one working straight away. You can only do it while the judge is signed out, so the **New PIN** button shows only on rows that say "Not signed in".
+
+<Steps>
+
+1. On the judge's row, select **New PIN**.
+
+2. Select **Issue new PIN**.
+
+   ![Issue a new PIN for Ingrid Mayhew? Their current PIN stops working at once. With Cancel and Issue new PIN](./images/show-or-reset-a-pin-new-pin-confirm.png)
+
+3. Read the judge the new PIN under their row. It also disappears after 60 seconds.
+
+</Steps>
+
+:::caution
+Show PIN puts the PIN on your screen. Keep the screen turned away from the room, and select **Show PIN** only with the judge in front of you.
+:::
+
+## Before the session starts
+
+Run has no panel cards until the first score. Until then, go to Judge Assignments → **All credentials**: it lists every judge's email and PIN, with **New PIN** and **Sign-in QR** on each row. You can also use a desk code. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/).
+
+## If something goes wrong
+
+- **"A new PIN can only be issued for a judge who is not signed in."** The judge is signed in on a seat of this meet. A new PIN would sign them out. Use **Show PIN** instead.
+- **"An admin signs in with their own password, so no PIN is issued for them."** That seat holds a host's account. They sign in with their own password.
+- **The row shows "No PIN issued".** Select **New PIN** to give the judge one.
+- **All credentials says "Expired: issue a New PIN or show a Sign-in QR".** Do one of those. On Scorsync Cloud, a PIN stops working some time after the judge's last meet.
+- **All credentials says "Locked out of sign-in … after too many wrong PINs".** Check it's really the judge, then select **Unlock** on their row.
+
+## Related
+
+- [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/)
+- [Replace a judge mid-meet](/scoring-table/replace-a-judge/)
+- [Print judge sign-in sheets](/host/before-meet-day/print-judge-sign-in-sheets/)

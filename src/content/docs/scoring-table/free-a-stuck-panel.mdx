@@ -1,16 +1,88 @@
 ---
 title: "Free a stuck panel or nudge a station"
-description: "Release a stuck panel, or nudge a station that has stopped moving."
+description: "Send a reminder to a panel that has gone quiet, or release a panel that is stuck on an athlete because the chair dropped off."
 sidebar:
   order: 6
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Scoring table operator and host · Scorsync Cloud and Scorsync Desktop
 
-**Who it's for:** Scoring table operator
+Use this when a panel has stopped scoring. Try a nudge first. Release the panel only when the chair can't move it on.
 
-## What this page will cover
+## Before you start
 
-Release a stuck panel, or nudge a station that has stopped moving.
+- You're signed in to Meet Control as the host or a scoring table operator.
+- The meet is live, and the panel has an athlete on the floor.
 
-Feature-map rows (SCO-2053): 76, 77.
+## Spot a stuck panel
+
+After 7 minutes with no score, the panel's card in Run turns red and says "stalled", with "No score in …". Triage lists it under **Needs you**, with the likely reason, such as "CH device offline".
+
+![A Needs you card in Triage: Stalled, Trampoline · Panel A, "No score in 9m · CH device offline", Nudge seen 10:11, with Nudge panel and Open panel](./images/free-a-stuck-panel-triage-stalled.png)
+
+Before you change anything, look at the panel. The athlete may still be warming up, or the chair may be dealing with an inquiry.
+
+## Nudge the panel
+
+A nudge puts a short message from you on every tablet of that panel. It changes nothing else.
+
+<Steps>
+
+1. In Run, select the panel's card. The panel drawer opens.
+
+   ![The Trampoline A drawer: the athlete up, Panel locked with Release panel, then Pause flight and Nudge station](./images/free-a-stuck-panel-drawer.png)
+
+2. Select **Nudge station**. The drawer doesn't change: that's expected.
+
+3. Check that the judges' tablets show a "Host" message: "Nudged from the floor", with **Acknowledge**.
+
+   ![The bottom of a judge's scoring screen: a Host message "Nudged from the floor", the host's name, and Acknowledge](./images/free-a-stuck-panel-nudge-on-tablet.png)
+
+4. In Triage, check the line under the panel: "Nudge sent", then "Nudge seen" when a tablet has shown it.
+
+</Steps>
+
+The message goes away when a judge selects **Acknowledge**, when the next score comes in, or after 10 minutes. You can also nudge from Triage with **Nudge panel**.
+
+## Release a stuck panel
+
+A panel stays on its athlete until the chair moves it on. If the chair's tablet died or the chair left, the panel is stuck. Releasing it frees the judges. It signs nobody out, and other panels aren't touched.
+
+<Steps>
+
+1. In Run, select the panel's card.
+
+2. Next to **Panel locked**, select **Release panel**.
+
+3. Read the message, then select **Release this panel**.
+
+   ![Panel locked, with "Judges on this panel stay signed in and are free to browse until the chair opens the next athlete. Other panels are not touched." and Cancel and Release this panel](./images/free-a-stuck-panel-release-confirm.png)
+
+4. Check that the drawer says "Flight in progress" and shows **Undo panel release**. The judges' tablets go back to their dashboard.
+
+   ![The drawer after the release: Flight in progress, with an Undo panel release button](./images/free-a-stuck-panel-released.png)
+
+5. Get the chair back on a working tablet, signed in. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/). If the chair can't carry on, [replace the chair](/scoring-table/replace-a-judge/).
+
+6. The chair selects **Open Flight**, then the pass button (such as **P1 Score**) of the athlete who was up. The panel is back on that athlete.
+
+</Steps>
+
+:::tip
+Released the wrong panel? Select **Undo panel release** straight away. It puts the panel back on the same athlete. It's there until the chair opens an athlete.
+:::
+
+## If something goes wrong
+
+- **There's no Release panel button.** The panel isn't on an athlete, so there's nothing to release. Check the chair's tablet instead.
+- **"This panel is not locked onto an athlete — there is nothing to release."** The chair moved the panel on while you were looking. Close the drawer and open it again.
+- **"The panel changed after the release. Nothing was restored."** The chair already opened an athlete, so Undo can't put the panel back. Carry on from the chair's tablet.
+- **Judges ignore the nudge.** The message doesn't say what you want. Walk over, or call the chair.
+- **Every panel stalled at once.** It's probably the network or the laptop, not the panels. See [Troubleshooting](/help/troubleshooting/).
+
+## Related
+
+- [Replace a judge mid-meet](/scoring-table/replace-a-judge/)
+- [Pause and resume a flight](/scoring-table/pause-and-resume/)
+- [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/)
+- [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/)

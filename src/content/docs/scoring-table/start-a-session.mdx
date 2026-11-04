@@ -1,16 +1,55 @@
 ---
 title: "Start a session"
-description: "There's no start button: a session starts when the chair opens the first athlete."
+description: "There's no start button: a session starts when the chair opens the first athlete and the first score comes in."
 sidebar:
-  order: 4
+  order: 2
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Scoring table operator and chair · Scorsync Cloud and Scorsync Desktop
 
-**Who it's for:** Scoring table operator
+There's no **Start session** button anywhere. A session starts when the chair opens the first athlete, and Run shows it once the first score is in.
 
-## What this page will cover
+## Before you start
 
-There's no start button: a session starts when the chair opens the first athlete.
+- The meet is live. See [Go live](/host/before-meet-day/go-live/).
+- The chair and the judges are signed in. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/).
 
-Feature-map rows (SCO-2053): 74.
+## Steps
+
+<Steps>
+
+1. In Run, check that the floor says "The floor is idle". That's normal before the first score.
+
+   ![Run with "No session active" at the top, and "The floor is idle. No session in progress — it starts at the first score."](./images/start-a-session-floor-idle.png)
+
+2. Ask the chair to select **Open Flight** on their tablet, then **P1 Score** next to the first athlete.
+
+   ![The chair's flight view: the first athlete on the floor, an Open pass 1 button, and every judge "waiting" in the Panel list](./images/chair-open-pass.png)
+
+3. Check that the judges' tablets move to the scoring screen. Each one shows "You're being pulled into scoring" and moves by itself. A judge can select **Go Now** to skip the wait.
+
+   ![A judge's tablet: "You're being pulled into scoring", with the flight, the athlete, a countdown and a Go Now button](./images/start-a-session-judge-pulled-in.png)
+
+4. The judges score, and the chair selects **Confirm & next athlete**.
+
+5. Check Run. Once the first score is in, the top bar shows the session and the flight, and the floor shows one card per panel.
+
+   ![Run with Session 2 and "Flight 2 / 3" at the top, and a card for each panel showing the athlete up and the passes scored](./images/start-a-session-floor-running.png)
+
+</Steps>
+
+Every later session starts the same way: its chair opens its first athlete.
+
+## If something goes wrong
+
+- **Run still says "The floor is idle" after the chair opened the athlete.** That's expected until the first athlete's score is in. Watch the chair's tablet instead.
+- **A judge's tablet doesn't move to the scoring screen.** Ask the judge to select **Go Now**, or **Enter Score** on their dashboard. If their tablet says "Waiting for CJP", the chair hasn't opened an athlete on that panel yet.
+- **The chair has no Open Flight button.** The chair isn't signed in, or isn't seated on this panel. Check the seat in Judge assignments. See [Replace a judge mid-meet](/scoring-table/replace-a-judge/).
+- **The Go live button is greyed out.** A check on "Ready to go live?" still has a cross. Select **Fix** next to it. See [Go live](/host/before-meet-day/go-live/).
+
+## Related
+
+- [Pause and resume a flight](/scoring-table/pause-and-resume/)
+- [Free a stuck panel or nudge a station](/scoring-table/free-a-stuck-panel/)
+- [Getting started as the chair](/judges/chair/)
+- [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/)
