@@ -29,7 +29,6 @@ CI (`.github/workflows/ci.yml`) runs `nimbus-docs check`, `astro check` and the 
 | `templates/article.mdx` | The article template. Copy it to start a page. |
 | `netlify.toml` | Netlify build settings. |
 | `public/_headers` | Caching headers. |
-| `wrangler.jsonc` | Old Cloudflare deploy config, kept until the Cloudflare Worker is retired. |
 
 The house style is on the site itself, under **For writers**: [how we write](src/content/docs/style-guide/index.mdx), the [article template](src/content/docs/style-guide/article-template.mdx), [callouts](src/content/docs/style-guide/callouts.mdx) and [rulebook citations](src/content/docs/style-guide/rulebook-citations.mdx).
 
