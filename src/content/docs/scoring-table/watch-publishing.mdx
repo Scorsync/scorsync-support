@@ -1,16 +1,79 @@
 ---
-title: "Watch publishing on the Sync Rail"
-description: "Check that results are reaching scorsync.com."
+title: "Check scores are reaching scorsync.com"
+description: "Check from Run that scores are reaching scorsync.com, and what to do when they're held."
 sidebar:
-  order: 9
+  order: 8
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Host and scoring table operator · Scorsync Cloud and Scorsync Desktop
 
-**Who it's for:** Scoring table operator
+Scores not showing on scorsync.com? Check the Sync Rail chip in Run, during the meet or when families ask.
 
-## What this page will cover
+## Before you start
 
-Check that results are reaching scorsync.com.
+- You're signed in to Meet Control as the host or another admin of your organization: only they see the Sync Rail chip and its buttons. If you're signed in another way, ask the host to check it.
+- The meet is connected to scorsync.com and publishing is on. See [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/).
 
-Feature-map rows (SCO-2053): 123.
+## Check publishing
+
+<Steps>
+
+1. Open **Run**. Find the Sync Rail chip at the bottom right, in the **Results & Sync** strip.
+
+   ![The Results & Sync strip at the bottom of Run, with the chip "Online · live" next to Last backup and Back up now](./images/watch-publishing-chip.png)
+
+2. If it says **Online · live**, there's nothing to do. Each score goes to scorsync.com within a second or two of being in.
+
+3. To see more, select the chip.
+
+4. Check **Waiting on this device** (**Waiting to send** on Scorsync Cloud) and **Online is**. scorsync.com has everything when the waiting number is 0 and **Online is** says **Up to date**.
+
+   ![The sync sheet: "Online is live", This device, Venue internet Connected and Scorsync Online Accepting results, with 0 waiting and Online is Up to date, then Schedule, Activity and Needs you tabs](./images/watch-publishing-sheet.png)
+
+5. Select **Activity** to see what was sent recently, or **Needs you** for anything to sort out.
+
+   ![The Activity tab: "Online publishing turned on. Sent 6 clubs and 96 athletes, then the results scored so far."](./images/watch-publishing-activity.png)
+
+</Steps>
+
+On Scorsync Cloud, the sheet has no **Venue internet** step.
+
+## What the chip says
+
+| Chip | What to do |
+| -- | -- |
+| **Online · live** | Nothing. |
+| **Catching up**, then **All caught up** | Nothing. It clears by itself. |
+| **Offline · holding** (Scorsync Desktop) | Keep scoring. Results go out by themselves when the internet is back. To try straight away, select the chip, then **Try now**. |
+| **Online not answering** | Keep scoring. scorsync.com didn't answer, and Scorsync keeps trying. Select **Try now** if it lasts. |
+| **Online publishing off** | Select the chip, then **Turn on Online publishing**. |
+| **Not connected to Online** | The meet isn't connected yet. See [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/). |
+| **Reconnect needed** | Select the chip, then **Reconnect**, and sign in to scorsync.com again. |
+| **Sending stopped** | Keep scoring: judges' scores are safe. On Scorsync Desktop, between athletes, select **Restart Server** in the tray menu, once. Don't Quit. If it still says "Sending stopped", contact Scorsync support (support@scorsync.com). On Scorsync Cloud, contact support if it lasts. |
+| **Online refused results** | Contact Scorsync support (support@scorsync.com). |
+
+![The chip reading "Offline · holding 1": one result is waiting to send](./images/watch-publishing-offline-holding.png)
+
+Scorsync keeps every score either way: the chip is only about scorsync.com.
+
+## The buttons at the bottom of the sheet
+
+| Button | What it does |
+| -- | -- |
+| **Check against Online** | Compares scorsync.com with your meet and sends anything missing. |
+| **Pause publishing** | Stops sending. Scores are kept, and **Turn on Online publishing** sends what was missed. |
+| **Disconnect…** | Cuts the link to scorsync.com. You'd have to connect again to publish. Don't use it during the meet. |
+
+## If something goes wrong
+
+- **A score is on the floor, but not on scorsync.com.** A score goes out only once every judge has submitted, or the chair moves on. Check the chair isn't waiting for a judge. See [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/).
+- **The chip says "Online · live", but you know the internet is down.** The chip only notices once a score is waiting. It changes after the next score.
+- **"The venue internet is down", but the internet works.** scorsync.com may be the one not answering. Select **Try now**. If it lasts more than a few minutes, contact Scorsync support.
+- **Families ask about their own account or subscription.** Send them to [help.scorsync.com](https://help.scorsync.com).
+
+## Related
+
+- [Mark divisions official](/scoring-table/mark-divisions-official/)
+- [What families see on scorsync.com](/start-here/what-families-see/)
+- [Score with no internet](/offline-host/score-without-internet/)
+- [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/)

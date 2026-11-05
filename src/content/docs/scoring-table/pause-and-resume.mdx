@@ -1,16 +1,86 @@
 ---
 title: "Pause and resume a flight"
-description: "Pause a flight and pick it up again."
+description: "Stop judges submitting scores for a flight, then open scoring again, from Run or from the chair's tablet."
 sidebar:
   order: 5
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Scoring table operator, host and chair · Scorsync Cloud and Scorsync Desktop
 
-**Who it's for:** Scoring table operator
+Pause a flight when the floor has to stop, for example for an injury or a broken trampoline.
 
-## What this page will cover
+## Before you start
 
-Pause a flight and pick it up again.
+- The meet is live, or you're rehearsing. Pause doesn't work before that.
+- You're signed in to Meet Control as the host or a scoring table operator. Or you're the chair, on your own tablet.
 
-Feature-map rows (SCO-2053): 75.
+:::caution[Pause stops the whole flight]
+A flight can run on several panels at once, such as Trampoline A, Trampoline B, Tumbling and Double Mini. Pausing it from one panel pauses every panel in that flight.
+:::
+
+## Pause from Run
+
+<Steps>
+
+1. In Run, select the panel's card. The panel drawer opens on the right.
+
+   ![The Trampoline A drawer: the athlete up, Panel locked with Release panel, then Pause flight and Nudge station](./images/pause-and-resume-drawer.png)
+
+2. Select **Pause flight**. Nothing asks you to confirm.
+
+3. Check that the drawer now says "paused" at the top, and the button reads **Resume flight**.
+
+   ![The Trampoline A drawer with a "paused" label and a Resume flight button](./images/pause-and-resume-drawer-paused.png)
+
+4. Check the floor. Every card in that flight says "paused".
+
+   ![Run's floor with four panel cards, each marked "paused"](./images/pause-and-resume-floor-paused.png)
+
+</Steps>
+
+Within about 30 seconds, judges' tablets show "Scoring paused. Your entry stays on this device." Judges can still enter marks, but **Submit Score** is greyed out and sends nothing until you resume. Nothing they typed is lost.
+
+![A judge's scoring screen with a "Scoring paused. Your entry stays on this device." banner at the top](./images/pause-and-resume-judge-paused.png)
+
+## Resume from Run
+
+<Steps>
+
+1. In Run, select one of the paused cards.
+
+2. Select **Resume flight**.
+
+3. Check that the cards say "running" again. Judges can select **Submit Score** straight away.
+
+</Steps>
+
+## Pause or resume from the chair's tablet
+
+<Steps>
+
+1. On the chair's tablet, select **Open Flight**.
+
+2. Select **Pause** at the top, next to the flight's name.
+
+3. Check that the screen says "Flight paused — judge scoring is blocked." and the button now reads **Resume**.
+
+   ![The chair's flight view: Flight C, Paused, a Resume button, and "Flight paused — judge scoring is blocked."](./images/pause-and-resume-chair-paused.png)
+
+4. To carry on, select **Resume**. The screen says "Flight resumed — scoring is open."
+
+</Steps>
+
+## If something goes wrong
+
+- **"Flight controls are only available while the meet is running or rehearsing."** The meet isn't live yet. See [Go live](/host/before-meet-day/go-live/).
+- **"Flight could not be paused (already paused or completed)."** Someone else already paused it, or every athlete in the flight has been scored. Close the drawer and open it again to see the current state.
+- **There's no Pause flight button in the drawer.** No flight is running on that panel, or your account can't control flights. A meet referee can't pause. Ask the host.
+- **The chair has no Pause button.** The flight is finished or official.
+- **A judge's tablet still says "Scoring paused" after you resumed.** Ask them to select **Submit Score**: it goes through. The banner clears by itself within about 30 seconds.
+
+## Related
+
+- [Free a stuck panel or nudge a station](/scoring-table/free-a-stuck-panel/)
+- [Replace a judge mid-meet](/scoring-table/replace-a-judge/)
+- [Start a session](/scoring-table/start-a-session/)
+- [Getting started at the scoring table](/scoring-table/)

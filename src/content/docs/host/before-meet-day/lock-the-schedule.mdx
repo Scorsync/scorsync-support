@@ -1,16 +1,81 @@
 ---
 title: "Lock the schedule"
-description: "Lock the schedule, and what locking publishes to scorsync.com."
+description: "Lock the schedule once it's final, know what locking sends to scorsync.com, and unlock it if you must."
 sidebar:
-  order: 2
+  order: 3
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Host (meet director) · Scorsync Cloud and Scorsync Desktop
 
-**Who it's for:** Host (meet director)
+Lock the schedule once sessions, flights and run orders are final, and before you print start lists.
 
-## What this page will cover
+## Before you start
 
-Lock the schedule, and what locking publishes to scorsync.com.
+- Every athlete is placed in a flight in Meet Builder.
+- If the meet will publish to scorsync.com, decide whether the schedule is ready for families to see. See [What families see on scorsync.com](/start-here/what-families-see/).
 
-Feature-map rows (SCO-2053): 49, 124.
+## Lock it
+
+<Steps>
+
+1. Select **Manage** at the top to open Meet Builder.
+
+2. Select **Lock** at the top right. (If a yellow banner says "A judge has connected while the schedule is unlocked", its **Lock Schedule** button does the same.)
+
+   ![Meet Builder's top bar with the Lock button, and a banner: "A judge has connected while the schedule is unlocked", with Lock Schedule](./images/lock-the-schedule-lock-button.png)
+
+3. In **Lock Schedule?**, select **Confirm Lock**. Anything listed under "Before go-live" still needs fixing before you go live, but it doesn't stop the lock.
+
+   ![Lock Schedule? with two go-live problems listed, "You can still lock now", and Cancel and Confirm Lock](./images/lock-the-schedule-confirm.png)
+
+4. Check that the button now reads **Locked**, and the board says "Schedule locked. Unlock to edit."
+
+   ![Meet Builder with the Locked button and "Schedule locked. Unlock to edit." above the board](./images/lock-the-schedule-locked.png)
+
+</Steps>
+
+## What locking changes
+
+| | Unlocked | Locked |
+| -- | -- | -- |
+| Move athletes, flights and sessions in Meet Builder | Yes | No |
+| Add an athlete | Yes | Yes. They wait unplaced until you unlock or accept a late-entry request. |
+| scorsync.com | Gets no schedule | Gets the schedule, if the meet is [publishing](/host/before-meet-day/connect-to-scorsync-com/) |
+
+Going live locks the schedule too, so a meet that's live is always locked.
+
+:::caution[What you can't take back]
+Once the locked schedule is on scorsync.com, unlocking doesn't remove it. Families keep seeing that version, and your changes only reach scorsync.com when you lock again.
+:::
+
+Locking a connected meet puts athletes' names, clubs and divisions on scorsync.com, and scores follow as they come in. Make sure your entry form says results are published online.
+
+## Unlock it
+
+Unlock only for a real change, such as [placing a late entry](/host/meet-day-changes/add-a-late-entry/).
+
+<Steps>
+
+1. In Meet Builder, select **Locked** (or **Unlock** above the board).
+
+2. Select **Confirm Unlock**.
+
+   ![Unlock Schedule? with Cancel and Confirm Unlock](./images/lock-the-schedule-unlock-confirm.png)
+
+3. Make your change.
+
+4. Select **Lock**, then **Confirm Lock**.
+
+</Steps>
+
+## If something goes wrong
+
+- **"The schedule is locked. Level, birth date, gender, flight and scratch go through Triage."** Don't unlock for these. After the lock, do them from Run instead: see [Scratch an athlete](/host/meet-day-changes/scratch-an-athlete/) and [Change an athlete's level or flight](/host/meet-day-changes/change-level-or-flight/).
+- **A change you made doesn't show on scorsync.com.** You made it while the schedule was unlocked. Lock it again.
+- **Undo is greyed out ("Schedule is locked").** Undo only works while the schedule is unlocked.
+
+## Related
+
+- [Print start lists and paper backup sheets](/host/before-meet-day/print-start-lists/)
+- [Add a late entry](/host/meet-day-changes/add-a-late-entry/)
+- [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/)

@@ -33,16 +33,28 @@ const defaults: Record<string, { label: string; icon: string }> = {
 };
 
 const d = defaults[type] ?? defaults.note;
+
+// "Needs Austin's review" notes are for writers and reviewers, not readers.
+// They render in `astro dev`, in Netlify deploy previews and branch deploys,
+// and in any build run with SHOW_REVIEW=1. The public production build drops
+// them, so readers never see an unsigned-off draft note.
+const showReview =
+  import.meta.env.DEV ||
+  process.env.SHOW_REVIEW === "1" ||
+  ["deploy-preview", "branch-deploy"].includes(process.env.CONTEXT ?? "");
+const hidden = type === "review" && !showReview;
 const hasTitleSlot = Astro.slots.has("title");
 const displayTitle = title ?? d.label;
 ---
 
+{!hidden && (
 <aside
   role="note"
   aria-label={hasTitleSlot ? undefined : displayTitle}
   data-slot="aside"
   data-type={type}
   class={cn("aside-card flex items-start gap-3 rounded-lg px-4 py-3 my-6", className)}
+  data-pagefind-ignore={type === "review" ? "" : undefined}
   {...attrs}
 >
   <span data-slot="aside-icon" class="aside-card-icon shrink-0 flex items-center h-6" aria-hidden="true">
@@ -57,6 +69,7 @@ const displayTitle = title ?? d.label;
     </div>
   </div>
 </aside>
+)}
 
 <style>
   .aside-card {

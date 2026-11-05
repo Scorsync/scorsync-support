@@ -1,16 +1,79 @@
 ---
 title: "Connect the judges' tablets"
-description: "Give judges the address or QR code that opens Scorsync on their tablets."
+description: "Find the judges' address on the laptop, and open Scorsync on each judge's tablet by address or QR code."
 sidebar:
-  order: 6
+  order: 60
+  label: "Connect judges' tablets"
 ---
 
-<Render file="placeholder" />
+**Who it's for:** Offline host · Scorsync Desktop
 
-**Who it's for:** Offline host (runs Scorsync Desktop)
+Do this before judges sign in, at home with one tablet and again at the venue.
 
-## What this page will cover
+## Before you start
 
-Give judges the address or QR code that opens Scorsync on their tablets.
+- Scorsync is open on the laptop.
+- The laptop and the tablets are on the scoring Wi-Fi. See [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/).
 
-Feature-map rows (SCO-2053): 11.
+## Which address to give judges
+
+| Address | Looks like | Use it for |
+| -- | -- | -- |
+| **Judges open** | `http://scorsync.local:8000` | Most tablets. Write this one on the judges' card. |
+| **Or** | `http://192.168.1.20:8000` | Tablets that can't open the first one, such as some Android tablets and older iPads. |
+| The QR code (Setup wizard) | A square code | Tablets with a camera that can open the first address. The QR code only holds the first address. |
+
+Yours will differ. Some laptops show no `:8000`.
+
+## Steps
+
+<Steps>
+
+1. On the laptop, click the Scorsync icon in the menu bar (on Windows, right-click it in the notification area).
+
+2. Check that the menu says **● Running**.
+
+3. Write both addresses on a card for the judges' table: the one after **Judges open** and the one after **Or**.
+
+   ![The Scorsync menu: Running, "Judges open" with the address, "Or" with a second address, then the rest of the menu](./images/tray-menu-running.png)
+
+4. On a judge's tablet, open the web browser and type the **Judges open** address, including any `:8000` at the end.
+
+5. Check that the tablet shows **Log in to Scorsync**. The tablet is connected. Now sign the judge in: see [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/).
+
+   ![A tablet showing "Log in to Scorsync" with Email address and Password or PIN boxes](./images/tablet-sign-in-page.png)
+
+</Steps>
+
+## Show the QR code instead
+
+<Steps>
+
+1. In the Scorsync window, select **Manage**, then **Setup** → **Advanced** → **Setup wizard**. It opens on **Connect judges' devices**.
+
+2. Turn the screen to the judges. Each judge scans the code under **Judges open** with their tablet's camera.
+
+   ![Connect judges' devices: the judges' QR code and address, and below it "Does not open? Use" with the second address](./images/setup-step-4-network-addresses.png)
+
+</Steps>
+
+:::tip
+Test each tablet before meet day. A tablet that can't open `scorsync.local` at home won't open it at the venue either: give that judge the second address.
+:::
+
+## If something goes wrong
+
+- **The tablet says it can't find the server, or the QR code opens nothing.** Check the tablet is on the scoring Wi-Fi, not the venue's, and try once more. If it still fails, type the second address, the one after **Or**.
+- **After you reopen Scorsync, the address ends in a different number**, such as `:8001` instead of `:8000`. Give judges the new address from the menu. Scores a judge saved on their tablet meanwhile wait under the old address: see [Keep the meet running](/offline-host/keep-the-meet-running/).
+
+  ![The Scorsync menu after reopening: the judges' address now ends in 8001 instead of 8000](./images/tray-menu-address-changed.png)
+
+- **The menu says "Network name is now scorsync-2.local — use Restart Server".** Another Scorsync laptop is on the same Wi-Fi, and `scorsync.local` may now open that one. Select **Quit Scorsync** on the other laptop (closing its window isn't enough), then select **Restart Server** on yours when no one is scoring.
+- **The second address changed.** The router gave the laptop a new address. Reserve one for it in the router. See [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/).
+
+## Related
+
+- [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/)
+- [Check your network before the meet](/offline-host/check-your-network/)
+- [Use the Scorsync tray menu](/offline-host/tray-menu/)
+- [Troubleshooting](/help/troubleshooting/)

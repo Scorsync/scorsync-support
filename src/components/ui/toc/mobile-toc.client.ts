@@ -96,19 +96,34 @@ function initMobileToc(root: HTMLElement): () => void {
       return;
     }
 
-    // Nothing in the band — clamp to the first or last heading based on where
-    // the boundary headings sit relative to the band; otherwise keep the
-    // current value (we're mid-section between two headings).
+    // Nothing in the band: the active heading is the last one above the
+    // band's top edge (or the page top if none is). Computing it from
+    // positions, rather than keeping the last value, stays right when a fast
+    // scroll carries a heading across the band between two observer frames.
     const bandTop = window.innerHeight * BAND_TOP;
-    const firstTop = headings[0].el.getBoundingClientRect().top;
-    const lastTop =
-      headings[headings.length - 1].el.getBoundingClientRect().top;
-    if (firstTop > bandTop) {
-      setActive("_top");
-    } else if (lastTop < bandTop) {
-      setActive(headings[headings.length - 1].slug);
+    let current = -1;
+    for (let i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top < bandTop) current = i;
+      else break;
     }
+    setActive(current === -1 ? "_top" : headings[current].slug);
   }
+
+  // The observer only fires when a heading enters or leaves the band, so a
+  // heading that jumps over it in one frame is missed. A throttled scroll
+  // check catches those.
+  let scrollFrame = 0;
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (scrollFrame) return;
+      scrollFrame = requestAnimationFrame(() => {
+        scrollFrame = 0;
+        resolve();
+      });
+    },
+    { passive: true, signal: controller.signal },
+  );
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -130,6 +145,7 @@ function initMobileToc(root: HTMLElement): () => void {
     controller.abort();
     observer.disconnect();
     clearTimeout(suppressTimer);
+    if (scrollFrame) cancelAnimationFrame(scrollFrame);
   };
 }
 

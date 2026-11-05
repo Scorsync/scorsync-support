@@ -1,0 +1,70 @@
+---
+title: "Install a newer version"
+description: "Install a newer version of Scorsync Desktop over the old one, without losing your meet."
+sidebar:
+  order: 110
+  label: "Install a newer version"
+---
+
+**Who it's for:** Offline host · Scorsync Desktop
+
+Scorsync doesn't update itself. Use this page when a newer version is out: install it before meet day, never during the meet.
+
+If Scorsync shows "Update to Scorsync 0.3.0 by March 1, 2027", install the newer version before that date. Meets already live keep running either way.
+
+## Before you start
+
+- You have internet, for the download.
+- No meet is being scored. Installing stops Scorsync for every judge.
+- If a meet just ended and publishes to scorsync.com, Results & Sync shows nothing waiting to send.
+
+## Steps
+
+<Steps>
+
+1. In Scorsync, select **Manage**, then **Setup** → **License**.
+
+2. Find the line such as "Scorsync 0.2.0 is available. You have 0.1.0.", and select the **Download** button next to it, for example **Download 0.2.0**. If there's no such button, download the new version as on [Install on a Mac](/offline-host/install-on-mac/) or [Install on Windows](/offline-host/install-on-windows/).
+
+3. Click the Scorsync icon in the menu bar (on Windows, right-click it in the notification area) and select **Back Up Now**.
+
+4. Wait for "Backed up.", then select **OK**.
+
+5. **On a Mac:** select **Quit Scorsync** in the same menu.
+
+6. **On a Mac:** open the new `.dmg` file, drag Scorsync onto **Applications**, and select **Replace**.
+
+7. **On Windows:** open the new **Scorsync-Setup** file and select **Yes** when Windows asks. If the installer says Scorsync is running, select **OK** to let it close Scorsync.
+
+8. Open Scorsync. The first start of a new version updates the meet's database, so the window says "Updating the database". On Windows this can take a few minutes.
+
+9. If the window shows "Welcome to the meet", select **Admin panel** at the bottom and sign in.
+
+10. Check that the menu says **● Running**, the address after **Judges open** is the same as before, and your meet is still there. You're on the new version.
+
+</Steps>
+
+Replacing the app keeps your meet: it's stored apart from the app. Don't uninstall Scorsync first, and don't delete anything.
+
+:::caution[Never update during a meet]
+Quitting or installing stops scoring for every judge, and a new version changes the meet's database. Update between meets, never on meet day.
+:::
+
+:::review[Needs Austin's review: installing over an existing install]
+Pending a check on Mac and Windows: installing over an existing install and keeping the meet (steps 5–10, and "Replacing the app keeps your meet"). They come from the code.
+:::
+
+## If something goes wrong
+
+- **The Mac says Scorsync is in use, or won't replace it.** Select **Quit Scorsync** in the Scorsync menu, then drag it onto **Applications** again.
+- **"Scorsync could not start" with "The database could not be updated."** Don't run setup again, and don't delete anything. Contact support (support@scorsync.com).
+- **"The meet database is missing", or Scorsync shows Set up the database again.** Stop there and contact support. Your meet and its backups are still on the laptop.
+- **"This app is version … Scorsync … or newer is needed to go live with a new meet."** Your version is too old to go live with a new meet. Install the newer version with the steps above.
+- **The judges' address changed** (for example `:8001` instead of `:8000`). Give judges the new address from the menu. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/).
+
+## Related
+
+- [Meet-day runbook: Scorsync Desktop](/runbook/scorsync-desktop/)
+- [Back up your meet](/offline-host/backups/)
+- [Install Scorsync Desktop on a Mac](/offline-host/install-on-mac/)
+- [Install Scorsync Desktop on Windows](/offline-host/install-on-windows/)
