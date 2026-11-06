@@ -21,7 +21,7 @@ Do this once per laptop, at least a week before your meet, while you have intern
 
 1. On the Mac, go to `app.scorsync.com/downloads`.
 
-2. On the **Mac** card, choose **Apple silicon** or **Intel** to match your Mac, then select **Download for Mac** (or **Download for Intel Mac**). If there's no Intel choice and your Mac has an Intel chip, contact support.
+2. On the **Mac** card, choose **Apple silicon** or **Intel** to match your Mac, then select **Download for Mac** (or **Download for Intel Mac**). The card may start on **Apple silicon**: on an Intel Mac, choose **Intel**.
 
 3. Open your Downloads folder and double-click the Scorsync file that ends in `.dmg`.
 
@@ -45,8 +45,8 @@ Do this once per laptop, at least a week before your meet, while you have intern
 
 Next, work through the six setup steps. See [First-run setup](/offline-host/first-run-setup/).
 
-:::review[Needs Austin's review: not checked on a Mac yet]
-Pending a check on a real Mac: a fresh install from the downloads page (steps 1–7), and the macOS local-network and firewall prompts (steps 6–7 and the first two fixes below).
+:::review[Needs Austin's review: two macOS prompts]
+Pending a check: the firewall prompt (the test Mac had its firewall off) and the local-network prompt on macOS 15 or later (the test Mac had macOS 13). See step 7 and the second fix below.
 :::
 
 ## If something goes wrong
@@ -56,6 +56,7 @@ Pending a check on a real Mac: a fresh install from the downloads page (steps 1�
 - **"Scorsync could not start" with "Ports 80 and 8000–8009 are all in use."** Another program on the Mac is acting as a web server. Quit it, then open Scorsync again. If you don't know which program it is, contact support.
 - **"Scorsync processes from the last run are still running."** Restart the Mac, then open Scorsync again.
 - **The window doesn't appear.** Click the Scorsync icon in the menu bar and select **Open Scorsync**.
+- **The judges' address is `scorsync-3.local` or similar, not `scorsync.local`.** Another Scorsync computer on the same Wi-Fi already has that name. That's fine: give judges the address exactly as the menu shows it.
 
 ## Related
 
