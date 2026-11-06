@@ -38,10 +38,10 @@ Scorsync Desktop serves every judge from your laptop, so the meet runs only whil
 | Select **Restart Server** in the tray menu | Yes, after about 5 seconds |
 | Let the laptop sleep, or close its lid | No |
 | Run out of battery, or restart the laptop for an update | No |
-| **Quit Scorsync** in the tray menu, ⌘Q, Dock → Quit, or File → Exit on Windows | No |
+| **Quit Scorsync** in the tray menu, ⌘Q, Dock → Quit, or File → Exit on Windows, then **Quit** | No |
 
 :::danger[Don't Quit Scorsync during the meet]
-Quit stops scoring for every judge within a second, and nothing asks you to confirm. Close the window instead. To open it again, select **Open Scorsync** in the tray menu.
+Quit stops scoring for every judge. Scorsync asks "Quit Scorsync?" first: select **Cancel**. Close the window instead. To open it again, select **Open Scorsync** in the tray menu.
 :::
 
 :::review[Needs Austin's review: closing the window and the lid]
@@ -72,11 +72,12 @@ Scorsync doesn't open by itself when the laptop starts. If every judge drops at 
 
 ## If something goes wrong
 
-- **The address after Judges open has changed**, for example `:8001` instead of `:8000`. Another program took the old address.
-  1. Each judge opens the new address on their tablet. They stay signed in.
-  2. A score a judge saved on their tablet while Scorsync was closed doesn't send from the new address. The judge tells the chair the mark, and the chair enters it. See [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/).
-
-  ![The Scorsync menu after reopening: the judges' address now ends in 8001 instead of 8000](./images/tray-menu-address-changed.png)
+- **The tray menu says "Address changed to … — judges are still on …"**, and a yellow banner says the same across the top of the Scorsync window. Another program took the judges' address, so Scorsync started on a new one. Judges' tablets are still on the old one.
+  1. Quit the other program, if you know which one it is.
+  2. Between athletes, select **Restart Server** in the tray menu. If the old address is free, Scorsync goes back to it and the warning goes. Scores saved on tablets send by themselves.
+  3. If the warning is still there, move the judges instead. Each judge opens the new address, after **Judges open**, on their tablet. They stay signed in.
+  4. Once every judge is on the new address, select **Keep New Address (judges moved to …)** in the tray menu. The warning goes.
+  5. A score a judge saved on their tablet while Scorsync was closed doesn't send from the new address. The judge tells the chair the mark, and the chair enters it. See [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/).
 
 - **"Scorsync could not start" with "Ports 80 and 8000–8009 are all in use."** Quit the other programs you don't need, then select **Restart Server** in the tray menu. Opening Scorsync again won't retry. If it still fails, restart the laptop and open only Scorsync.
 - **"Scorsync processes from the last run are still running."** Restart the laptop, then open Scorsync again.

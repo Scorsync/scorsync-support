@@ -18,16 +18,17 @@ Find what you see on screen, do the fix, and open the linked page if you need th
 
 ## Tablets and sign-in
 
-- **A tablet can't open Scorsync, or "can't find the server"** (Scorsync Desktop). Check the tablet is on the scoring Wi-Fi, not the venue's. Then, on the host laptop, click the Scorsync icon in the menu bar (Windows: right-click it near the clock), and type the address next to **Or** into the tablet's browser. It's all numbers, like `http://192.168.1.20:8000`. The QR codes only hold the first address. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/).
+- **A tablet can't open Scorsync, or "can't find the server"** (Scorsync Desktop). Check the tablet is on the scoring Wi-Fi, not the venue's. Then, on the host laptop, click the Scorsync icon in the menu bar (Windows: right-click it near the clock), and type the address next to **Or** into the tablet's browser. It's all numbers, like `http://192.168.1.20:8000`. QR codes hold this address too. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/).
 - **A tablet can't open Scorsync** (Scorsync Cloud). Check the tablet is on the venue Wi-Fi and can open another website. Then type the address the scoring table gave you exactly, or sign in with a desk code. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#a-desk-code).
-- **The judges' address changed**, for example `:8001` instead of `:8000`. Give judges the new address from the Scorsync menu, and ask the chair to check that the athlete on the floor has every judge's score. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong).
-- **"Network name is now scorsync-2.local — use Restart Server".** Another Scorsync laptop is on the same Wi-Fi. Select **Quit Scorsync** on the other laptop, then **Restart Server** on yours when no one is scoring. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/#if-something-goes-wrong).
+- **"Address changed to … — judges are still on …"** in the Scorsync menu, and a yellow banner in the Scorsync window. Another program took the judges' address. Between athletes, select **Restart Server**. If the warning stays, move the judges to the new address, then select **Keep New Address**. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong).
+- **"Network name is now scorsync-2.local — use Restart Server".** Another Scorsync laptop is on the same Wi-Fi. Select **Quit Scorsync**, then **Quit**, on the other laptop. Then select **Restart Server** on yours when no one is scoring. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/#if-something-goes-wrong).
 - **"That code didn't work. Ask for a new one."** The desk code was mistyped, already used or more than 10 minutes old. Select **New code** and try again. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#if-something-goes-wrong).
 - **"That email and password or PIN do not match."** Check the email and PIN in **All credentials**, and type them again. If it still fails, use a desk code. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#if-something-goes-wrong).
 - **"QR code already used."** Each sign-in QR works once. Select **Sign-in QR** again for a fresh one.
 - **"Locked out of sign-in … after too many wrong PINs"** or **"Expired: issue a New PIN or show a Sign-in QR"** in All credentials (Scorsync Cloud). Check it's really the judge, then select **Unlock**, **New PIN** or **Sign-in QR**. See [Show or reset a judge's PIN](/scoring-table/show-or-reset-a-pin/).
 - **A host's PIN or desk code is refused, or "This account signs in with its own email and password."** Hosts sign in with their own password. See [the FAQ](/help/faq/#why-cant-i-sign-in-with-a-pin-as-a-host-on-scorsync-cloud).
-- **"QR code expired or invalid"** on a data-entry card. Sign in with the card's username and password instead. See [Key scores as a data-entry judge](/scoring-table/key-scores/).
+- **"QR code expired or invalid"** or **"QR code already used"** on a data-entry card. A card's QR code works once, until the date on the card. Sign in with the card's username and password instead. See [Key scores as a data-entry judge](/scoring-table/key-scores/).
+- **"This QR code was replaced when the PIN was reset."** The card is out of date: someone selected **New Password** for that account. Use the new card. See [Print judge sign-in sheets and data-entry cards](/host/before-meet-day/print-judge-sign-in-sheets/#if-something-goes-wrong).
 
 ## Scoring
 
@@ -35,15 +36,20 @@ Find what you see on screen, do the fix, and open the linked page if you need th
 - **A judge's tablet doesn't move to the scoring screen.** Ask the judge to select **Go Now** on the countdown, or **Enter Score** on their dashboard. If it says "Waiting for CJP", the chair hasn't opened an athlete yet. See [Start a session](/scoring-table/start-a-session/#if-something-goes-wrong).
 - **"My screen jumped to another athlete."** The chair opened the next athlete: tablets show "You're being pulled into scoring" and move by themselves. If the judge was changing a score, they tell the chair the right mark. See [Fix a score you submitted](/judges/fix-a-score/).
 - **A score didn't send, or "Score saved on this device".** The tablet lost the Wi-Fi. Keep scoring: the score sends by itself when the Wi-Fi is back. If the tablet shows **Unsent score**, select **Send**. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/).
-- **"Your saved score was not applied …"** The chair moved on, or changed the score, before it arrived. Show the chair your paper. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/#if-something-goes-wrong).
+- **"Your saved score … was not applied …"** The chair moved on, or changed the score, before it arrived. Show the chair your paper. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/#if-something-goes-wrong).
+- **"… It was not applied yet: the chair will accept or refuse it."** The judge's score arrived after the chair moved on. The chair selects **Accept** or **Refuse** under **Late offline scores**. See [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/#if-something-goes-wrong).
+- **A judge's card says "Disconnected" on the chair's screen.** That tablet lost the connection and may be holding a score. Ask the judge. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/).
 - **We can't move on: "Incomplete Submissions".** A judge hasn't submitted. The chair enters the mark from the judge's paper, waits for an offline tablet, or selects **Advance Anyway**. See [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/).
 - **A panel is stuck on an athlete, or has gone quiet.** Nudge it, or release it from Run. See [Free a stuck panel or nudge a station](/scoring-table/free-a-stuck-panel/).
 - **"Results are official. Ask the meet host to correct a score."** The flight is official, so every scoring button is greyed out. The chair selects **Reopen results**, fixes the score and confirms it official again. See [Reopen an official flight to fix a score](/judges/chair/reopen-official-flight/).
+- **"Level 8 maximum DD is 6.0. 6.0 will be stored."** (or another level and number). The difficulty total typed is above the level's maximum. Check it against the paper. If it's right, carry on: Scorsync stores the maximum. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#if-something-goes-wrong).
+- **"Not saved — check the slip"** in data entry. A pass is empty, a mark is missing, or a DD is above the maximum. Fix it, or select the save button again to store the scores as entered. See [Key scores as a data-entry judge](/scoring-table/key-scores/#if-something-goes-wrong).
 - **"Scores are out of range" when the chair moves on.** It's a warning for the chair only. See [Check an out-of-range flag](/judges/chair/out-of-range-flag/).
 
 ## Meet-day changes
 
 - **Meet Builder says "The schedule is locked. Level, birth date, gender, flight and scratch go through Triage."** Don't unlock. Make the change from Run instead. See [Scratch an athlete](/host/meet-day-changes/scratch-an-athlete/) and [Change an athlete's level or flight](/host/meet-day-changes/change-level-or-flight/).
+- **A flight isn't in the move list.** Official and finished flights aren't offered. See [Change an athlete's level or flight](/host/meet-day-changes/change-level-or-flight/#move-to-another-flight).
 - **"Undo expired. The change is still saved."** Undo lasts about 10 seconds. Change it back the same way, or use **Reinstate**. See [Scratch an athlete](/host/meet-day-changes/scratch-an-athlete/#if-something-goes-wrong).
 
 ## Scorsync Desktop laptop
@@ -51,6 +57,7 @@ Find what you see on screen, do the fix, and open the linked page if you need th
 - **There's no Scorsync icon in the menu bar or notification area.** Scorsync isn't open. Open it, and wait for **● Running**. See [Use the Scorsync tray menu](/offline-host/tray-menu/).
 - **"Scorsync could not start" with "Ports 80 and 8000–8009 are all in use."** Quit the other programs you don't need, then select **Restart Server** in the tray menu. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong).
 - **"Scorsync processes from the last run are still running."** Restart the laptop, then open Scorsync again.
+- **"Quit Scorsync?"** Select **Cancel** during the meet: Quit disconnects every judge's tablet. Close the window instead. See [Keep the meet running](/offline-host/keep-the-meet-running/).
 - **"Backups stopped — a lost database cannot be restored"** across the top of Run. Select **Back up now**. If the line comes back, contact Scorsync support. See [Back up your meet](/offline-host/backups/#if-something-goes-wrong).
 - **"Disk almost full — backups and scores may stop saving".** Delete or move large files you don't need, such as videos, then select **Back up now**.
 - **"The meet database is missing".** Stop. Don't run setup again, and don't delete anything. Contact Scorsync support (support@scorsync.com): your meet and its backups are still on the laptop.

@@ -122,18 +122,23 @@ There's no button to start a session. It starts when the chair opens the first a
 
 ### At Level 8
 
-At Level 8, some judges have nothing to score. Their tablets say so. The time of flight judge (TF on the chair's screen, ToF on the judge's tablet) sees "ToF doesn't count at Level 8. Skip this athlete." and doesn't need to do anything: ignore **Enter marks anyway**. In routine 1 the difficulty judge sees "DD not counted".
+At Level 8, the tablets tell judges what to score.
+
+- The time of flight judge (TF on the chair's screen, ToF on the judge's tablet) sees "ToF doesn't count at Level 8. Skip this athlete." They don't need to do anything: ignore **Enter marks anyway**.
+- In routine 1, the difficulty judge sees "First voluntary · DD not counted" and "Still enter the routine: repeats and requirements are checked." They enter the routine as usual.
 
 ![The Time of Flight judge's tablet: "ToF doesn't count at Level 8. Skip this athlete."](./images/judge-tof-skip-level-8.png)
 
-When the chair selects **Confirm & next athlete**, Scorsync asks about those judges every time ("Incomplete Submissions … DD, TF"). If only judges whose scores don't count are listed, the chair selects **Advance Anyway**.
-
-![Incomplete Submissions: DD and TF have not submitted, with Cancel and Advance Anyway. The running score says "not counted at Level 8"](./images/chair-advance-anyway.png)
+When the chair selects **Confirm & next athlete**, **Incomplete Submissions** lists only judges whose score counts. The time of flight judge is never listed at Level 8. In routine 1, the difficulty judge is listed until they submit: wait for them rather than select **Advance Anyway**.
 
 :::rule[What the rulebook says]
-At Levels 8 and above, no difficulty is awarded for the first voluntary routine. Time of flight is added only at Level 10 (and Open, before it was retired).
+At Levels 8 and above, no difficulty is awarded for the first voluntary routine, but the difficulty judge's penalties still come off its total, such as 2.0 for each repeated element. Time of flight is added only at Level 10 (and Open, before it was retired).
 
-**Source:** USA Gymnastics, *Development Program Code of Points: Trampoline* (2025–2029), Section 3, Rule 5.7, page 20; Section 4, Rules 9.1.1 and 9.1.2, page 27. Level 10 includes time of flight in 2026–27 (2026–27 Coaches T210, slides 41–43).
+**Source:** USA Gymnastics, *Development Program Code of Points: Trampoline* (2025–2029), Section 3, Rules 5.5 and 5.7, page 20; Section 4, Rules 9.1.1 and 9.1.2, page 27. Level 10 includes time of flight in 2026–27 (2026–27 Coaches T210, slides 41–43).
+:::
+
+:::review
+The sentence on the difficulty judge's penalties in routine 1 is new (SCO-2191). Not yet signed off.
 :::
 
 ## If something goes wrong
@@ -150,9 +155,9 @@ At Levels 8 and above, no difficulty is awarded for the first voluntary routine.
 
   ![Log in to Scorsync with "QR code already used. Ask for a fresh code, or sign in with your email and PIN."](./images/tablet-qr-already-used.png)
 
-- **The QR code opens nothing, or "can't find the server"** (Scorsync Desktop). Every QR code holds the `scorsync.local` address, which some tablets can't open. On that tablet, sign in with a desk code or email and PIN, and type the second address from the Scorsync menu (the one after **Or**).
+- **The QR code opens nothing, or "can't find the server"** (Scorsync Desktop). Check the tablet is on the scoring Wi-Fi. QR codes hold the laptop's number address (the one after **Or** in the Scorsync menu), so a code printed before the laptop's address changed no longer works. Show a fresh QR code, or sign in with a desk code.
 - **A tablet can't open Scorsync** (Scorsync Cloud). Check the tablet has internet: it can open another website. Then sign the judge in with a desk code.
-- **The difficulty judge typed a total that's too high.** At Level 8 routine 2, a typed difficulty total above the maximum is saved as the maximum (6.0) with no warning to the judge or the chair. If the chair sees exactly 6.0, ask the difficulty judge to check their total.
+- **"Level 8 maximum DD is 6.0. 6.0 will be stored."** The difficulty judge typed a total above the level's maximum. Their tablet says so as they type, and the button reads **Use 6.0**. Check the total against the paper. If it's right, select **Use 6.0**. The chair sees the same warning when they type a DD on the difficulty card.
 
 :::rule[What the rulebook says]
 At Level 8, the second routine has a maximum routine difficulty of 6.0 (and a minimum of 4.0).

@@ -21,7 +21,7 @@ Do this before judges sign in, at home with one tablet and again at the venue.
 | -- | -- | -- |
 | **Judges open** | `http://scorsync.local:8000` | Most tablets. Write this one on the judges' card. |
 | **Or** | `http://192.168.1.20:8000` | Tablets that can't open the first one, such as some Android tablets and older iPads. |
-| The QR code (Setup wizard) | A square code | Tablets with a camera that can open the first address. The QR code only holds the first address. |
+| The QR code (Setup wizard) | A square code | Tablets with a camera. The QR code holds the second address, the one made of numbers, so it works on tablets that can't open the first. |
 
 Yours will differ. Some laptops show no `:8000`.
 
@@ -58,18 +58,16 @@ Yours will differ. Some laptops show no `:8000`.
 </Steps>
 
 :::tip
-Test each tablet before meet day. A tablet that can't open `scorsync.local` at home won't open it at the venue either: give that judge the second address.
+Test each tablet before meet day. A tablet that can't open `scorsync.local` at home won't open it at the venue either: give that judge the second address, or the QR code.
 :::
 
 ## If something goes wrong
 
 - **The tablet says it can't find the server, or the QR code opens nothing.** Check the tablet is on the scoring Wi-Fi, not the venue's, and try once more. If it still fails, type the second address, the one after **Or**.
-- **After you reopen Scorsync, the address ends in a different number**, such as `:8001` instead of `:8000`. Give judges the new address from the menu. Scores a judge saved on their tablet meanwhile wait under the old address: see [Keep the meet running](/offline-host/keep-the-meet-running/).
+- **The menu says "Address changed to … — judges are still on …"**. Another program took the judges' address. Select **Restart Server** between athletes, or move the judges and select **Keep New Address**. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong).
 
-  ![The Scorsync menu after reopening: the judges' address now ends in 8001 instead of 8000](./images/tray-menu-address-changed.png)
-
-- **The menu says "Network name is now scorsync-2.local — use Restart Server".** Another Scorsync laptop is on the same Wi-Fi, and `scorsync.local` may now open that one. Select **Quit Scorsync** on the other laptop (closing its window isn't enough), then select **Restart Server** on yours when no one is scoring.
-- **The second address changed.** The router gave the laptop a new address. Reserve one for it in the router. See [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/).
+- **The menu says "Network name is now scorsync-2.local — use Restart Server".** Another Scorsync laptop is on the same Wi-Fi, and `scorsync.local` may now open that one. Select **Quit Scorsync**, then **Quit**, on the other laptop (closing its window isn't enough). Then select **Restart Server** on yours when no one is scoring.
+- **The second address changed.** The router gave the laptop a new address. Reserve one for it in the router. QR codes you printed earlier, such as data-entry cards, hold the old address: print them again. See [Set up Scorsync Desktop and the venue network](/offline-host/set-up-the-venue-network/).
 
 ## Related
 
