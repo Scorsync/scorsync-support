@@ -24,11 +24,11 @@ Do this once per laptop, at least a week before your meet, while you have intern
 
 2. Open your Downloads folder and double-click **Scorsync-Setup**, the file that ends in `.exe`.
 
-3. If Windows says it protected your PC, select **More info**, then **Run anyway**. Preview builds may not be signed yet.
+3. If Windows says it protected your PC, select **More info**, then **Run anyway**.
 
 4. When Windows asks whether to allow this app to make changes to your device, select **Yes**. The installer asks nothing else, and it opens the Windows firewall for judges' tablets by itself.
 
-5. Wait for Scorsync to open. If it doesn't open by itself, open **Scorsync** from the Start menu.
+5. Wait for the installer to finish. It takes about 3–4 minutes, then Scorsync opens by itself. If it doesn't, open **Scorsync** from the Start menu.
 
 6. Wait while the window shows a short checklist that ends with "Starting the server". The first start can take a few minutes, and the window says so. Leave it alone until it finishes.
 
@@ -42,8 +42,8 @@ On Windows, the Scorsync icon sits in the notification area, at the bottom right
 
 Next, work through the six setup steps. See [First-run setup](/offline-host/first-run-setup/).
 
-:::review[Needs Austin's review: not checked on Windows yet]
-Pending a check on Windows: nothing on this page has been tried on a Windows laptop yet, including a fresh install and the Windows firewall prompt. Every step comes from the code.
+:::review[Needs Austin's review: the Windows firewall]
+Pending a check on a laptop that has never had Scorsync: that the installer opens the Windows firewall by itself. The test laptop already allowed Scorsync from an earlier install.
 :::
 
 ## If something goes wrong
@@ -53,6 +53,7 @@ Pending a check on Windows: nothing on this page has been tried on a Windows lap
 - **"Scorsync could not start" with "Ports 80 and 8000–8009 are all in use."** Another program on the laptop is acting as a web server. Close it, then open Scorsync again. If you don't know which program it is, contact support.
 - **"Scorsync processes from the last run are still running."** Restart the laptop, then open Scorsync again.
 - **The judges' address ends in `:8000`.** That's normal when another program uses the usual web port. Give judges the address exactly as Scorsync shows it.
+- **The judges' address is `scorsync-3.local` or similar, not `scorsync.local`.** Another Scorsync computer on the same Wi-Fi already has that name. That's fine: give judges the address exactly as the menu shows it.
 - **Tablets can't open `scorsync.local`.** On Windows the name doesn't always work. Give judges the second address from the menu, the one after **Or**. See [Connect the judges' tablets](/offline-host/connect-judges-tablets/).
 
 ## Related

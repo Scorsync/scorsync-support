@@ -36,7 +36,7 @@ Scorsync Desktop serves every judge from your laptop, so the meet runs only whil
 | Close or minimise the Scorsync window | Yes. The tray icon keeps Scorsync running. |
 | Let the screen go dark or lock | Yes |
 | Select **Restart Server** in the tray menu | Yes, after about 5 seconds |
-| Let the laptop sleep, or close its lid | No |
+| Let the laptop sleep, or close its lid | Not reliably. The laptop wakes for a moment when a judge sends a score, but it can't be reached in between. Keep it awake. |
 | Run out of battery, or restart the laptop for an update | No |
 | **Quit Scorsync** in the tray menu, ⌘Q, Dock → Quit, or File → Exit on Windows, then **Quit** | No |
 
@@ -44,8 +44,8 @@ Scorsync Desktop serves every judge from your laptop, so the meet runs only whil
 Quit stops scoring for every judge. Scorsync asks "Quit Scorsync?" first: select **Cancel**. Close the window instead. To open it again, select **Open Scorsync** in the tray menu.
 :::
 
-:::review[Needs Austin's review: closing the window and the lid]
-Closing the window: confirmed on Windows; pending a check on Mac. Closing the laptop lid: pending a check on real hardware.
+:::review[Needs Austin's review: sleep and the lid]
+Checked on a Mac plugged into mains power. Pending a check on Windows, and on a Mac running on battery.
 :::
 
 ## Reopen Scorsync after a restart
@@ -60,9 +60,7 @@ Scorsync doesn't open by itself when the laptop starts. If every judge drops at 
 
 3. If there's no Scorsync icon, open Scorsync. Wait for "Starting the server…" to finish: about 10 seconds.
 
-4. If the window shows **Welcome to the meet**, select **Admin panel** at the bottom, and sign in again.
-
-   ![The Scorsync window after reopening: "Welcome to the meet", with Results and "Judges and staff: sign in", and Admin panel at the bottom](./images/keep-the-meet-running-window-after-reopen.png)
+4. If the window shows **Welcome to the meet**, select **Meet director and staff: sign in**, and sign in again.
 
 5. Open the tray menu, and check that the address after **Judges open** matches your card.
 
