@@ -43,13 +43,13 @@ Use this page when a panel scores on paper and you type its marks into Scorsync.
 
 1. Check the name and number at the top match the paper sheet.
 
-2. Select the **E1** box and type the mark without the dot: the last digit is tenths, so `8` `6` is 8.6.
+2. Select the **E1** box and type the mark without the dot: the last digit is tenths, so `8` `6` is 8.6. A number pad opens next to the box.
 
    ![The E1 box open with a number pad, showing 8.6](./images/key-scores-keypad.png)
 
 3. Press **Enter** to move to the next box, and type the next mark. Fill in every box the paper has a number for: **E1**, **E2**, **DD** and, if there is one, **ND**.
 
-4. For the second pass or routine, select its **E1** box yourself. Enter doesn't jump there from the first **DD**.
+4. After the last box of Pass 1, press **Enter** again. It moves to Pass 2's **E1**. Key Pass 2 the same way.
 
 5. Check **E Total** and **Total** against the paper.
 
@@ -57,19 +57,13 @@ Use this page when a panel scores on paper and you type its marks into Scorsync.
 
 6. Select **Save & Next**.
 
-7. Check for "Scores saved successfully". The next athlete opens.
+7. Check for "Scores saved successfully". The next athlete opens. If it says **Not saved — check the slip** instead, see [If something goes wrong](#if-something-goes-wrong).
 
    ![The next athlete, Nolan Abernathy, with the message "Scores saved successfully" at the top right](./images/key-scores-saved.png)
 
 </Steps>
 
 On the last athlete, the button reads **Save & Start Routine 2**, which takes you back to the first athlete. If you've keyed both passes for everyone, select **Save & Return** instead. When the whole flight is done, the button reads **Save & Complete**.
-
-:::caution[Check every athlete has both passes]
-If you press Enter after the first **DD** and keep typing, the digits go into that DD box, the second pass stays empty, and Scorsync still says "Scores saved successfully". After each save, check the start list: **Progress** should read 2/2, and the **Score** should match the paper. If not, select **Edit** on that athlete and fix it.
-
-![The start list after saving: Wesley Sorensen 2/2, but Nolan Abernathy only 1/2](./images/key-scores-pass-2-missing.png)
-:::
 
 ## Fix a score you keyed
 
@@ -89,13 +83,15 @@ Once results are official, you can't change them: the athlete shows "Official ·
 
 ## If something goes wrong
 
-- **"QR code expired or invalid."** The QR code on a card works only once, and only for 5 minutes after the card was made. Sign in with the username and password instead.
+- **"Not saved — check the slip".** Nothing was saved. The message names what to check, for example "Pass 2 is empty." or "Pass 1 has no E2.". Fix it against the paper, then save again. If the paper really is like that, select the same save button again: Scorsync stores the scores as entered and says "Scores saved as entered".
+- **"QR code expired or invalid"** or **"QR code already used".** The QR code on a card works once, until the date printed under it. Sign in with the username and password instead.
+- **"This QR code was replaced when the PIN was reset."** Someone gave the account a new password, so the old card stopped working. Use the new card, or ask the host to print one.
 - **There's no Open data entry button.** Your panel isn't set to Data Entry yet, or isn't assigned to you. Ask the host.
 - **"Offline. Nothing you tap is sent until the connection is back."** Nothing was saved, but your marks stay on the screen. When the connection is back, select **Save & Next** again.
 - **"The E2 field must not be greater than 10."** A mark was mistyped, often a stray tap on the open number pad. Select the box, select **C**, and type it again.
 - **"E scores span …, over the … tolerance."** Check the marks against the paper. It's a warning only: Scorsync saves what you typed.
 - **"Not saved — this athlete was changed on another screen".** Someone else saved this athlete. Check the scores now shown, then type your change again.
-- **After saving, the Score is lower than the Total you saw.** The DD you typed is above the level's maximum, and Scorsync saved the maximum, with no warning. Check the DD with the chair.
+- **"Level 9 maximum DD is 3.7. 3.7 will be stored."** under the DD box (or another level and number). The DD you typed is above the level's maximum. Check it against the paper. If it's right, save. Scorsync stops once with **Not saved — check the slip**: save again to store the maximum.
 
 :::rule[What the rulebook says]
 In Double Mini, if a routine's difficulty is above the level's maximum (3.7 at Level 9), the maximum is the difficulty that counts.

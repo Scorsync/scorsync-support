@@ -69,7 +69,7 @@ The For writers section (`/style-guide/`) is internal guidance and isn't listed.
 | `/help/faq/` | Frequently asked questions | Everyone | 7, 8, 14, 24, 27–29, 56, 70, 72, 99, 122, 124, 126 | 0 | partly | 1 |
 | `/help/tips/` | Things you might not know | Hosts, scoring table, chairs | 6, 52, 70, 78, 79, 102 | 5 | yes | 0 |
 
-**Totals:** 57 public pages, 194 screenshots, 7 open `:::review` callouts, all pending hardware checks (see the Linear document "Hardware checks for the support site"). Not checked in the app at all: 1 page (Windows install). Partly checked: 10 pages.
+**Totals:** 57 public pages, 194 screenshots, 8 open `:::review` callouts: hardware checks still pending, plus one new rules sentence on the Level 8 difficulty judge (see the Linear document "Hardware checks for the support site"). Not checked in the app at all: 1 page (Windows install). Partly checked: 10 pages.
 
 ## Not documented, and why
 

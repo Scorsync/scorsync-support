@@ -10,14 +10,14 @@ sidebar:
 Use this when you select **Confirm & next athlete** and Scorsync says **Incomplete Submissions**.
 
 :::caution[Advance Anyway can cost the athlete points]
-A missing D, HD or ToF seat gets no score when you select **Advance Anyway**. Use it only when that seat has nothing to score at this level, or the mark truly can't be found.
+A missing D, HD or ToF seat gets no score when you select **Advance Anyway**. Use it only when the mark truly can't be found.
 :::
 
 ## Steps
 
 <Steps>
 
-1. Select **Confirm & next athlete**. If a judge is missing, **Incomplete Submissions** lists their seat.
+1. Select **Confirm & next athlete**. If a judge whose score counts for this athlete is missing, **Incomplete Submissions** lists their seat. Seats with nothing to score at this level aren't listed.
 
    ![Incomplete Submissions: "The following judges have not submitted: E2. E2 will get the average of the other E marks (Rule 2.3.2)." with Cancel and Advance Anyway](./images/move-on-missing-judge-incomplete.png)
 
@@ -26,8 +26,8 @@ A missing D, HD or ToF seat gets no score when you select **Advance Anyway**. Us
    | If | Do this |
    | -- | -- |
    | The judge has the mark on paper | Select **Cancel**, then go to step 3. |
-   | The judge's tablet is offline but they submitted | Select **Cancel**. If the card doesn't say **Submitted** within a minute, enter the mark from the judge's paper (step 3). |
-   | Only seats that don't count at this level are listed (for example TF at Level 8) | Select **Advance Anyway**. See [At Level 8](/scoring-table/get-judges-signed-in/#at-level-8). |
+   | The judge's tablet is offline but they submitted (their card may say **Disconnected**) | Select **Cancel**. If the card doesn't say **Submitted** within a minute, enter the mark from the judge's paper (step 3). |
+   | The difficulty judge is listed in routine 1 at Level 8 | Select **Cancel**, and wait for them: they still enter routine 1. See [At Level 8](/scoring-table/get-judges-signed-in/#at-level-8). |
    | There's no mark at all, and none can be found | Select **Advance Anyway**. You're done. |
 
 3. On the missing judge's card, select **Enter**.
@@ -50,12 +50,13 @@ If an execution judge fails to show their mark when the chair signals, the remai
 
 ## If something goes wrong
 
-- **"Refused offline scores" appears above the scores.** A judge's held score arrived after you advanced or changed it. Scorsync kept your recorded score. Check the judge's paper, fix the mark with **Override** if needed, then select **Acknowledge**. See [Override a mark, apply penalties or score 0](/judges/chair/override-and-penalties/).
-
-  ![Refused offline scores, 1 pending: "E2 sent a score from an offline tablet, but this score changed while the tablet was offline. Not applied. The recorded score stands." with Acknowledge](./images/move-on-missing-judge-not-applied.png)
-
-- **The same seats are listed for every athlete.** At Level 8, some seats have nothing to score. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#at-level-8).
+- **"Late offline scores" appears above the scores.** A judge's score, held on an offline tablet, arrived after you moved on. Each row names the athlete, the seat and the score.
+  - "… after you moved on. Not applied yet: Accept to apply it, or Refuse to leave the score without it." Check the judge's paper. Select **Accept** to add the score, or **Refuse** to leave it out.
+  - "… Not applied. The recorded score stands." (or "Your override stands.") Scorsync kept your score. Check the judge's paper, fix the mark with **Override** if needed, then select **Acknowledge**. See [Override a mark, apply penalties or score 0](/judges/chair/override-and-penalties/).
+- **"This held score can no longer be applied. Refuse it, then enter the score."** Select **Refuse**. Then enter the mark from the judge's paper: see [Fix an athlete you've already moved past](/judges/chair/override-and-penalties/#fix-an-athlete-youve-already-moved-past).
+- **A judge's card says "Disconnected"**, with "Not heard from in …s · may be holding a score". Their tablet lost the connection and may hold a score. Ask the judge before you move on. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/).
 - **A judge says they submitted, but their card doesn't say Submitted.** Their tablet may be offline holding the score. Ask them to check for the red **OFFLINE** banner. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/).
+- **The difficulty judge is listed for every athlete in routine 1 at Level 8.** They're skipping the first routine. Ask them to enter it: repeats and requirements are still checked. See [At Level 8](/scoring-table/get-judges-signed-in/#at-level-8).
 
 ## Related
 

@@ -31,12 +31,13 @@ The tray menu is where you check that Scorsync is running and find the judges' a
 | **Open Backups Folder** | Opens the folder of backups on the laptop. | If Scorsync support asks. See [Back up your meet](/offline-host/backups/). |
 | **Restore from Backup…** | Replaces the meet with an older backup. | Only with Scorsync support helping you. |
 | **Second Backup Folder…** | Copies every backup to a USB drive as well. | Before the meet. See [Back up your meet](/offline-host/backups/#copy-every-backup-to-a-usb-drive). |
-| **Restart Server** | Stops Scorsync for about 5 seconds and starts it again. Tablets reconnect by themselves. | When the top line says "use Restart Server", or after you set a second backup folder. Between athletes, never mid-routine. |
+| **Restart Server** | Stops Scorsync for about 5 seconds and starts it again. Tablets reconnect by themselves. | When the top line says "use Restart Server" or "Address changed", or after you set a second backup folder. Between athletes, never mid-routine. |
+| **Keep New Address (judges moved to …)** | Only there after Scorsync started on a new address. Makes the new address the judges' address, and clears the warning. | After every judge has opened the new address. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong). |
 | **Show Logs** | Opens files for Scorsync support. | Only if support asks. |
-| **Quit Scorsync** | Stops scoring for every judge. | Only after the meet. |
+| **Quit Scorsync** | Asks "Quit Scorsync?", then stops scoring for every judge if you select **Quit**. | Only after the meet. |
 
 :::danger[Don't Quit Scorsync during the meet]
-**Quit Scorsync** stops scoring for every judge within a second, and nothing asks you to confirm. On a Mac, ⌘Q and Dock → Quit do the same. To get the window out of the way, close it instead. See [Keep the meet running](/offline-host/keep-the-meet-running/).
+**Quit Scorsync** stops scoring for every judge. Scorsync asks "Quit Scorsync?" first: select **Cancel**. On a Mac, ⌘Q and Dock → Quit do the same. To get the window out of the way, close it instead. See [Keep the meet running](/offline-host/keep-the-meet-running/).
 :::
 
 ## What the top line means
@@ -46,13 +47,14 @@ The tray menu is where you check that Scorsync is running and find the judges' a
 | **◌ Starting…** or **◌ Preparing the database…** | Wait a few seconds. |
 | **● Running** | Nothing. Scorsync is ready. |
 | **▲ … stopped (…); restarting…** | Wait. Scorsync restarts that part by itself, usually within seconds. If it's still there after a minute, contact Scorsync support. |
+| **▲ Address changed to … — judges are still on …** | Another program took the judges' address, so Scorsync started on a new one. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong). |
 | **▲ Network name is now … — use Restart Server** | Another computer on the network took Scorsync's name. Between athletes, select **Restart Server**, then give judges the new address after **Judges open**. |
 | **✕** anything | Contact Scorsync support (support@scorsync.com). |
 
 ## If something goes wrong
 
 - **There's no Scorsync icon.** Scorsync isn't open. Open it like any other app, and wait for **● Running**.
-- **The address after Judges open has changed**, for example `:8001` instead of `:8000`. Give judges the new address. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong).
+- **The top line says "Address changed to …"**, and the window shows a yellow banner. Select **Restart Server** between athletes, or move the judges and select **Keep New Address**. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong).
 - **"… is still running."**, for example "Back Up Now is still running." Back Up Now and Restart Server run one at a time. Wait a few seconds, then try again.
 
 ## Related

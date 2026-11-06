@@ -82,7 +82,7 @@ The score sheet has one score line per athlete. For a two-routine flight, print 
 </Steps>
 
 :::danger[Never Quit Scorsync during the meet]
-**Quit Scorsync** in the menu, and ⌘Q on a Mac, stop scoring for every judge within a second. Nothing asks you to confirm. If you need the screen for something else, close or minimise the Scorsync window instead.
+**Quit Scorsync** in the menu, and ⌘Q on a Mac, stop scoring for every judge. Scorsync asks "Quit Scorsync?" first: select **Cancel**. If you need the screen for something else, close or minimise the Scorsync window instead.
 :::
 
 Closing the window keeps scoring running: the Scorsync icon in the menu bar (the notification area on Windows) keeps it going.
@@ -111,7 +111,7 @@ Confirmed on Windows; pending a check on Mac.
 
 </Steps>
 
-At Level 8, the chair is asked to **Advance Anyway** for every athlete, because some judges have nothing to score. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#at-level-8).
+At Level 8, the time of flight judge has nothing to score, and the chair isn't asked about them. The difficulty judge still enters routine 1. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/#at-level-8).
 
 Before confirming, the chair waits until "Inquiry window closed" is ticked under "Before this flight is official". The app only reminds: **Confirm official** works before then. See [Confirm a flight official](/judges/chair/confirm-flight-official/).
 
@@ -123,7 +123,7 @@ The meet referee must be told about a possible inquiry within 5 minutes after th
 
 ## When something goes wrong
 
-**A judge's tablet loses the Wi-Fi.** The judge keeps scoring. Their tablet says "Score saved on this device", and the score sends by itself when the Wi-Fi comes back. Meanwhile the chair sees that judge as "Waiting", like a slow judge. See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/).
+**A judge's tablet loses the Wi-Fi.** The judge keeps scoring. Their tablet says "Score saved on this device", and the score sends by itself when the Wi-Fi comes back. Meanwhile the chair sees that judge's card say **Disconnected**, with "may be holding a score". See [Score when the Wi-Fi drops](/judges/score-when-wifi-drops/).
 
 ![A judge's tablet while offline: "Score saved on this device. It will submit automatically when you're back online."](./images/judge-offline-score-held.png)
 
@@ -143,11 +143,9 @@ The meet referee must be told about a possible inquiry within 5 minutes after th
 
 </Steps>
 
-**The address changed after you reopened Scorsync**, for example `:8001` instead of `:8000`. Each judge opens the new address (they stay signed in). A score a judge saved on their tablet while Scorsync was closed doesn't send from the new address: the judge tells the chair the mark, and the chair enters it. See [Move on when a judge hasn't submitted](/judges/chair/move-on-missing-judge/).
+**The menu says "Address changed to … — judges are still on …"**, and a yellow banner says the same in the Scorsync window. Another program took the judges' address. Quit that program if you know which one, then select **Restart Server** between athletes. If the warning stays, move the judges to the new address. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong).
 
-![The Scorsync menu after reopening: the judges' address now ends in 8001 instead of 8000](./images/tray-menu-address-changed.png)
-
-**A tablet can't open the judges' address.** Type the second address from your card, the one after **Or** (all numbers). The QR codes only hold the first address.
+**A tablet can't open the judges' address.** Type the second address from your card, the one after **Or** (all numbers). QR codes hold that address too.
 
 **The tablets can't score for more than a few minutes.** Switch to the paper score sheets you printed the day before, and contact support.
 
@@ -167,7 +165,7 @@ For anything else, see [Troubleshooting](/help/troubleshooting/), or contact sup
 
 4. If your meet publishes to scorsync.com, select the Sync Rail chip, and leave Scorsync open until **Waiting on this device** is 0. No internet at the venue? At home, open Scorsync on your home Wi-Fi and leave it open until the chip says **Online · live** and **Waiting on this device** is 0. See [Score with no internet](/offline-host/score-without-internet/).
 
-5. Close the Scorsync window. You don't need to Quit. If you want to, select **Quit Scorsync** only after Finalize shows every division Official and **Waiting on this device** is 0.
+5. Close the Scorsync window. You don't need to Quit. If you want to, select **Quit Scorsync**, then **Quit**, only after Finalize shows every division Official and **Waiting on this device** is 0.
 
 </Steps>
 
