@@ -49,9 +49,11 @@ Yours will differ. Some laptops show no `:8000`.
 
 <Steps>
 
-1. In the Scorsync window, select **Manage**, then **Setup** → **Advanced** → **Setup wizard**. It opens on **Connect judges' devices**.
+1. In the Scorsync window, select **Manage**, then **Meet setup** (the gear, ⚙, at the top left).
 
-2. Turn the screen to the judges. Each judge scans the code under **Judges open** with their tablet's camera.
+2. In the list on the left, select **Advanced** near the bottom to open it, then **Setup wizard**. It opens on **Connect devices**.
+
+3. Turn the screen to the judges. Each judge scans the QR code in the **Judges' tablets** card with their tablet's camera. Don't use the **TVs & displays** code: it opens the results, not the judges' sign-in.
 
    ![Connect judges' devices: the judges' QR code and address, and below it "Does not open? Use" with the second address](./images/setup-step-4-network-addresses.png)
 
@@ -63,7 +65,7 @@ Test each tablet before meet day. A tablet that can't open `scorsync.local` at h
 
 ## If something goes wrong
 
-- **The tablet says it can't find the server, or the QR code opens nothing.** Check the tablet is on the scoring Wi-Fi, not the venue's, and try once more. If it still fails, type the second address, the one after **Or**.
+- **The tablet says it can't find the server, or the QR code opens nothing.** Check the tablet is on the scoring Wi-Fi, not the venue's, and try once more. If it still fails, type the second address: the one after **Or** in the tray menu, or under **Not opening?** in the Setup wizard.
 - **The menu says "Address changed to … — judges are still on …"**. Another program took the judges' address. Select **Restart Server** between athletes, or move the judges and select **Keep New Address**. See [Keep the meet running](/offline-host/keep-the-meet-running/#if-something-goes-wrong).
 
 - **The menu says "Network name is now scorsync-2.local — use Restart Server".** Another Scorsync laptop is on the same Wi-Fi, and `scorsync.local` may now open that one. Select **Quit Scorsync**, then **Quit**, on the other laptop (closing its window isn't enough). Then select **Restart Server** on yours when no one is scoring.

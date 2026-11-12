@@ -1,6 +1,6 @@
 ---
 title: "Back up your meet"
-description: "Check the automatic backups, back up by hand, copy every backup to a USB drive, and get help to restore one."
+description: "Check the automatic backups, back up by hand, copy every backup to a USB drive, save a restore key, and get help to restore a backup."
 sidebar:
   order: 70
 ---
@@ -61,9 +61,35 @@ Do this before the meet, not between athletes: the last step restarts Scorsync f
 The USB copy starts only after **Restart Server**, and the tray menu never says it's on. Always do step 7.
 :::
 
+## Save a restore key
+
+A backup holds the meet, but not this laptop's own key. If the laptop dies and you restore a backup on another computer without that key, judge PINs, the link to your Scorsync account and publishing to scorsync.com must all be set up again. A restore key is a copy of the laptop's key, locked with a passphrase you choose. Save it once, before your first meet. If Scorsync is ever reinstalled, save a new one.
+
+<Steps>
+
+1. In the tray menu, select **Save Restore Key…**.
+
+2. Read the message, then select **Continue**.
+
+3. Type a passphrase of at least 10 characters under **Passphrase**, and again under **Type it again**. Then select **OK**.
+
+4. Write the passphrase down, and keep it apart from the key file. Without it the key can't be used, and nobody can recover it, Scorsync support included.
+
+5. Choose where to save the file: a USB drive that isn't your backup drive, or the laptop's Documents folder if you'll email the file to yourself straight after. Then select **Save**.
+
+6. Check that Scorsync says "Restore key saved.", then select **OK**.
+
+</Steps>
+
+:::caution
+Never keep the restore key with the backups: whoever has that drive would have both, with only the passphrase between them. Scorsync refuses the backups folder ("Choose another folder for the restore key."), and warns you if you pick the USB drive your second backups go to: select **Choose Again**.
+:::
+
 ## Restore a backup
 
 To restore a backup, contact Scorsync support (support@scorsync.com). Don't use **Restore from Backup…** on your own: everything scored after the backup is lost.
+
+If the backup comes from another computer, Scorsync says "This backup was made with a different app key." and offers **Use Restore Key…** or **Restore Without Key**. Have your restore key file and its passphrase ready. Without them, you reissue every judge's PIN, link this computer to your Scorsync account again, and reconnect each meet that publishes to scorsync.com.
 
 ## If something goes wrong
 
@@ -74,6 +100,8 @@ To restore a backup, contact Scorsync support (support@scorsync.com). Don't use 
 - **"Disk almost full — backups and scores may stop saving"**. The laptop has less than 500 MB free, so backups can't run. Delete or move large files you don't need, such as videos, then select **Back up now**.
 - **"Backed up", followed by "The backup could not be copied to the second disk".** The USB drive is unplugged or full. Plug it back in, or free some space on it, then select **Back up now**.
 - **"The backup did not finish."** after **Back Up Now** in the tray. Try **Back up now** in Run. If that fails too, contact Scorsync support.
+- **"This restore key does not match the backup".** The key comes from another computer, or from before Scorsync was reinstalled. Nothing was changed. Find the restore key saved on the computer the backup came from.
+- **"The restore key could not be opened".** The passphrase is wrong, or the file isn't a restore key. Nothing was changed: try again with the passphrase you wrote down.
 - **"Backup not started" or "Backup failed"** in Run. Read the message under it, for example "Not enough free disk space for a backup". If it isn't clear what to do, contact Scorsync support.
 
 ## Related
