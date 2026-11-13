@@ -12,15 +12,27 @@ Do this first, once your account works (Scorsync Cloud) or first-run setup is do
 ## Before you start
 
 - You're signed in as the host. On Scorsync Desktop, build the meet on the laptop itself, in the Scorsync window.
-- You have your entries: a CSV file, a ProScore (PTF) file, or your USAG sanction.
+- You have your USAG sanction number, or your entries as a CSV file or a ProScore or TScore file.
 
 ## Create the meet
 
 <Steps>
 
-1. Select **Create a meet**. If you don't see it, select the meet name at the top left, then **Choose a meet…**.
+1. Select **Create a meet**. If you don't see it, select the meet name at the top left, then **All meets**.
 
-2. Fill in the title, dates, timezone and venue, then select **Create Meet**. Meet Builder opens.
+   ![Choose a meet, with Create a meet at the top right and the Lakeshore Fall Classic 2026 meet below](./images/build-your-meet-create-a-meet.png)
+
+2. Under **USAG Sanction ID**, type your sanction number, then select **Continue**. No sanction? Leave it blank and select **Continue**.
+
+   ![Create New Meet: the USAG Sanction ID box and the Continue button](./images/build-your-meet-create-sanction.png)
+
+3. Check the title, dates, timezone and venue. If the sanction says "Sanction verified", Scorsync has filled them in from USAG. Otherwise, fill them in yourself.
+
+   ![Create New Meet filled in: Meet Title, Timezone, Start Date, End Date, Location and Venue, with Create Meet at the bottom](./images/build-your-meet-create-details.png)
+
+4. Select **Create Meet**. Meet Builder opens. With a verified sanction, the athletes registered for it are already in the list on the left.
+
+   ![Meet Builder for the new meet, with No athletes yet on the left and the message Meet Created Successfully](./images/build-your-meet-create-meet-builder.png)
 
 </Steps>
 
@@ -28,9 +40,11 @@ Fill in the dates now: without them, Scorsync can't work out age groups.
 
 ## Add your athletes
 
+If your athletes came in from USAG when you created the meet, skip to [Add sessions and fill the flights](#add-sessions-and-fill-the-flights). Otherwise, or to add more:
+
 <Steps>
 
-1. Above the list on the left, select **+ Add**, then **Add from CSV**. (The same menu has **Sync from USAG**, **Import from ProScore (PTF)** and **Add athlete**.)
+1. Above the list on the left, select **+ Add**, then **Add from CSV**. (The same menu has **Add athlete**, **Sync from USAG** and **Import from ProScore or TScore**.)
 
 2. Choose your file, check the preview of new athletes, then select **Apply Changes**.
 
@@ -42,7 +56,7 @@ Fill in the dates now: without them, Scorsync can't work out age groups.
 Bring everyone in before you arrange sessions: each import, and each **Add athlete**, clears Undo.
 :::
 
-On Scorsync Desktop, **Sync from USAG** needs the internet and a linked computer. If it asks, select **Link this computer**.
+On Scorsync Desktop, **Sync from USAG** needs the internet and a linked computer. If it asks, select **Link this computer**. If the meet says "Athletes not imported" after you create it, use **Sync from USAG** to try again.
 
 ## Add sessions and fill the flights
 
@@ -62,19 +76,45 @@ On Scorsync Desktop, **Sync from USAG** needs the internet and a linked computer
 
 <Steps>
 
-1. Select the gear (**Setup**), then **Judge assignments** under **Judging**.
+1. Select **Manage** at the top, then **Meet setup** (⚙) at the left of the row under the top bar.
 
-2. Select **Add judge**, and add each judge. To add several at once, select **Paste a list**: one judge per line, as "USAG ID, last name, first name".
+   ![Meet Builder with Manage selected at the top and the Meet setup button at the left of the row below](./images/build-your-meet-seat-meet-setup.png)
 
-3. On each panel, select **Fill the next** seats, then tap each judge in the **Judge pool** in seat order (CH first). Each tap seats the judge and moves to the next empty seat.
+2. In the list on the left, under **Judging**, select **Judge assignments**.
 
-4. Select the **Scoring** button at the top (for example **Scoring: 2 E**), check the settings, then select **Confirm method**.
+   ![The Meet setup list open on the left, with Judge assignments under Judging](./images/build-your-meet-seat-judge-assignments-item.png)
 
-   ![Judge Assignments: panels with seated judges, the Judge pool on the right, and the Scoring: 2 E popover open with Confirm method](./images/build-your-meet-judge-assignments.png)
+3. In **Judges** on the right, select **+** (**Add judge**), and add each judge. To add several at once, select **Paste a list**: one judge per line, as "USAG ID, last name, first name".
 
-5. Check that the bar says every seat is filled, for example "12 of 12 seats filled · All seated".
+   ![The Add judge window: a search box, Add several, Sync from USAG and Paste a list](./images/build-your-meet-seat-add-judge.png)
+
+4. If a card asks **Do judges have their own devices?**, select **Yes** if each judge scores on their own phone or tablet. If judges mark paper and someone types the scores, see [Print judge sign-in sheets and data-entry cards](/host/before-meet-day/print-judge-sign-in-sheets/#give-each-data-entry-account-its-panel).
+
+   ![The card Do judges have their own devices? above the panels, with Yes, No and Mix](./images/build-your-meet-seat-own-devices.png)
+
+5. Select a session's tab above the panels.
+
+   ![Judge Assignments with the Session 2 tab selected, 0/20 seats filled, and its empty panels below](./images/build-your-meet-seat-session-tab.png)
+
+6. Select **Fill the next** (for example **Fill the next 12**). The first empty seat opens.
+
+   ![Fill the next 20 at the right of the session tabs, with its tip: Opens the next empty seat](./images/build-your-meet-seat-fill-the-next.png)
+
+7. Select each judge in **Judges** in seat order (CH first). Each judge you pick takes the open seat, and the next empty seat opens. You can also drag a judge from **Judges** onto a seat.
+
+   ![Judge Assignments while seating Session 2: CH, E1 and E2 filled on the Trampoline A panel, the DD seat open, and Seating Trampoline A · DD above the Judges list](./images/build-your-meet-judge-assignments.png)
+
+8. Check that the session's tab shows a ✓. Repeat for each session.
+
+   ![The session tabs: Session 1 with a ✓, and Session 2 still at 12/20](./images/build-your-meet-seat-session-done.png)
 
 </Steps>
+
+Scorsync sets each panel's number of E judges for you, from the meet type and the levels on that panel. To change one panel, select the gear on that panel, then a number under **# Execution**. **Default** puts it back.
+
+:::review
+The default E-judge count follows the app's rulebook table (meet type × level, #2553), not a meet-wide setting. No `:::rule` citation yet: check the wording, and add one from the rulebook if the page should say where the numbers come from.
+:::
 
 A session's panel appears only once the session has athletes in that event.
 
@@ -82,6 +122,7 @@ A session's panel appears only once the session has athletes in that event.
 
 - **"Schedule locked. Unlock to edit."** The schedule is locked. See [Lock the schedule](/host/before-meet-day/lock-the-schedule/#unlock-it), or for meet-day changes, [Meet-day changes](/host/meet-day-changes/).
 - **A session shows "TRA: no panel" (or another event).** Its judges aren't seated yet. Seat them in **Judge assignments**.
+- **The sanction says "Sanction not found at USAG".** Check the number and type it again. If it still isn't found, select **Continue** and fill in the meet yourself.
 - **An athlete you added isn't in the list.** Check they have a level for the event. If they still don't show, contact Scorsync support (support@scorsync.com).
 
 ## Related

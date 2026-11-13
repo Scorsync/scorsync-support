@@ -21,9 +21,9 @@ Work down this page in order. Each step links to the full how-to when there is o
 
 1. If Scorsync told you a newer version is out, install it. See [Install a newer version](/offline-host/install-a-newer-version/).
 
-2. In **Manage** → **Setup** → **License**, check that this computer is linked. If it says "Go live works without it until" a date before your meet, link it now, while you have internet. If linking fails, email support@scorsync.com.
+2. In **Manage**, select **Meet setup** (the gear, ⚙, at the top left), then **License** in the list on the left. Check that this computer is linked. If it says "Go live works without it until" a date before your meet, link it now, while you have internet. If linking fails, email support@scorsync.com.
 
-3. Set up the USB copy of every backup. See [Back up your meet](/offline-host/backups/).
+3. Set up the USB copy of every backup. If you haven't yet, save a restore key too, on a different drive. See [Back up your meet](/offline-host/backups/).
 
 4. Run a rehearsal with a couple of tablets. See [Rehearse your meet](/host/before-meet-day/rehearse/).
 
@@ -37,15 +37,23 @@ Work down this page in order. Each step links to the full how-to when there is o
 
 1. Lock the schedule. See [Lock the schedule](/host/before-meet-day/lock-the-schedule/).
 
-2. Print a paper backup for each flight. Go to **Manage** → the gear (**Setup**) → **Structure** → **Sessions**, open the session, and select **Start list PDF** and **Score sheet PDF** on each flight's row.
+2. Print a paper backup for each flight. No button in Meet Builder leads to these PDFs yet, so you open the sessions page by its address. In the tray menu, select **Open in Browser**, and sign in with your admin email and password.
+
+3. In the browser's address bar, type the address after **Judges open** in the tray menu, followed by `/admin/sessions`. For example: `http://scorsync.local:8000/admin/sessions`. Press Enter.
+
+4. Select the session. On each flight's row, select **Start list PDF** and **Score sheet PDF**, and print both. Repeat for each session. See [Print start lists and paper backup sheets](/host/before-meet-day/print-start-lists/).
 
    ![A session page with three flights. Each row has Edit, Start list PDF and Score sheet PDF](./images/session-paper-backup-pdfs.png)
 
-3. If your meet will publish to scorsync.com, connect it now, while you have internet. See [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/).
+5. If your meet will publish to scorsync.com, connect it now, while you have internet. See [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/).
 
-4. Pack the laptop, its power cable, the travel router, a power strip and the UPS if you have one.
+6. Pack the laptop, its power cable, the travel router, a power strip and the UPS if you have one.
 
 </Steps>
+
+:::review[Needs Austin's review: paper sheets by address]
+Typing `/admin/sessions` is a stopgap. Since the Nov 11 change to Meet setup, nothing in the app links to the sessions page. Replace steps 2 to 4 once the app has its own print button.
+:::
 
 :::tip
 The score sheet has one score line per athlete. For a two-routine flight, print two copies: one per routine.
@@ -131,7 +139,7 @@ The meet referee must be told about a possible inquiry within 5 minutes after th
 
 2. Check the Scorsync icon says **● Running**. If there's no icon, open Scorsync again. It's ready in under 10 seconds. Judges stay signed in, and scores saved on their tablets send by themselves.
 
-3. If the Scorsync window shows **Welcome to the meet**, select **Meet director and staff: sign in**, and sign in again.
+3. If the Scorsync window shows **Welcome to the meet**, select **Meet director and staff: sign in**, then **Continue as** with your name. No password is needed in this window. If it says "Can't reach the server", wait: it loads by itself once Scorsync is running.
 
 4. Click the Scorsync icon, and check the address after **Judges open** is the same as on your card.
 
@@ -141,7 +149,7 @@ The meet referee must be told about a possible inquiry within 5 minutes after th
 
 **A tablet can't open the judges' address.** Type the second address from your card, the one after **Or** (all numbers). QR codes hold that address too.
 
-**The tablets can't score for more than a few minutes.** Switch to the paper score sheets you printed the day before, and contact support.
+**The tablets can't score for more than a few minutes.** Switch to the paper score sheets you printed the day before, and contact support. To carry the meet on in ProScore or TScore instead, select **File** → **Export to ProScore (.ptf)…** or **Export to TScore (.tsc)…** in the Scorsync window.
 
 For anything else, see [Troubleshooting](/help/troubleshooting/), or contact support.
 
