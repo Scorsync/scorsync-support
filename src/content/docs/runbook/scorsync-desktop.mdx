@@ -21,7 +21,7 @@ Work down this page in order. Each step links to the full how-to when there is o
 
 1. If Scorsync told you a newer version is out, install it. See [Install a newer version](/offline-host/install-a-newer-version/).
 
-2. In **Manage**, select **Meet setup** (the gear, ⚙, at the top left), then **License** in the list on the left. Check that this computer is linked. If it says "Go live works without it until" a date before your meet, link it now, while you have internet. If linking fails, email support@scorsync.com.
+2. In Scorsync, select your account icon at the top right, then **License and setup**. Check that the **Scorsync license** card says **Licensed**. If it says "Go live works without it until" a date before your meet, link it now, while you have internet. If linking fails, email support@scorsync.com.
 
 3. Set up the USB copy of every backup. If you haven't yet, save a restore key too, on a different drive. See [Back up your meet](/offline-host/backups/).
 
@@ -37,13 +37,11 @@ Work down this page in order. Each step links to the full how-to when there is o
 
 1. Lock the schedule. See [Lock the schedule](/host/before-meet-day/lock-the-schedule/).
 
-2. Print a paper backup for each flight. No button in Meet Builder leads to these PDFs yet, so you open the sessions page by its address. In the tray menu, select **Open in Browser**, and sign in with your admin email and password.
+2. Print a paper backup for each session. In Meet Builder, select **Reports ▾**, then **All printouts…**.
 
-3. In the browser's address bar, type the address after **Judges open** in the tray menu, followed by `/admin/sessions`. For example: `http://scorsync.local:8000/admin/sessions`. Press Enter.
+3. Under **By session**, select **Start lists** next to the session, and print the PDF. Then select **Score sheets**, and print that too. Each file holds every flight of the session.
 
-4. Select the session. On each flight's row, select **Start list PDF** and **Score sheet PDF**, and print both. Repeat for each session. See [Print start lists and paper backup sheets](/host/before-meet-day/print-start-lists/).
-
-   ![A session page with three flights. Each row has Edit, Start list PDF and Score sheet PDF](./images/session-paper-backup-pdfs.png)
+4. Repeat step 3 for each session. See [Print start lists and paper backup sheets](/host/before-meet-day/print-start-lists/).
 
 5. If your meet will publish to scorsync.com, connect it now, while you have internet. See [Connect your meet to scorsync.com](/host/before-meet-day/connect-to-scorsync-com/).
 
@@ -51,12 +49,8 @@ Work down this page in order. Each step links to the full how-to when there is o
 
 </Steps>
 
-:::review[Needs Austin's review: paper sheets by address]
-Typing `/admin/sessions` is a stopgap. Since the Nov 11 change to Meet setup, nothing in the app links to the sessions page. Replace steps 2 to 4 once the app has its own print button.
-:::
-
 :::tip
-The score sheet has one score line per athlete. For a two-routine flight, print two copies: one per routine.
+The score sheet has one row per routine an athlete owes, so a two-routine athlete gets two rows. Boxes a routine doesn't score print as a dash.
 :::
 
 ## Morning of
@@ -77,15 +71,15 @@ The score sheet has one score line per athlete. For a two-routine flight, print 
 
 6. Sign each judge in. See [Get judges signed in and scoring](/scoring-table/get-judges-signed-in/).
 
-7. Select **Run**, then **Ready to go live?** in the blue bar, then **Go live**.
+7. Select **Command Center**, then **Go live** at the top right. If it says **Go live · 2 to fix** (or another number), select it and fix what it lists first.
 
-8. Select **Yes, go live**.
+8. In "Go live? The schedule locks.", select **Yes, go live**.
 
-   ![Ready to go live? with every row ticked, and "Go live? The schedule locks." with Cancel and Yes, go live](./images/go-live-confirm.png)
+   ![Command Center with "Go live? The schedule locks." under the Go live button, with Cancel and Yes, go live](./images/go-live-confirm.png)
 
-9. Check that Run says "The floor is idle". That's expected: the session starts with the first score.
+9. Check that Command Center says "No session in progress — it starts at the first score." That's expected: the session starts with the first score.
 
-   ![Run after going live: "The floor is idle. No session in progress — it starts at the first score."](./images/run-floor-idle-after-go-live.png)
+   ![Command Center after going live: Live at the top left, and "No session in progress — it starts at the first score."](./images/run-floor-idle-after-go-live.png)
 
 </Steps>
 
@@ -103,9 +97,9 @@ Closing the window keeps scoring running: the Scorsync icon in the menu bar (the
 
    ![The chair's flight view with the first athlete on the floor and every judge "waiting"](./images/chair-flight-view-open-pass.png)
 
-2. Watch the session from **Run** on the laptop.
+2. Watch the session from **Command Center** on the laptop.
 
-3. To scratch an athlete, press ⌘K in Run, type their name, and choose them. Then select **Scratch Trampoline** (or the event) and **Scratch event**. **Undo** works for about 10 seconds. See [Scratch an athlete](/host/meet-day-changes/scratch-an-athlete/).
+3. To scratch an athlete, press ⌘K in Command Center, type their name, and choose them. Then select **Scratch Trampoline** (or the event) and **Scratch event**. **Undo** works for about 10 seconds. See [Scratch an athlete](/host/meet-day-changes/scratch-an-athlete/).
 
    ![Scratch Brooks Bellamy from Trampoline? with Cancel and Scratch event](./images/scratch-athlete-confirm.png)
 
@@ -157,17 +151,17 @@ For anything else, see [Troubleshooting](/help/troubleshooting/), or contact sup
 
 <Steps>
 
-1. In **Finalize**, check that every division is **Official**. See [Mark divisions official](/scoring-table/mark-divisions-official/).
+1. In Command Center, select **Finalize** at the bottom right, and check that every division is **Official**. See [Mark divisions official](/scoring-table/mark-divisions-official/).
 
-2. In Run, select **Back up now** (bottom right). Scorsync also backs up by itself every 5 minutes.
+2. In Command Center, select **Back up now** (bottom right). Scorsync also backs up by itself every 5 minutes.
 
-   ![Run with the Backed up message, and "Last backup 0 seconds ago" next to Back up now](./images/run-back-up-now.png)
+   ![Command Center with the Backed up message, and "Last backup 0 seconds ago" next to Back up now](./images/run-back-up-now.png)
 
 3. Open the USB drive and check that a file named `scorsync-` followed by today's date is there. Take the USB drive home separately from the laptop.
 
-4. If your meet publishes to scorsync.com, select the Sync Rail chip, and leave Scorsync open until **Waiting on this device** is 0. No internet at the venue? At home, open Scorsync on your home Wi-Fi and leave it open until the chip says **Online · live** and **Waiting on this device** is 0. See [Score with no internet](/offline-host/score-without-internet/).
+4. If your meet publishes to scorsync.com, select the Sync Rail chip, and leave Scorsync open until **Scores waiting on this device** is 0. No internet at the venue? At home, open Scorsync on your home Wi-Fi and leave it open until the chip says **Online · live** and **Scores waiting on this device** is 0. See [Score with no internet](/offline-host/score-without-internet/).
 
-5. Close the Scorsync window. You don't need to Quit. If you want to, select **Quit Scorsync**, then **Quit**, only after Finalize shows every division Official and **Waiting on this device** is 0.
+5. Close the Scorsync window. You don't need to Quit. If you want to, select **Quit Scorsync**, then **Quit**, only after Finalize shows every division Official and **Scores waiting on this device** is 0.
 
 </Steps>
 

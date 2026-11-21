@@ -1,48 +1,48 @@
 ---
 title: "Mark divisions official"
-description: "Confirm divisions official in Finalize, one at a time or all the ready ones at once, so they go to awards."
+description: "Sign off divisions as host in Finalize, one at a time or every waiting one at once, when the chair can't."
 sidebar:
   order: 9
 ---
 
-**Who it's for:** Host and scoring table operator · Scorsync Cloud and Scorsync Desktop
+**Who it's for:** Host · Scorsync Cloud and Scorsync Desktop
 
-Use this page when a division's scores are all in and the chair hasn't confirmed it official, for example a panel that scored on paper.
+Use this page when a division's scores are all in, but the chair hasn't signed it off, for example when the chair has left.
 
 ## Before you start
 
-- You're signed in to Meet Control as the host or another admin of your organization. Only they see **Finalize**.
+- You're a host of this meet, signed in with your own password. Only a host sees **Finalize**, and a PIN sign-in can't sign off.
 - Every score in the division is in, and no inquiry is open.
 - The inquiry time for the flight has passed (see the rule below).
 
-## Confirm one division
+## Sign off one division
 
 <Steps>
 
-1. In **Run**, select **Finalize** in the Results & Sync strip at the bottom.
+1. In the **Command Center**, select **Finalize** in the Results & Sync strip at the bottom.
 
-2. At the top, select **Ready**. Only divisions you can confirm now are shown.
+2. Find the division in its event's table. Its **Status** says **Waiting on chair**.
 
-   ![Finalize with the Ready filter on: Level 8 Girls and Level 8 Boys Trampoline, each marked Ready with a podium, 0/6 official, and View and Confirm official buttons](./images/mark-divisions-official-ready.png)
+   ![Finalize: the Trampoline table with Level 8 Girls and Level 8 Boys marked Waiting on chair, each with View and Sign off as host, and Sign off all (2) at the top](./images/mark-divisions-official-ready.png)
 
-3. Check the top three on the division's card. Select **View** to see every athlete.
+3. Select **View** to check the standings.
 
-4. Select **Confirm official** on the card.
+4. Select **Sign off as host** on the division's row.
 
-5. Select **Yes, confirm official**.
+5. Select **Yes, sign off**.
 
-   ![Confirm Level 8 Girls Trampoline official? Signs this division now. Public results change from Provisional to Final. With Cancel and Yes, confirm official](./images/mark-divisions-official-confirm.png)
+   ![Sign off Level 8 · Girls · Trampoline as host? Public results change from Provisional to Final. With Cancel and Yes, sign off](./images/mark-divisions-official-confirm.png)
 
-6. Check for "Marked official" and the division's name. It moves to **Official** and joins the **Awards queue** on the right.
+6. Check for "Marked official" and the division's name. Its status changes to **Official**, and the row shows **Go to awards**.
 
-   ![Finalize after confirming: Ready now 3, Official 5, and the message "Marked official, Level 8 Girls Trampoline, 6 results"](./images/mark-divisions-official-marked.png)
+   ![Finalize after signing off: Level 8 Girls Trampoline now Official with Go to awards, and the message "Marked official, Level 8 · Girls · Trampoline · 6 results"](./images/mark-divisions-official-marked.png)
 
 </Steps>
 
-To confirm every ready division at once, select **Confirm official (N)** at the top right, then **Yes, confirm all**. Blocked divisions are skipped. Check for "Officialization complete", with how many were marked and skipped.
+To sign off every waiting division of an event at once, select **Sign off all (N)** at the top of the event's table, then **Yes, sign off all**. Check for "Signed off", with how many were marked and skipped.
 
 :::caution[Check the inquiry time first]
-Finalize doesn't wait for the inquiry time. Only an open inquiry stops it. Confirm a division only once nobody can still ask for an inquiry on it.
+Finalize doesn't wait for the inquiry time. Only an open inquiry stops it. Sign off a division only once nobody can still ask for an inquiry on it.
 :::
 
 :::rule[What the rulebook says]
@@ -55,23 +55,29 @@ The meet referee must be told about a possible inquiry within 5 minutes after th
 
 | Status | What to do |
 | -- | -- |
-| **Blocked**, "Waiting on scores" | Wait for the last scores, or [key them](/scoring-table/key-scores/). |
-| **Blocked**, "Can't officialize — open inquiry with the referee" | The meet referee rules on the inquiry first. |
-| **Ready** | Confirm it official. |
-| **Finish officializing** | Part of the division is official already, for example one flight. Confirm the rest. |
-| **Official** | Nothing. It's on its way to awards. |
+| **Not started** | Nothing yet. |
+| **Scoring**, with "N routines left" | Wait for the last scores, or [key them](/scoring-table/key-scores/). |
+| **Waiting on chair** | The chair signs it off. If they can't, select **Sign off as host**. |
+| **Inquiry open** | Select **Go to inquiry**. The meet referee rules on it first. |
+| **Ready to confirm** | Rare: every routine is signed, but the division isn't on the awards desk. Select **Confirm official**, type a **Reason**, then select **Yes, confirm official**. |
+| **Official** | Nothing. Select **Go to awards** to present it. |
 
-If the meet publishes, scorsync.com shows the division's results as final. See [What families see on scorsync.com](/start-here/what-families-see/).
+Awards don't wait for Official: the awards desk follows the divisions whose scores are all in. If the meet publishes, scorsync.com shows an official division's results as final. See [What families see on scorsync.com](/start-here/what-families-see/).
+
+:::review
+Awards start from scored divisions, not official ones (SCO-2547). Sign-off by the host is for when the chair can't. Check both are pilot policy.
+:::
 
 ## If something goes wrong
 
-- **There's no Finalize button.** Only the host and other admins of the organization see it. Ask the host.
-- **"Scores changed since your confirm".** A score changed after you confirmed. Check the division, then select **Confirm official** again.
+- **There's no Finalize button.** Only a host of the organization sees it. Ask the host.
+- **"Only a host of this meet, signed in with their own password, can confirm results official."** You signed in with a PIN or a code. Sign out, then sign in with your email and password.
+- **"Scores changed since your confirm".** A score changed after you selected it. Check the division, then sign it off again.
 - **A score is wrong after the division is official.** There's no button to undo official. The chair reopens the flight and fixes it. See [Reopen an official flight to fix a score](/judges/chair/reopen-official-flight/).
 
 ## Related
 
-- [Check scores are reaching scorsync.com](/scoring-table/watch-publishing/)
 - [Confirm a flight official](/judges/chair/confirm-flight-official/)
-- [Key scores as a data-entry judge](/scoring-table/key-scores/)
+- [Run the table as the data-entry judge](/scoring-table/run-the-table/)
+- [Check scores are reaching scorsync.com](/scoring-table/watch-publishing/)
 - [Meet-day runbook: Scorsync Cloud](/runbook/scorsync-cloud/)

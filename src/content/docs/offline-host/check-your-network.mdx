@@ -20,19 +20,21 @@ Run this at home after setup, and again at the venue on the morning of the meet,
 
 <Steps>
 
-1. In the Scorsync window, select **Manage** at the top, then **Meet setup** (the gear, ⚙) at the top left.
+1. In the Scorsync window, select **Manage** at the top.
 
-   ![The top left of Meet Builder: Manage selected, and the Meet setup button at the start of the row below](./images/check-your-network-setup-button.png)
+2. Select the **Meet settings** tab, next to **Schedule** and **Athletes**.
 
-2. In the list on the left, select **Advanced** near the bottom to open it, then **Network diagnostics**.
+   ![The top left of Meet Builder: Manage selected, and the Meet settings tab in the row below](./images/check-your-network-setup-button.png)
 
-   ![The Meet setup list with Advanced open. Setup wizard and Network diagnostics are the last two items](./images/check-your-network-setup-drawer.png)
+3. In the list on the left, select **Advanced settings** near the bottom to open it, then **Network diagnostics**.
 
-3. Wait a few seconds while each row fills in. Each row ends in **Ready**, **Check** or **Not ready**.
+   ![The Meet settings list with Advanced settings open. Setup wizard and Network diagnostics come just before Reset meet… and Delete meet…](./images/check-your-network-setup-drawer.png)
 
-   ![Network diagnostics on the laptop: DNS resolution, Latency to server, WebSocket, Bandwidth, Internet uplink, mDNS name and Certificate. Latency and Certificate say Check; the rest say Ready](./images/network-diagnostics.png)
+4. Wait a few seconds while each row fills in. Each row ends in **Ready**, **Needs attention**, **Not ready** or **Info**.
 
-4. Check the rows against the table below. On the laptop itself, **Check** next to "Latency to server" and "Certificate" is normal: the laptop is measuring itself.
+   ![Network diagnostics on the laptop: the judges' address, response time, live updates, download speed, internet, the .local name and the encrypted connection, each marked Ready, Needs attention or Info](./images/network-diagnostics.png)
+
+5. Check the rows against the table below. On the laptop itself, **Info** next to "Response time", "Download speed" and "Encrypted connection to Scorsync" is normal: the laptop is measuring itself.
 
 </Steps>
 
@@ -42,19 +44,15 @@ The laptop can't measure the Wi-Fi. A tablet can.
 
 <Steps>
 
-1. On the tablet, open the judges' address from the Scorsync menu.
+1. On the laptop, keep **Network diagnostics** open, and find the **Test the Wi-Fi** card.
 
-2. Sign in with your own admin email and password.
+2. On the tablet, scan the card's QR code with the camera. Or type the address under it into the tablet's browser.
 
-3. Select **Manage**, then **Meet setup**: on a tablet it's only the gear button (⚙), at the top left.
+3. Sign in with your own admin email and password. The tablet opens Network diagnostics.
 
-   ![Meet Builder at tablet size: Manage selected at the top, and the Meet setup button, an icon with no name, at the left of the row below](./images/check-your-network-tablet-gear.png)
+4. Check that "Response time", "Live updates on this tablet" and "Download speed" say **Ready**.
 
-4. In the Meet setup list (on the left, or at the top on a narrow screen), select **Advanced** near the end to open it, then **Network diagnostics**.
-
-5. Check that "Latency to server", "WebSocket (live updates)" and "Bandwidth" say **Ready**.
-
-6. Before you hand the tablet to a judge, select your initials at the top of the screen, then **Sign out**.
+5. Before you hand the tablet to a judge, select **Sign out** on the page.
 
 </Steps>
 
@@ -62,21 +60,21 @@ The laptop can't measure the Wi-Fi. A tablet can.
 
 | Row | Needed for | If it isn't Ready |
 | -- | -- | -- |
-| DNS resolution | Publishing only | Check the router's internet. Scoring isn't affected. |
-| Latency to server | Scoring | "Judges' screens will lag." On a tablet: move the router closer to the judges, and keep spectators off the scoring Wi-Fi. |
-| WebSocket (live updates) | Live updates on every screen | When no one is scoring, select **Restart Server** in the Scorsync menu. If it still fails, contact support. |
-| Bandwidth | Scoring | Same fix as Latency. |
-| Internet uplink | Publishing to scorsync.com only | "Something else answered" means a Wi-Fi sign-in page: open a browser on the laptop and sign in to the network. Scoring isn't affected. |
-| mDNS name | The `scorsync.local` address | When no one is scoring, select **Restart Server**. Until it's Ready, judges type the second address from the menu, the one after **Or**. |
-| Certificate | Nothing | Always **Check** on Scorsync Desktop ("Running without encryption"). Keep the scoring Wi-Fi for the laptop and judges only. |
+| Address for judges' tablets | Scoring | "Does not answer on this address": allow Scorsync in the laptop's firewall, then quit and reopen Scorsync. "Something else answers on this address": another program uses the address. Quit it, then quit and reopen Scorsync. |
+| Response time | Scoring | On a tablet, "slow" means judges' screens may lag. Move the router closer to the judges, and keep spectators off the scoring Wi-Fi. |
+| Live updates | Live updates on every screen | When no one is scoring, select **Restart Server** in the Scorsync menu. Ready on the laptop but not on the tablet: the Wi-Fi blocks it. Use your own travel router. If it still fails, contact support. |
+| Download speed | Scoring | Same fix as Response time. A tablet needs 20 Mbps for **Ready**. |
+| Internet connection | Publishing to scorsync.com only | "Something else answered" means a Wi-Fi sign-in page: open a browser on the laptop and sign in to the network. Scoring isn't affected. |
+| Name for this computer (.local) | The `scorsync.local` address | When no one is scoring, select **Restart Server**. Until it's Ready, judges type the second address from the menu, the one after **Or**. |
+| Encrypted connection to Scorsync | Nothing | Always **Info** on Scorsync Desktop ("Off, as on most venue networks"). Keep the scoring Wi-Fi for the laptop and judges only. |
 
-Select **Re-run all tests** after each fix.
+Select **Check again** after each fix.
 
 ## If something goes wrong
 
-- **"Could not reach this server from this device."** The tablet isn't on the scoring Wi-Fi. Join it, then select **Re-run all tests**.
-- **"scorsync.local does not resolve."** Select **Restart Server** in the Scorsync menu when no one is scoring. Meanwhile, judges use the second address.
-- **You can't find Meet setup.** It's only in **Manage**, not in **Run**. If the window is narrow, Meet setup shows as a gear icon (⚙) with no name. During first-run setup, the **System check** step also has a **Network diagnostics** link.
+- **The tablet can't open the Test the Wi-Fi address.** The tablet isn't on the scoring Wi-Fi. Join it, then scan the code again. If it still fails, open **If a tablet cannot open this page** on the laptop's Network diagnostics.
+- **"scorsync.local is not answering".** Select **Restart Server** in the Scorsync menu when no one is scoring. Meanwhile, judges use the second address.
+- **You can't find Meet settings.** It's a tab in **Manage**, not in **Command Center**. During first-run setup, the **System check** step also has a **Network diagnostics** link, under **If tablets cannot connect or update slowly**.
 
 ## Related
 
