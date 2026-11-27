@@ -19,7 +19,8 @@ To see this in the app, select **Privacy** at the bottom of the agent panel.
 
 - IDs instead of names: for example, an athlete is `ath_12` and a club is `club_3`. The panel shows you the names. The AI never sees them.
 - Levels, age groups, events, sessions, flights and times.
-- Session names, flight labels and notes, as IDs too.
+- Session names and flight letters as you see them on the board. If a session name has an athlete's or club's name in it, only "Session" and its number are sent.
+- Notes and other labels you type are not sent.
 
 ## What it never gets
 
@@ -33,10 +34,10 @@ Before each request leaves Scorsync, Scorsync checks it for the meet's athlete n
 
 ## What you type
 
-Your messages go as you type them. When Scorsync recognizes one of your athletes' names, it replaces the name with an ID first.
+Your messages go as you type them. First, Scorsync replaces your athletes' and clubs' full names and USA Gymnastics numbers with IDs. A first or last name on its own is not caught.
 
 - Use **@** to pick an athlete. That is the safest way.
-- If you type a birth date, Scorsync stops the message: "Your message names someone the agent may not see. Use @ to pick them."
+- If you type the birth date of an athlete in the meet, Scorsync stops the message: "Your message names someone the agent may not see. Use @ to pick them."
 - Don't type contact or medical details. Scorsync can't recognize all of them.
 
 Club change requests: the agent gets the type of request and the athlete's ID. It never gets the coach's text.
@@ -53,7 +54,8 @@ Club change requests: the agent gets the type of request and the athlete's ID. I
 | Threads, file rows, proposals and the records of what was applied | 90 days after the meet's last day |
 | The same, for a meet with no dates | 1 year after the meet was created |
 | Files you attach | Never stored |
-| Meet Builder undo history | After the meet's last day |
+| Meet Builder undo history | After the meet's last day (for a meet with no dates: when the meet is deleted) |
+| A cost record of each AI request (meet, model, tokens, cost) | Kept, with no link to the thread or the person |
 
 Changes you applied stay part of the meet.
 
