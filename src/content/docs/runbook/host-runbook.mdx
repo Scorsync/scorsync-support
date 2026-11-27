@@ -1,0 +1,278 @@
+---
+title: "Host runbook: panels, awards and printouts"
+description: "Set up a panel with 2 judges, award split divisions, merge genders, rehearse, sync from USAG, print club schedules, and keep panels free on meet day."
+sidebar:
+  order: 3
+  label: "Host runbook"
+---
+
+**Who it's for:** Host (meet director) · Scorsync Cloud and Scorsync Desktop
+
+Use this page with the [meet-day runbook](/runbook/scorsync-cloud/). Each section is one task. Do the tasks in this order.
+
+## Two buttons have new names
+
+| Old name | New name |
+| -- | -- |
+| **Lock schedule** | **Publish schedule** |
+| **Go live** | **Start meet** |
+
+The other help pages still use the old names. The buttons do the same thing as before.
+
+## Sync athletes and judges from USAG
+
+**Sync from USAG** reads your sanction. You see every change before you apply it.
+
+<Steps>
+
+1. In Meet Builder, select **Sync from USAG**.
+
+2. Read the preview. It counts the changes, for example "1 new athlete · 3 new judges".
+
+3. To see the judges, open **New judges**.
+
+4. Select the **Apply** button. It counts the changes, for example "Apply 4 changes".
+
+</Steps>
+
+| Sync adds | Sync removes | Sync does not change |
+| -- | -- | -- |
+| New athletes on the sanction | Athletes who are no longer registered | Judges already on your list, from USAG or added by hand |
+| New judges on the sanction | No judges | Judge seats and PINs |
+
+Sync sends no email.
+
+- A judge who needs a review (scratched by USAG, or no member ID) is not added. Select the link "… needs a review in Judge Assignments".
+- "Judges could not be read from USAG." The athletes still sync. Sync again later, or select **Sync judges from USAG** in Judge Assignments.
+
+### Remove a judge you added by mistake
+
+<Steps>
+
+1. In Judge Assignments, select the judge in the list.
+
+2. Select **Remove from meet**.
+
+3. Select **OK** on "Remove … from this meet? Their account and PIN stay."
+
+</Steps>
+
+You can't remove a judge who has a seat, scores, floor duties or the Meet referee box in this meet. The reason shows next to the button.
+
+## Set up a panel with 2 judges
+
+You can run a panel with a chair (CJP) and 1 execution judge only at an eligibility meet. Make one judge real in each seat. Don't add made-up judges.
+
+### Eligibility meet: the chair and 1 E judge
+
+<Steps>
+
+1. In Meet Builder, open the meet details. Set **Competition type** to **Eligibility**. You can't change it after the first score.
+
+2. In Judge Assignments, select **Panel settings** (the cog) on the panel.
+
+3. Under **# Execution**, select **1 E**. To do this for all panels, select **Set every panel to 1 E**.
+
+4. Seat the chair and the E1 judge.
+
+</Steps>
+
+Scorsync doubles the E1 judge's mark. Every other meet type needs at least 2 E judges.
+
+:::rule[What the rulebook says]
+When only one execution judge is used, the judge's total mark is multiplied by two. The rule table allows 1 execution judge at eligibility meets only.
+
+**Source:** USA Gymnastics, *Development Program Code of Points: Trampoline* (2025–2029), Section 4, Rule 4 and Rule 4.2, page 25. Tumbling: Section 4, Rule 4.2, page 24. Double Mini: Section 4, Rule 4.2, page 23.
+:::
+
+:::review
+Rules statement. Not yet signed off.
+:::
+
+### The chair also scores E1
+
+The chair can hold one more seat on the same panel: E1 or DD.
+
+<Steps>
+
+1. In Judge Assignments, select the empty **E1** seat on the panel.
+
+2. Select the chair's name in the judge list. The chair now holds CH and E1.
+
+3. On meet day, the chair selects **Score E1** in the command center to give the E mark.
+
+</Steps>
+
+For DD, select **Cover DD with CJP** on the panel. To undo, select **Uncover DD**.
+
+:::review
+The app lets the chair hold E1 at any level. Check that the meet's rules allow the chair to give an E mark before you use this.
+:::
+
+### A third judge arrives
+
+<Steps>
+
+1. Select **Panel settings** on the panel, then **2 E** under **# Execution**.
+
+2. Seat the new judge in the open E seat.
+
+</Steps>
+
+With 2 E judges, Scorsync adds the 2 marks. It doesn't double them. You can change the E count only until the first score.
+
+## Spread flights when you add a panel
+
+If you raise the number of panels for an event in Meet settings (for example, **Trampoline panels running at the same time** from 1 to 2), Meet Builder asks: "Trampoline has 2 panels · N flights use fewer".
+
+- Select **Spread flights over 2 panels**. Each flight's athletes go to panel A and panel B in turn (1st to A, 2nd to B, 3rd to A). The flights get shorter, and later flights move up.
+- Select **Not now** to keep the flights as they are.
+
+A started or scored flight is not spread. The message names it. To go back, select **Undo**.
+
+## Award a division that runs in two sessions
+
+Meet Builder warns "N divisions span sessions" when one division has athletes in two sessions. Each row in the warning has two buttons.
+
+| Button | Who gets medals | When |
+| -- | -- | -- |
+| **Award per session** | Each session's athletes, ranked among themselves | At the end of each session |
+| **Award as one** | All the division's athletes, ranked together | At the end of the later session |
+
+<Steps>
+
+1. In Meet Builder, select the status chip that reads "N divisions span sessions".
+
+2. On the division's row, select **Award per session** or **Award as one**.
+
+3. Check that the row moves to **Split divisions**.
+
+</Steps>
+
+- **Award per session** makes one awarded group for each session, named "division · session". The division itself is not split. Its results on scorsync.com still rank all its athletes together.
+- To change your answer, select **Undo** on the row in **Split divisions**. You can't undo after a session group is awarded at the ceremony.
+- A Synchro division, a division with a final, or an athlete in two sessions can't be awarded per session. Scorsync tells you why and saves nothing.
+
+## Merge boys and girls into one award
+
+<Steps>
+
+1. In Meet Builder, open the **Age groups** dialog.
+
+2. Select the age chip, for example Level 1 Boys 7-8.
+
+3. Select **Merge genders**. Scorsync makes the group "TRA L1 Boys & Girls 7-8" and awards it in place of the two divisions.
+
+4. Check that both divisions show **Awarded as TRA L1 Boys & Girls 7-8**.
+
+</Steps>
+
+- **Merge genders** shows only when the other gender has a division with the same event, level and ages. It stays off until athletes are in flights: "Place athletes in flights first".
+- To go back, open the age chip's menu and select **Undo merge**.
+- On scorsync.com, the boys and girls stay in their own divisions. Each division shows "Awarded as" with the group name.
+
+## Rehearse
+
+<Steps>
+
+1. In Command Center, select **Rehearse**. On a screen narrower than 1792 pixels, select **⋯** first, then **Rehearse**.
+
+2. Confirm "Open judge panels for practice scores?". Command Center opens on **Run**.
+
+3. To have Scorsync play the judges who aren't there, turn on **Simulate other judges** in the "Rehearsal running" bar.
+
+4. When you're done, select **End rehearsal** in the bar, then confirm "Delete N practice scores and end rehearsal?".
+
+</Steps>
+
+You can rehearse again: the button then reads **Rehearse again**. You can't rehearse a meet that has real scores. **Start meet** also ends a rehearsal and deletes its practice scores. For the full steps, see [Rehearse your meet](/host/before-meet-day/rehearse/).
+
+## Print a schedule for each club
+
+<Steps>
+
+1. Open the Print menu, then **Print for**.
+
+2. Select a club, or **Each club (page per club)** for every club in one PDF.
+
+3. Print it, or send each club its page.
+
+</Steps>
+
+Each club gets a portrait page. For each session: **Report by**, march-in and competition start, then one row for each athlete with event, division, flight and est. start. **All clubs** still prints the full meet schedule.
+
+:::note
+**Report by** is the session's warm-up start. If the session has no warm-up start, it shows "—".
+:::
+
+## Keep the panels free on meet day
+
+A panel holds its judges on the athlete who is up. If the chair leaves a panel on an athlete, the judges can't move to their next panel.
+
+### Tell every chair
+
+<Steps>
+
+1. Confirm the last athlete of every flight. On the last athlete, the chair selects **Review and release →**. This frees the panel. See [Confirm a flight official](/judges/chair/confirm-flight-official/).
+
+2. If you can't confirm (a scratch, or you must leave), select **Release panel**. It is on the look-in banner in the command center and on the flight view's on-the-floor strip.
+
+3. If you tapped the wrong athlete, select **Undo move** on "Moved from …". Every judge goes back. No score changes. You get one Undo for each move.
+
+</Steps>
+
+- When some judges have marked and some haven't, Scorsync asks before the chair moves the panel to another athlete. Select **Cancel** to stay.
+- **Back to flight** from a look-in also releases the panel. It asks first and names the athlete.
+- If the chair runs two panels, the command center warns: "… still has … up · Release". Select **Release** to free the other panel. Scorsync never does it for you.
+
+### If the chair isn't there: Force release
+
+<Steps>
+
+1. In Command Center, open **Schedule** and select the panel's name.
+
+2. Next to **Panel locked**, select **Release panel**.
+
+3. Select **Release this panel**.
+
+</Steps>
+
+Judges stay signed in. Other panels don't change. Wrong panel? Select **Undo panel release** at once. Don't delete a judge's seat to free a judge. Full steps: [Release a stuck panel](/scoring-table/free-a-stuck-panel/#release-a-stuck-panel).
+
+### What judges see
+
+- A judge who owes a mark on one live panel is taken there.
+- A judge whose mark is in stays put: "Waiting for the chair · athlete".
+- A judge who owes marks on two panels sees a list. The judge selects **Score** on one.
+
+## After the update: send "Awarded as" to scorsync.com
+
+Do this once for each meet that already publishes to scorsync.com, after Scorsync tells you the update is out.
+
+<Steps>
+
+1. In Command Center, select the sync chip in the **Results & Sync** bar at the bottom.
+
+2. Select **Check against scorsync.com**.
+
+3. On scorsync.com, check that a merged or split division shows "Awarded as" with the group name.
+
+</Steps>
+
+Meets that start publishing later get the tags without this step.
+
+## If something goes wrong
+
+- **A judge's tablet keeps going back to the last session's athlete.** The chair of that panel didn't confirm the last athlete. Ask the chair to select **Release panel**. If the chair isn't there, [release the panel from Command Center](/scoring-table/free-a-stuck-panel/#release-a-stuck-panel).
+- **A judge sees "Choose a panel".** The judge owes marks on two panels. The judge selects **Score** on the right one.
+- **A judge sees "Waiting for the chair".** The judge's mark is in. The tablet moves on when the chair puts up the next athlete.
+- **The chair moved the panel to the wrong athlete.** The chair selects **Undo move**.
+- **There's no Award per session button.** The division has athletes in one session only, so it doesn't need one.
+
+## Related
+
+- [Meet-day runbook: Scorsync Cloud](/runbook/scorsync-cloud/)
+- [Free a stuck panel or nudge a station](/scoring-table/free-a-stuck-panel/)
+- [Rehearse your meet](/host/before-meet-day/rehearse/)
+- [Confirm a flight official](/judges/chair/confirm-flight-official/)
+- [Watch publishing to scorsync.com](/scoring-table/watch-publishing/)
